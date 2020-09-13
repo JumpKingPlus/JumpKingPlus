@@ -5,9 +5,9 @@
 # 你的博客名称，请用你想要的博客名替换“LOFFER”，以下修改都可类似处理
 # 注意，“name: LOFFER”，冒号后面的空格不可以省略。
 # 井号后面的文字是说明文档，不会被程序读取。
-name: JumpKing+
+name: Jump King Plus
 # 描述/签名
-description: whatifshorter
+description: An enhanced version of Jump King
 
 #
 # 下面的设定都是可选的
@@ -22,7 +22,7 @@ favicon: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/fav
 
 # 菜单中的按钮
 navigation:
-  - name: home
+  - name: /
     url: /
   - name: about
     url: /about
@@ -39,7 +39,7 @@ excerpt_separator: <!-- more -->
 
 # 你的社交网络链接，它们会作为图标出现在你的网站页脚中，可选填写
 footer-links: 
-  weibo: #请输入你的微博个性域名 https://www.weibo.com/<thispart>
+  weibo: #https://www.weibo.com/<thispart>
   behance: # https://www.behance.net/<>
   dribbble: # https://dribbble.com/<>
   email: andreaseppi@outlook.it 
@@ -52,7 +52,7 @@ footer-links:
   rss: #随便填点啥RSS就能用了
   stackoverflow: # http://stackoverflow.com/<>
   tumblr: # https://<username>.tumblr.com
-  twitter: https://www.twitter.com/phxx19
+  twitter: phxx19
   youtube: # channel/<your_long_string> or user/<user-name>
 
 # 站点页脚的文字
@@ -61,14 +61,14 @@ footer-text: Copyright (c) 2019 来自中世界
 # 评论，注意，请不要同时添加多种不同的评论区
 
 # 输入Disqus shortname，即可添加评论区
-disqus: loffer #shortname
+disqus: #shortname
 
 # 输入Gitalk相关设定，即可添加评论区
 gitalk:
-  clientID: 
-  clientSecret: 
-  repo: 
-  owner: 
+  clientID: da96b340e9f119388f2f
+  clientSecret: d5636195a2096fbe05b0b3373afce60b1038358e
+  repo: JumpKingPlus
+  owner: Phoenixx19
 
 # 输入Google Analytics web tracking code
 google_analytics:
