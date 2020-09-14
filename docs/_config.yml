@@ -7,7 +7,7 @@
 # 井号后面的文字是说明文档，不会被程序读取。
 name: Jump King Plus
 # 描述/签名
-description: ![GitHub Release Date](https://img.shields.io/github/release-date/Phoenixx19/JumpKingPlus?style=flat-square&color=lightgrey) ![GitHub All Releases](https://img.shields.io/github/downloads/Phoenixx19/JumpKingPlus/total)<br>An enhanced version of Jump King
+description: An enhanced version of Jump King
 
 #
 # 下面的设定都是可选的
