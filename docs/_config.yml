@@ -28,8 +28,6 @@ navigation:
     url: /about
   - name: download
     url: https://github.com/Phoenixx19/JumpKingPlus/releases/latest
-  - name: donate
-    url: https://www.paypal.me/phxx19
 
 # 每页的文章数
 paginate: 8
