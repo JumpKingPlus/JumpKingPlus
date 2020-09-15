@@ -63,10 +63,10 @@ disqus: #shortname
 
 # 输入Gitalk相关设定，即可添加评论区
 gitalk:
-  clientID: da96b340e9f119388f2f
-  clientSecret: d5636195a2096fbe05b0b3373afce60b1038358e
-  repo: JumpKingPlus
-  owner: Phoenixx19
+  clientID: 
+  clientSecret: 
+  repo: 
+  owner: 
 
 # 输入Google Analytics web tracking code
 google_analytics:
