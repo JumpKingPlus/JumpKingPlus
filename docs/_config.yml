@@ -22,14 +22,14 @@ favicon: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/fav
 
 # 菜单中的按钮
 navigation:
-  - name: /
+  - name: releases
     url: /
   - name: about
     url: /about
-  - name: archive
-    url: /archive
-  - name: tags
-    url: /tags
+  - name: download
+    url: https://github.com/Phoenixx19/JumpKingPlus/releases/latest
+  - name: donate
+    url: https://www.paypal.me/phxx19
 
 # 每页的文章数
 paginate: 8
