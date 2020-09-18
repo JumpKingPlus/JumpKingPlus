@@ -9,7 +9,7 @@ JumpKingPlus is **not** supporting betatesting until its most features are done.
 ## Current features
 - [x] Discord's **Rich Presence** using [JumpKingRPC](https://github.com/Phoenixx19/JumpKingRPC)
 - [x] **Inventory** in Main Menu
-- [x] Importancy **order** in the inventory:&ensp;<img src="https://cdn.discordapp.com/app-assets/726077029195448430/735954342825427134.png" height="15" /><img src="https://cdn.discordapp.com/app-assets/726077029195448430/735947335305265202.png" height="15" />:bangbang:
+- [x] Importancy **order** in the inventory:&ensp;<img src="https://cdn.discordapp.com/app-assets/726077029195448430/735954342825427134.png" height="15" /><img src="https://cdn.discordapp.com/app-assets/726077029195448430/735947335305265202.png" height="15" />❗
 - [ ] **Hotkey** for Snake Ring and Giant Boots
 - [x] <text title="Let you restart the story mode faster than before directly from your pause menu">**Quick restart**</text>
 - [x] Actual full stats on `Total Statistics`, inluding sessions and attempts
