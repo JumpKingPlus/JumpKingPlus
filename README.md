@@ -14,7 +14,7 @@ JumpKingPlus is **not** supporting betatesting until its most features are done.
 - [x] <text title="Let you restart the story mode faster than before directly from your pause menu">**Quick restart**</text>
 - [x] Actual full stats on `Total Statistics`, inluding sessions and attempts
 - [ ] Music **library**
-- [ ] <text title="Including JumpKingPlus logo">Customized startup</text>
+- [x] <text title="Including JumpKingPlus logo">Customized startup</text>
 - [ ] Easter egg as quantity of item
 - [ ] Cheats (Jump%, no fall, teleport feature)
 
