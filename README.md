@@ -1,4 +1,4 @@
-# JumpKingPlus
+# JumpKingPlus <img src ="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/images/jkpluslogo.png" width="80px" alt="jkplus logo" align ="right">
 *An enhanced version of Jump King.* :sparkles:
 
 ## Release
