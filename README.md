@@ -16,7 +16,11 @@ JumpKingPlus is **not** supporting betatesting until its most features are done.
 - [ ] Music **library**
 - [x] <text title="Including JumpKingPlus logo">Customized startup</text>
 - [ ] Easter egg as quantity of item
-- [ ] Cheats (Jump%, no fall, teleport feature)
+- [ ] Cheats:   
+      
+      ❌ Jump%
+      ✔️ No fall
+      ✔️ Teleport feature
 
 ## Future features
 - [ ] Workshop
