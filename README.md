@@ -15,6 +15,7 @@ JumpKingPlus is **not** supporting betatesting until its most features are done.
 - [x] Actual full stats on `Total Statistics`, inluding sessions and attempts
 - [ ] Music **library**
 - [x] <text title="Including JumpKingPlus logo">Customized startup</text>
+- [x] Reorganized menus
 - [ ] Easter egg as quantity of item
 - [ ] Cheats:   
       
