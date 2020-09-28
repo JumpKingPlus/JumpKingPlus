@@ -19,60 +19,9 @@ JumpKingPlus is <strong>not</strong> supporting betatesting until its most featu
 <li><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked> <text title="Including JumpKingPlus logo">Customized startup</text></li>
 <li><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked> Reorganized menus</li>
 <li><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked> Easter egg as quantity of item</li>
+<li><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Cheats</li>
 </ul>
-<table>
-<thead>
-<tr>
-<th>Story Mode</th>
-<th>Seller</th>
-<th>Quantity</th>
-<th>Item</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Main Babe</td>
-<td>Merchant</td>
-<td>69</td>
-<td>Gold Rings</td>
-</tr>
-<tr>
-<td>New Babe+</td>
-<td>NB+ Merchant</td>
-<td>420</td>
-<td>Silver</td>
-</tr>
-<tr>
-<td>New Babe+</td>
-<td>Snake</td>
-<td>69</td>
-<td>Ruby</td>
-</tr>
-<tr>
-<td>GoTB</td>
-<td>Shroom Guy</td>
-<td>420</td>
-<td>Mushrooms</td>
-</tr>
-<tr>
-<td>GoTB</td>
-<td>Mold Man</td>
-<td>69</td>
-<td>Ghost Fragments</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><p><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Cheats:   </p>
-<pre><code>❌ Jump<span class="hljs-comment">%</span>
-✔️ No fall
-✔️ Teleport feature
-</code></pre></li>
-</ul>
-<h2 id="future-features">Future features</h2>
-<ul>
-<li><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Workshop</li>
-</ul>
-<p><br>
+<br>
+<p>Check out more on <a href="https://github.com/Phoenixx19/JumpKingPlus"><strong>Gihub</strong></a>.</p>
 <br>
 ~ Phoenixx19, 2020</p>
