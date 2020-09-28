@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-<p><em>An enhanced version of Jump King.</em> :sparkles:</p>
+<p><em>An enhanced version of Jump King.</em> ✨</p>
 <h2 id="release">Release</h2>
 <p>Currently work in progress, the project&#39;s progress can be checked <a href="https://github.com/users/Phoenixx19/projects/1"><strong>here</strong></a>. <br>
 JumpKingPlus is <strong>not</strong> supporting betatesting until its most features are done.</p>
