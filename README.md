@@ -16,14 +16,16 @@ JumpKingPlus is **not** supporting betatesting until its most features are done.
 - [ ] Music **library**
 - [x] <text title="Including JumpKingPlus logo">Customized startup</text>
 - [x] Reorganized menus
-- [x] Easter egg as quantity of item:
-      |Story Mode|Seller|Quantity|Item|
-      |----------|--------|--------|---|
-      |Main Babe|Merchant|69 |Gold Rings|
-      |New Babe+|NB+ Merchant|420|Silver|
-      |New Babe+|Snake|69|Ruby|
-      |GoTB|Shroom Guy|420|Mushrooms|
-      |GoTB|Mold Man|69|Ghost Fragments|
+- [x] Easter egg as quantity of item
+
+|Story Mode|Seller|Quantity|Item|
+|---|---|---|---|
+|Main Babe|Merchant|69 |Gold Rings|
+|New Babe+|NB+ Merchant|420|Silver|
+|New Babe+|Snake|69|Ruby|
+|GoTB|Shroom Guy|420|Mushrooms|
+|GoTB|Mold Man|69|Ghost Fragments|
+
 - [ ] Cheats:   
       
       ❌ Jump%
