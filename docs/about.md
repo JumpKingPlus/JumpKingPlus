@@ -1,17 +1,12 @@
 ---
 layout: page
-title: about
+title: About
 permalink: /about/
 ---
-
-# JumpKingPlus
 *An enhanced version of Jump King.* :sparkles:
-
 ## Release
 Currently work in progress, the project's progress can be checked [**here**](https://github.com/users/Phoenixx19/projects/1). <br>
 JumpKingPlus is **not** supporting betatesting until its most features are done.
-
-
 ## Current features
 - [x] Discord's **Rich Presence** using [JumpKingRPC](https://github.com/Phoenixx19/JumpKingRPC)
 - [x] **Inventory** in Main Menu
@@ -31,7 +26,6 @@ JumpKingPlus is **not** supporting betatesting until its most features are done.
 |New Babe+|Snake|69|Ruby|
 |GoTB|Shroom Guy|420|Mushrooms|
 |GoTB|Mold Man|69|Ghost Fragments|
-
 - [ ] Cheats:   
       
       ❌ Jump%
