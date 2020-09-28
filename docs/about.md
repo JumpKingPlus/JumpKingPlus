@@ -9,16 +9,16 @@ permalink: /about/
 JumpKingPlus is <strong>not</strong> supporting betatesting until its most features are done.</p>
 <h2 id="current-features">Current features</h2>
 <ul>
-<li>[x] Discord&#39;s <strong>Rich Presence</strong> using <a href="https://github.com/Phoenixx19/JumpKingRPC">JumpKingRPC</a></li>
-<li>[x] <strong>Inventory</strong> in Main Menu</li>
-<li>[x] Importancy <strong>order</strong> in the inventory:&ensp;<img src="https://cdn.discordapp.com/app-assets/726077029195448430/735954342825427134.png" height="15" /><img src="https://cdn.discordapp.com/app-assets/726077029195448430/735947335305265202.png" height="15" />❗</li>
-<li>[ ] <strong>Hotkey</strong> for Snake Ring and Giant Boots</li>
-<li>[x] <text title="Let you restart the story mode faster than before directly from your pause menu"><strong>Quick restart</strong></text></li>
-<li>[x] Actual full stats on <code>Total Statistics</code>, inluding sessions and attempts</li>
-<li>[ ] Music <strong>library</strong></li>
-<li>[x] <text title="Including JumpKingPlus logo">Customized startup</text></li>
-<li>[x] Reorganized menus</li>
-<li>[x] Easter egg as quantity of item</li>
+<li><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked> Discord&#39;s <strong>Rich Presence</strong> using <a href="https://github.com/Phoenixx19/JumpKingRPC">JumpKingRPC</a></li>
+<li><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked> <strong>Inventory</strong> in Main Menu</li>
+<li><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked> Importancy <strong>order</strong> in the inventory:&ensp;<img src="https://cdn.discordapp.com/app-assets/726077029195448430/735954342825427134.png" height="15" /><img src="https://cdn.discordapp.com/app-assets/726077029195448430/735947335305265202.png" height="15" />❗</li>
+<li><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <strong>Hotkey</strong> for Snake Ring and Giant Boots</li>
+<li><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked> <text title="Let you restart the story mode faster than before directly from your pause menu"><strong>Quick restart</strong></text></li>
+<li><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked> Actual full stats on <code>Total Statistics</code>, inluding sessions and attempts</li>
+<li><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Music <strong>library</strong></li>
+<li><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked> <text title="Including JumpKingPlus logo">Customized startup</text></li>
+<li><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked> Reorganized menus</li>
+<li><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked> Easter egg as quantity of item</li>
 </ul>
 <table>
 <thead>
@@ -63,7 +63,7 @@ JumpKingPlus is <strong>not</strong> supporting betatesting until its most featu
 </tbody>
 </table>
 <ul>
-<li><p>[ ] Cheats:   </p>
+<li><p><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Cheats:   </p>
 <pre><code>❌ Jump<span class="hljs-comment">%</span>
 ✔️ No fall
 ✔️ Teleport feature
@@ -71,7 +71,7 @@ JumpKingPlus is <strong>not</strong> supporting betatesting until its most featu
 </ul>
 <h2 id="future-features">Future features</h2>
 <ul>
-<li>[ ] Workshop</li>
+<li><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Workshop</li>
 </ul>
 <p><br>
 <br>
