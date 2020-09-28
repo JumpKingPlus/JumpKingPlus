@@ -22,6 +22,6 @@ JumpKingPlus is <strong>not</strong> supporting betatesting until its most featu
 <li><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Cheats</li>
 </ul>
 <br>
-<p>Check out more on <a href="https://github.com/Phoenixx19/JumpKingPlus"><strong>Gihub</strong></a>.</p>
+<p>Check out more on <a href="https://github.com/Phoenixx19/JumpKingPlus"><strong>Github</strong></a>.</p>
 <br>
-~ Phoenixx19, 2020</p>
+~ Phoenixx19, 2020
