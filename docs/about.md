@@ -6,7 +6,7 @@ permalink: /about/
 <p><em>An enhanced version of Jump King.</em> ✨</p>
 <h2 id="release">Release</h2>
 <p>Currently work in progress, the project&#39;s progress can be checked <a href="https://github.com/users/Phoenixx19/projects/1"><strong>here</strong></a>. <br>
-JumpKingPlus is <strong>not</strong> supporting betatesting until its most features are done.</p>
+JumpKingPlus is <strong>not</strong> supporting betatesting until most of its features are done.</p>
 <h2 id="current-features">Current features</h2>
 <ul>
 <li><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked> Discord&#39;s <strong>Rich Presence</strong> using <a href="https://github.com/Phoenixx19/JumpKingRPC">JumpKingRPC</a></li>
