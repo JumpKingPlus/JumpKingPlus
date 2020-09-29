@@ -3,7 +3,7 @@
 
 ## Release
 Currently work in progress, the project's progress can be checked [**here**](https://github.com/users/Phoenixx19/projects/1). <br>
-JumpKingPlus is **not** supporting betatesting until its most features are done.
+JumpKingPlus is **not** supporting betatesting until most of its features are done.
 
 
 ## Current features
