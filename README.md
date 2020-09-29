@@ -33,4 +33,5 @@ JumpKingPlus is **not** supporting betatesting until its most features are done.
       ✔️ Teleport feature
 
 ## Future features
+- [ ] Localization
 - [ ] Workshop
