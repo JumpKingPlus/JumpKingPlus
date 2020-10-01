@@ -14,6 +14,7 @@ JumpKingPlus is **not** supporting betatesting until most of its features are do
 - [x] <text title="Let you restart the story mode faster than before directly from your pause menu">**Quick restart**</text>
 - [x] Actual full stats on `Total Statistics`, inluding sessions and attempts
 - [ ] Music **library**
+- [ ] Disable NPC speech
 - [x] <text title="Including JumpKingPlus logo">Customized startup</text>
 - [x] Reorganized menus
 - [x] Easter egg as quantity of item
