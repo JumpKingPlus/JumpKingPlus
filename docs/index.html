@@ -43,7 +43,10 @@ layout: default
       <span style="float: left;
     text-align: left;
     width: 50%;">
-        <a href="{{ site.baseurl }}{{ post.url }}">
+        <a style="color: #868e96;
+    border: 1px solid #f1f3f5;
+    padding: 10px 20px;
+    background: #f8f9fa;" href="{{ site.baseurl }}{{ post.url }}">
           Read More
         </a>
       </span>
@@ -75,13 +78,16 @@ layout: default
       </div>
 
       <div class="entry">
-        {{ post.excerpt | truncate: 200 }}
+        {{ post.excerpt | truncate: 300 }}
       </div>
 
       <span style="float: left;
     text-align: left;
     width: 50%;">
-        <a href="{{ site.baseurl }}{{ post.url }}">
+        <a style="color: #868e96;
+    border: 1px solid #f1f3f5;
+    padding: 10px 20px;
+    background: #f8f9fa;" href="{{ site.baseurl }}{{ post.url }}">
           Read More
         </a>
       </span>
@@ -94,14 +100,14 @@ layout: default
   {% if paginator.previous_page %}
     <span class="prev">
       <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="prev">
-        ← 上一页
+        ← Previous
       </a>
     </span>
   {% endif %}
   {% if paginator.next_page %}
     <span class="next">
       <a href="{{ site.baseurl}}{{ paginator.next_page_path }}" class="next">
-        下一页 →
+        Next →
       </a>
     </span>
   {% endif %}
