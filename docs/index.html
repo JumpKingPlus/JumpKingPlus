@@ -39,17 +39,11 @@ layout: default
       <div class="entry">
         {{ post.excerpt | truncate: 300 }}
       </div>
-      <div style="border-top: 1px solid #f1f3f5;
-    font-weight: 300;
-    padding: 20px 0;
-    width: 100%;
-    display: inline-block;">
-      <span class="previous">
+      <span class="prev">
         <a href="{{ site.baseurl }}{{ post.url }}">
           Read More
         </a>
       </span>
-      </div>
     </article>
     {% endif %}
   {% endfor %}
@@ -80,17 +74,11 @@ layout: default
       <div class="entry">
         {{ post.excerpt | truncate: 300 }}
       </div>
-      <div border-top: 1px solid #f1f3f5;
-    font-weight: 300;
-    padding: 20px 0;
-    width: 100%;
-    display: inline-block;>
-      <span class="previous">
+      <span class="prev">
         <a href="{{ site.baseurl }}{{ post.url }}">
           Read More
         </a>
       </span>
-      </div>
     </article>
     {% endunless %}
   {% endfor %}
