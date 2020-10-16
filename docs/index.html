@@ -72,7 +72,13 @@ layout: default
         {{ post.excerpt | truncate: 200 }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <span style="float: left;
+    text-align: left;
+    width: 50%;">
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          Read More
+        </a>
+      </span>
     </article>
     {% endunless %}
   {% endfor %}
