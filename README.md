@@ -27,9 +27,9 @@ JumpKingPlus is **not** supporting betatesting until most of its features are do
 |GoTB|Shroom Guy|420|Mushrooms|
 |GoTB|Mold Man|69|Ghost Fragments|
 
-- [ ] Cheats:   
+- [x] Cheats:   
       
-      ❌ Jump%
+      ✔️ Jump%
       ✔️ No fall
       ✔️ Teleport feature
 
