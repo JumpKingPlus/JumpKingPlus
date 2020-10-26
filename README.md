@@ -14,7 +14,7 @@ JumpKingPlus is **not** supporting betatesting until most of its features are do
 - [x] **Quick restart** from Pause Menu
 - [x] Actual full stats on `Total Statistics`, inluding sessions, attempts and a more specific time section (with total days and milliseconds)
 - [ ] Music **library**
-- [ ] Disable NPC speech
+- [x] Disable NPC speech
 - [x] Revamped `Stats Display` in Main Menu
 - [x] JumpKingPlus additions (start-up logo, version in main menu, author added in the attributions)
 - [x] Reorganized menus
