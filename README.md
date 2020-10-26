@@ -11,12 +11,12 @@ JumpKingPlus is **not** supporting betatesting until most of its features are do
 - [x] **Inventory** in Main Menu
 - [x] Importancy **order** in the inventory:&ensp;<img src="https://cdn.discordapp.com/app-assets/726077029195448430/735954342825427134.png" height="15" /><img src="https://cdn.discordapp.com/app-assets/726077029195448430/735947335305265202.png" height="15" />❗
 - [x] **Hotkey** for Snake Ring and Giant Boots
-- [x] <text title="Let you restart the story mode faster than before directly from your pause menu">**Quick restart**</text>
-- [x] Actual full stats on `Total Statistics`, inluding sessions and attempts
+- [x] **Quick restart** from Pause Menu
+- [x] Actual full stats on `Total Statistics`, inluding sessions, attempts and a more specific time section (with total days and milliseconds)
 - [ ] Music **library**
 - [ ] Disable NPC speech
 - [x] Revamped `Stats Display` in Main Menu
-- [x] <text title="Including JumpKingPlus logo">Customized startup</text>
+- [x] JumpKingPlus additions (start-up logo, version in main menu, author added in the attributions)
 - [x] Reorganized menus
 - [x] Easter egg as quantity of item
 
@@ -30,9 +30,9 @@ JumpKingPlus is **not** supporting betatesting until most of its features are do
 
 - [x] Cheats:   
       
-      ✔️ Jump%
+      ✔️ Jump% (last jump percentage and current jump percentage)
       ✔️ No fall
-      ✔️ Teleport feature
+      ✔️ Teleport feature (possible only in the story mode selected)
 
 ## Future features
 - [ ] Localization
