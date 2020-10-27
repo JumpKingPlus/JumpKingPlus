@@ -2,9 +2,10 @@
 *An enhanced version of Jump King.* :sparkles:
 
 ## Release
-Currently work in progress, the project's progress can be checked [**here**](https://github.com/users/Phoenixx19/projects/1). <br>
-JumpKingPlus is **not** supporting betatesting until most of its features are done.
+Currently work in progress, the project's progress can be checked [**here**](https://github.com/users/Phoenixx19/projects/1).
 
+![Early Access](https://github.com/Phoenixx19/JumpKingPlus/blob/master/docs/images/Banner.png)
+**Betatesting** can be applied by compiling [**this form**](https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAcgqL_5UMVg4OTU3Mlg0TFVGUk5LWkE4SEFDVEgzRS4u). The early access form ends October 28th, 2020 at 2 PM UTC+1.
 
 ## Current features
 - [x] Discord's **Rich Presence** using [JumpKingRPC](https://github.com/Phoenixx19/JumpKingRPC)
