@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Early Access Release 1
-date: 2020-10-20
+date: 2020-10-28
 Author: Phoenixx19
 tags: [early-access, release]
 comments: false
