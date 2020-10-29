@@ -1,0 +1,46 @@
+---
+layout: post
+title: Early Access Release 1
+date: 2020-10-20
+Author: Phoenixx19
+tags: [early-access, release]
+comments: false
+toc: false
+pinned: true
+---
+
+## v0.13.0
+
+First beta version for testers only.<br>
+Download available for public after release.
+<!-- more -->
+
+### Features added:
+
+Mods:
+- **JumpKingRPC** v2.2.0
+- Disabling NPC speech
+- **Quick restart** from Pause Menu
+- Easter eggs (check out more [**here**](https://github.com/Phoenixx19/JumpKingPlus))
+- Cheats, including:
+  - **Jump%** (showing the percentage of a jump)
+  - No falls (once ticked on the cheats menu, the falls will be null)
+  - **Teleport** mod (possible only in story mode selected)
+
+Tweaks:
+- **Inventory** in Main Menu
+- **Importance** order (Snake Ring and Giant Boots on top of the inventory)
+- **Hotkey** for Snake Ring and Giant Boots (**P** and **O** on keyboard)
+- No more confirmation over new story mode when one is already existing
+- Revamped `Stats Display` in Main Menu
+- JumpKingPlus **logo** in start-up screen
+- JumpKingPlus **version** in Main Menu
+- JumpKingPlus **credits** in `Contributions`
+- Reorganized menus
+- Full stats on `Total Statistics`, including sessions, attempts and a more specific time section (with total days and milliseconds)
+- Displaying milliseconds in `Display timer in-game`
+
+
+### Fixes:
+
+- Installer previously missing a file (music.xml)
