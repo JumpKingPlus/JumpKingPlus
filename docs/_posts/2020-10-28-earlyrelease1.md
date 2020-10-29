@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Early Access Release 1
+title: Early Access - Release 1 (v0.13.0)
 date: 2020-10-28
 Author: Phoenixx19
 tags: [early-access, release]
@@ -9,7 +9,7 @@ toc: false
 pinned: true
 ---
 
-## v0.13.0
+## Changelog
 
 First beta version for testers only.<br>
 Download available for public after release.
