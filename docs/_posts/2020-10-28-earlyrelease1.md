@@ -12,7 +12,7 @@ pinned: true
 ## Changelog
 
 First beta version for testers only.<br>
-Download available for public after release.
+Download available for public after official release.
 <!-- more -->
 
 ### Features added:
