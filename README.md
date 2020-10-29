@@ -13,7 +13,7 @@ Currently work in progress, the project's progress can be checked [**here**](htt
 - [x] Importancy **order** in the inventory:&ensp;<img src="https://cdn.discordapp.com/app-assets/726077029195448430/735954342825427134.png" height="15" /><img src="https://cdn.discordapp.com/app-assets/726077029195448430/735947335305265202.png" height="15" />❗
 - [x] **Hotkey** for Snake Ring and Giant Boots
 - [x] **Quick restart** from Pause Menu
-- [x] Actual full stats on `Total Statistics`, inluding sessions, attempts and a more specific time section (with total days and milliseconds)
+- [x] Actual full stats on `Total Statistics`, including sessions, attempts and a more specific time section (with total days and milliseconds)
 - [ ] Music **library**
 - [x] Disable NPC speech
 - [x] Revamped `Stats Display` in Main Menu
