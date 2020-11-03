@@ -14,7 +14,6 @@ Currently work in progress, the project's progress can be checked [**here**](htt
 - [x] **Hotkey** for Snake Ring and Giant Boots
 - [x] **Quick restart** from Pause Menu
 - [x] Actual full stats on `Total Statistics`, including sessions, attempts and a more specific time section (with total days and milliseconds)
-- [ ] Music **library**
 - [x] Disable NPC speech
 - [x] Revamped `Stats Display` in Main Menu
 - [x] JumpKingPlus additions (start-up logo, version in main menu, author added in the attributions)
@@ -36,5 +35,6 @@ Currently work in progress, the project's progress can be checked [**here**](htt
       ✔️ Teleport feature (possible only in the story mode selected)
 
 ## Future features
+- [ ] Music library
 - [ ] Localization
 - [ ] Workshop
