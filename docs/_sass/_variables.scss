@@ -23,9 +23,10 @@ $white: #fff;
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
+@font-face { font-family: alkhemikal; src: url('ttf_alkhemikal.ttf'); }
 
 // Fonts
-$base-font: "Helvetica Neue","PT Serif",source-han-serif-sc, "Source Han Serif SC", "Source Han Serif CN", "Source Han Serif TC", "Source Han Serif TW", "Source Han Serif","Songti SC", SimSon, serif;
+$base-font: "Noto Serif","PT Serif",source-han-serif-sc, "Source Han Serif SC", "Source Han Serif CN", "Source Han Serif TC", "Source Han Serif TW", "Source Han Serif","Songti SC", SimSon, serif;
 $code-font: 'Menlo', 'Courier New', 'Monaco', 'Spoqa Han Sans', monospace;
 
 // Font sizes
