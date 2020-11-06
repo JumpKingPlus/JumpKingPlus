@@ -269,6 +269,11 @@ img {
   border-radius: 5px;
 }
 
+.icon {
+  display: inline;
+  margin: 0;
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
