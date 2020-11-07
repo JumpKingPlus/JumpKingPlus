@@ -7,12 +7,16 @@ layout: default
   <h2>No post found</h2>
 {% endif %}
 
-<script>document.getElementById("release").textContent="{{ site.github.latest_release.tag_name }}";</script>
+<script>
+  var text = document.getElementById("h-release").textContent;
+  document.getElementById("release").textContent=text;
+</script>
 
 <div class="posts">
-	<code>
+	<code id="h-release" hidden>
 		Latest version: {{ site.github.latest_release.tag_name }}
-    <br>
+	</code>
+  <code id="h-releases" hidden>
     Versions: {% for release in site.github.releases %}
     {{ site.github.releases.tag_name }}
     {% endfor %}
