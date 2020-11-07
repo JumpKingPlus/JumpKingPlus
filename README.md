@@ -3,7 +3,7 @@
 
 JumpKingPlus is an **enhancement** for Jump King with plentiful of small tweaks to make your hard climb to the babe even better! JumpKingPlus fully **supports** the community around the game <!--  more --> and has taken notes on the features/tweaks the game was missing and implemented it (such as a quick restart system, disabling the NPC speeches for full focus on those hard jumps and so on!).
 
-#### More about JumpKingPlus on the [<img src="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/images/jkpluslogo.png" height="15"/> official website](https://phoenixx19.github.io/JumpKingPlus/about).
+### More about JumpKingPlus on the [<img src="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/images/jkpluslogo.png" height="15"/> official website](https://phoenixx19.github.io/JumpKingPlus/about).
 
 [![Releases](https://flat.badgen.net/github/releases/Phoenixx19/JumpKingPlus)](https://github.com/Phoenixx19/JumpKingPlus/releases)
 [![GitHub release (latest by date)](https://flat.badgen.net/github/release/Phoenixx19/JumpKingPlus)](https://github.com/Phoenixx19/JumpKingPlus/releases/latest)
