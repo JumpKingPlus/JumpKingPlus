@@ -3,14 +3,14 @@ layout: default
 ---
 <script src="https://unpkg.com/feather-icons"></script>
 
-<iframe src="https://badgen.net/github/release/phoenixx19/jumpkingrpc" width="102.3" height="20" hidden></iframe>
-<iframe src="https://badgen.net/github/releases/phoenixx19/jumpkingrpc?style=flat-square" width="72.5" height="20" hidden></iframe>
-
 {% if site.posts.size == 0 %}
   <h2>No post found</h2>
 {% endif %}
 
 <div class="posts">
+	<code>
+		The project is called {{ site.github.project_title }}
+	</code>
   
   {% for post in paginator.posts %}
   {% if post.pinned==true %}
