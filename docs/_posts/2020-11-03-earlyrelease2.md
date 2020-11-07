@@ -11,8 +11,8 @@ pinned: true
 
 ## Changelog
 
-Second beta version for testers only.<br>
-Download available for public after official release.
+Second beta version for testers only during testing period.<br>
+Download available [**here**](https://github.com/Phoenixx19/JumpKingPlus/releases/tag/v0.14.0).
 <!-- more -->
 
 ### Features added:

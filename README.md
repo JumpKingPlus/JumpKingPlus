@@ -1,8 +1,7 @@
-# JumpKingPlus <img src ="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/images/jkpluslogo.png" width="80px" alt="jkplus logo" align ="right">
+# JumpKingPlus <img href="https://phoenixx19.github.io/JumpKingPlus" src ="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/images/jkpluslogo.png" width="80px" alt="jkplus logo" align ="right">
 *An enhanced version of Jump King.* :sparkles:
 
 ## Release
-Currently work in progress, the project's progress can be checked [**here**](https://github.com/users/Phoenixx19/projects/1).
 
 ![Early Access](https://github.com/Phoenixx19/JumpKingPlus/blob/master/docs/images/Banner.png)
 **Betatesting** can be applied by compiling [**this form**](https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAcgqL_5UMVg4OTU3Mlg0TFVGUk5LWkE4SEFDVEgzRS4u). The early access form ends October 28th, 2020 at 2 PM UTC+1.
@@ -17,26 +16,11 @@ Currently work in progress, the project's progress can be checked [**here**](htt
 - [x] **Quick restart** from Pause Menu
 - [x] Actual full stats on `Total Statistics`, including sessions, attempts and a more specific time section (with total days and milliseconds)
 - [x] Disable NPC speech
+- [x] Disable location intro
 - [x] Revamped `Stats Display` in Main Menu
 - [x] JumpKingPlus additions (start-up logo, version in main menu, author added in the attributions)
 - [x] Reorganized menus
 - [x] Easter egg as quantity of item
+- [x] Quote-on-quote cheats (more like tools)
 
-|Story Mode|Seller|Quantity|Item|
-|---|---|---|---|
-|Main Babe|Merchant|69 |Gold Rings|
-|New Babe+|NB+ Merchant|420|Silver|
-|New Babe+|Snake|69|Ruby|
-|GoTB|Shroom Guy|420|Mushrooms|
-|GoTB|Mold Man|69|Ghost Fragments|
-
-- [x] Cheats:   
-      
-      ✔️ Jump% (last jump percentage and current jump percentage)
-      ✔️ No fall
-      ✔️ Teleport feature (possible only in the story mode selected)
-
-## Future features
-- [ ] Music library
-- [ ] Localization
-- [ ] Workshop
+### More about JumpKingPlus on the [official website](https://phoenixx19.github.io/JumpKingPlus/about).
