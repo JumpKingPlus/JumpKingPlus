@@ -14,8 +14,11 @@
   </header>
 
   <span id="h-releases">
-    Versions:
-    {{ site.github.releases }}
+    {% assign allreleases = 0 %}
+    {% for release in site.github.releases %}
+    {% increment allreleases %}
+    {% endfor %}
+    {{ allreleases }}
 	</span>
 
   <div class="navlist">
