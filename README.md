@@ -6,8 +6,6 @@ JumpKingPlus is an **enhancement** for Jump King with plentiful of small tweaks 
 ### More about JumpKingPlus on the [<img src="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/images/jkpluslogo.png" height="15"/> official website](https://phoenixx19.github.io/JumpKingPlus/about).
 
 [![Releases](https://flat.badgen.net/github/releases/Phoenixx19/JumpKingPlus)](https://github.com/Phoenixx19/JumpKingPlus/releases)
-[![GitHub release (latest by date)](https://flat.badgen.net/github/release/Phoenixx19/JumpKingPlus)](https://github.com/Phoenixx19/JumpKingPlus/releases/latest)
-[![GitHub Releases](https://img.shields.io/github/downloads/Phoenixx19/JumpKingPlus/latest/total?style=flat-square)]()
 [![GitHub top language](https://img.shields.io/github/languages/top/Phoenixx19/JumpKingPlus?style=flat-square)](https://github.com/Phoenixx19/JumpKingPlus/search?l=c%23)
 [![License](https://flat.badgen.net/github/license/Phoenixx19/JumpKingPlus)](https://github.com/Phoenixx19/JumpKingPlus/blob/master/LICENSE)
 ## Release
