@@ -7,6 +7,8 @@ layout: default
   <h2>No post found</h2>
 {% endif %}
 
+<script>document.getElementById("release").textContent="{{ site.github.latest_release.tag_name }}";</script>
+
 <div class="posts">
 	<code>
 		Latest version: {{ site.github.latest_release.tag_name }}
