@@ -13,10 +13,9 @@
     </div>
   </header>
 
-  <span id="h-releases" hidden>
-    Versions: {% for release in site.github.releases %}
-    {{ site.github.releases.tag_name }}
-    {% endfor %}
+  <span id="h-releases">
+    Versions:
+    {{ site.github.releases }}
 	</span>
 
   <div class="navlist">
