@@ -7,21 +7,7 @@ layout: default
   <h2>No post found</h2>
 {% endif %}
 
-<script>
-  var text = document.getElementById("h-release").textContent;
-  document.getElementById("release").textContent=text;
-</script>
-
 <div class="posts">
-	<code id="h-release" hidden>
-		Latest version: {{ site.github.latest_release.tag_name }}
-	</code>
-  <code id="h-releases" hidden>
-    Versions: {% for release in site.github.releases %}
-    {{ site.github.releases.tag_name }}
-    {% endfor %}
-	</code>
-  
   {% for post in paginator.posts %}
   {% if post.pinned==true %}
     <article class="post pinned">
