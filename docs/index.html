@@ -10,7 +10,10 @@ layout: default
 <div class="posts">
 	<code>
 		Latest version: {{ site.github.latest_release.tag_name }}
-		<br> {{ site.github.releases }}
+    <br>
+    Versions: {% for release in site.github.releases %}
+    {{ site.github.releases.tag_name }}
+    {% endfor %}
 	</code>
   
   {% for post in paginator.posts %}
