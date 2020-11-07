@@ -12,3 +12,12 @@ JumpKingPlus is an **enhancement** for Jump King with plentiful of small tweaks 
 
 ![Public Release](https://github.com/Phoenixx19/JumpKingPlus/blob/master/docs/images/BannerRelease.png)
 **Public release** will take place on November 8th, 2020 at 12 AM UTC+1.
+
+## Future features
+- [ ] Music library
+- [ ] Localization
+- [ ] Workshop
+<br>
+
+<br>
+~ Phoenixx19, 2020
