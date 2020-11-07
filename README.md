@@ -1,12 +1,10 @@
 # JumpKingPlus <img href="https://phoenixx19.github.io/JumpKingPlus" src ="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/images/jkpluslogo.png" width="80px" alt="jkplus logo" align ="right">
 *An enhanced version of Jump King.* :sparkles:
 
+#### More about JumpKingPlus on the [<img src="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/images/jkpluslogo.png" height="15"/> official website](https://phoenixx19.github.io/JumpKingPlus/about).
+
 ## Release
 
-### Betatesting (done!)
-**Betatesting** can be applied by compiling [**this form**](https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAcgqL_5UMVg4OTU3Mlg0TFVGUk5LWkE4SEFDVEgzRS4u). The early access form ends October 28th, 2020 at 2 PM UTC+1.
-
-### Public release
 ![Public Release](https://github.com/Phoenixx19/JumpKingPlus/blob/master/docs/images/BannerRelease.png)
 **Public release** will take place on November 8th, 2020 at 12 AM UTC+1.
 
@@ -24,5 +22,3 @@
 - [x] Reorganized menus
 - [x] Easter egg as quantity of item
 - [x] Quote-on-quote cheats (more like tools)
-
-### More about JumpKingPlus on the [official website](https://phoenixx19.github.io/JumpKingPlus/about).
