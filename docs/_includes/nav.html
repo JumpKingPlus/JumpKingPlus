@@ -16,7 +16,7 @@
   <span id="h-releases">
     {% assign allreleases = 0 %}
     {% for release in site.github.releases %}
-      {% increment allreleases %}
+      {% assign allreleases = allreleases + 1 %}
     {% endfor %}
     {{ allreleases }}
 	</span>
