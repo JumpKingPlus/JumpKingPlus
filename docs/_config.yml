@@ -26,8 +26,6 @@ navigation:
     url: /
   - name: about
     url: /about
-  - name: download <span id="release" class="badge-pill"></span>
-    url: https://github.com/Phoenixx19/JumpKingPlus/releases/latest
 
 # 每页的文章数
 paginate: 8

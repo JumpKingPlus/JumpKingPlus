@@ -13,7 +13,6 @@
     </div>
   </header>
 
-  <span id="h-release" hidden>{{ site.github.latest_release.tag_name }}</span>
   <span id="h-releases" hidden>
     Versions: {% for release in site.github.releases %}
     {{ site.github.releases.tag_name }}
@@ -29,6 +28,7 @@
       <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.name }}</a>
       {% endif %}
       {% endfor %}
+      <a href="https://github.com/Phoenixx19/JumpKingPlus/releases/latest">download <span class="badge-pill">{{ site.github.latest_release.tag_name }}</span></a>
     </nav>
   </div>
 
@@ -37,9 +37,4 @@
       {% include footer.html %}
     </footer>
   </div>
-
-  <script>
-    var text = document.getElementById("h-release").textContent;
-    document.getElementById("release").textContent=text;
-  </script>
 </div>
