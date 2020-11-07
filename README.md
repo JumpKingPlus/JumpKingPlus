@@ -4,7 +4,6 @@
 ## Release
 
 ### Betatesting (done!)
-![Early Access](https://github.com/Phoenixx19/JumpKingPlus/blob/master/docs/images/Banner.png)
 **Betatesting** can be applied by compiling [**this form**](https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAcgqL_5UMVg4OTU3Mlg0TFVGUk5LWkE4SEFDVEgzRS4u). The early access form ends October 28th, 2020 at 2 PM UTC+1.
 
 ### Public release
