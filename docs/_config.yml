@@ -26,7 +26,7 @@ navigation:
     url: /
   - name: about
     url: /about
-  - name: download <span id="release"></span>
+  - name: download <span class="badge-pill">{{ site.github.latest_release.tag_name }}</span>
     url: https://github.com/Phoenixx19/JumpKingPlus/releases/latest
 
 # 每页的文章数

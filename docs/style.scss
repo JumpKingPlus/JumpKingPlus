@@ -90,6 +90,14 @@ a {
   }
 }
 
+.badge-pill{
+  padding-right:.6em;
+  padding-left:.6em;
+  border-radius:10rem;
+  background-color: #868e96;
+  color: $link-color;
+}
+
 em, i {
   font-style: italic;
 }
