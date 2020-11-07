@@ -6,7 +6,7 @@ Author: Phoenixx19
 tags: [early-access, release]
 comments: false
 toc: false
-pinned: true
+pinned: false
 ---
 
 ## Changelog
