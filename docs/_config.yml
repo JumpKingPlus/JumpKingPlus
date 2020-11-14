@@ -22,10 +22,12 @@ favicon: https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/i
 
 # 菜单中的按钮
 navigation:
-  - name: releases <span id="releases"></span>
+  - name: releases
     url: /
   - name: about
     url: /about
+  - name: qna
+    url: /qna
 
 # 每页的文章数
 paginate: 8
