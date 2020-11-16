@@ -14,7 +14,7 @@ namespace JumpKingPlus
         ///     jkpluslogo      JKPlus intro
         ///     toggleLocation  pewwww animation new area
         /// </summary>
-        public Version version = new Version("1.0.0");
+        public Version version = new Version("1.1.0");
         public Cheats cheats;
         public JKPlusData()
         {
@@ -30,11 +30,19 @@ namespace JumpKingPlus
         private bool toggleNpcSpeech;
         private bool jkpluslogo;
         private bool toggleLocation;
+        private bool togglePreciseTimer;
         public bool QuickRestart { get { return _restart; } set { _restart = value; } }
         public bool ToggleRPC { get { return toggleRpc; } set { toggleRpc = value; } }
         public bool ToggleCheats { get { return toggleCheats; } set { toggleCheats = value; cheats.AchievementAccess = !value; } }
         public bool ToggleNPC { get { return toggleNpcSpeech; } set { toggleNpcSpeech = value; } }
         public bool JKPlusScreen { get { return jkpluslogo; } set { jkpluslogo = value; } }
         public bool ToggleLocation { get { return toggleLocation; } set { toggleLocation = value; } }
+        public bool ToggleTimer { get { return togglePreciseTimer; } set { togglePreciseTimer = value; } }
+
+        public String[] timer = new String[2]
+            {
+                "Default",
+                "Precise"
+            };
     }
 }

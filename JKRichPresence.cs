@@ -15,7 +15,7 @@ namespace JumpKingPlus
 		/// ClearUpdate() is the check for the toggle.
 		/// BodyValues is an internal class.
 		/// </summary>
-			Version jkplusver = new Version("1.0.0");
+			Version jkplusver = new Version("1.1.0");
             public String[] presets = new String[3] {
                 "Babe+Location",
                 "Location+Falls",
