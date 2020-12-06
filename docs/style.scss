@@ -96,6 +96,23 @@ a {
   border-radius:10rem;
   background-color: #868e9647;
   color: $link-color;
+  font-size: small;
+  font-weight: 600;
+  font-family: system-ui;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+
+  &:hover, &:active {
+    color: $link-lighten-color;
+  }
+}
+
+a svg {
+    transition: all 0.5s;
 }
 
 em, i {
