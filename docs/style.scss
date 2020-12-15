@@ -90,6 +90,14 @@ a {
   }
 }
 
+.meta, .entry {
+  padding: 0 1.2em;
+}
+
+.meta {
+  border-bottom: 1px solid #f1f3f5;
+}
+
 .badge-pill{
   padding-right:.6em;
   padding-left:.6em;
@@ -417,6 +425,7 @@ img {
 }
 
 .site-description {
+  line-height: normal;
   margin: 15px auto;
   color: $base-lighten-color;
   font-size: 16px;
@@ -445,7 +454,7 @@ nav {
   a {
     margin: 0 10px;
     text-align: right;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1px;
 
     @include mobile {
@@ -501,8 +510,10 @@ nav {
 }
 
 .posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $divider-color;
+  background-color: #f8f9fa;
+  border: 1px solid #f1f3f5;
+  margin: 2em 0;
+  border-radius: 10px;
 }
 
 .posts > .post:last-child {
@@ -731,6 +742,7 @@ footer {
   text-align: center;
 
   p {
+    line-height: normal;
     font-size: $small-font-size;
     color: $base-lighten-color;
   }

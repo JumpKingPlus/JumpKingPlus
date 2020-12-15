@@ -11,11 +11,10 @@ layout: default
   {% for post in paginator.posts %}
   {% if post.pinned==true %}
     <article class="post pinned">
-      <h1>
-          <span title="pinned"><i data-feather="anchor"></i></span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      </h1>
-
       <div clsss="meta">
+        <h1>
+          <span title="pinned"><i data-feather="anchor"></i></span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </h1>
         <span class="date">
           {{ post.date | date: "%Y-%m-%d" }}
         </span>
@@ -38,13 +37,13 @@ layout: default
       <div class="entry">
         {{ post.excerpt | truncate: 300 }}
       </div>
-      <div class="pagination" style="border-top: 0; padding: 10px 0;">
+      <!--<div class="pagination" style="border-top: 0; padding: 10px 0;">
       <span class="prev">
         <a href="{{ site.baseurl }}{{ post.url }}">
           Read More
         </a>
       </span>
-      </div>
+      </div>-->
     </article>
     {% endif %}
   {% endfor %}
@@ -52,11 +51,10 @@ layout: default
   {% for post in paginator.posts %}
     {% unless post.pinned %}
     <article class="post">
-      <h1>
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      </h1>
-
       <div clsss="meta">
+        <h1>
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </h1>
         <span class="date">
           {{ post.date | date: "%Y-%m-%d" }}
         </span>
@@ -75,13 +73,13 @@ layout: default
       <div class="entry">
         {{ post.excerpt | truncate: 300 }}
       </div>
-      <div class="pagination" style="border-top: 0; padding: 10px 0;">
+      <!--<div class="pagination" style="border-top: 0; padding: 10px 0;">
       <span class="prev">
         <a href="{{ site.baseurl }}{{ post.url }}">
           Read More
         </a>
       </span>
-      </div>
+      </div>-->
     </article>
     {% endunless %}
   {% endfor %}
