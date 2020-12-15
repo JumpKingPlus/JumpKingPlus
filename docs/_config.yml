@@ -26,8 +26,8 @@ navigation:
     url: /
   - name: about
     url: /about
-  - name: qna
-    url: /qna
+  - name: faq
+    url: /faq
 
 # 每页的文章数
 paginate: 8
