@@ -34,7 +34,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 2em;
-  margin: 1em 0 16px;
   padding: 0;
 
   @include mobile {
@@ -445,11 +444,11 @@ nav {
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $base-font;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16.5px;
 
   @include mobile {
     margin-top: 9px;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   a {
