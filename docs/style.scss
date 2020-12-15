@@ -90,12 +90,13 @@ a {
   }
 }
 
-.meta, .entry {
+article .entry {
   padding: 0 1.2em;
 }
 
-.meta {
+article .meta {
   border-bottom: 1px solid #f1f3f5;
+  padding: 0 1.2em;
 }
 
 .badge-pill{
@@ -510,10 +511,10 @@ nav {
 }
 
 .posts > .post {
-  background-color: #f8f9fa;
-  border: 1px solid #f1f3f5;
   margin: 2em 0;
   border-radius: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #f1f3f5;
 }
 
 .posts > .post:last-child {
