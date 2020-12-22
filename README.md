@@ -14,7 +14,6 @@ JumpKingPlus is an **enhancement** for Jump King with plentiful of small tweaks 
 **Public release** will take place on November 8th, 2020 at 12 AM UTC+1.
 
 ## Future features
-- [ ] Music library
 - [ ] Localization
 - [ ] Workshop
 <br>
