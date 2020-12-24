@@ -28,6 +28,7 @@ After installing and downloading all the files needed; you can start working on 
 [__Blank mod.xml file__]()
 
 In this file, you will set up the basics information of your level such as:
+
 |name|about|optional|
 |---|---|---|
 |`<About>`|Contains the fundamentals of the mod|✖|
@@ -42,7 +43,6 @@ In this file, you will set up the basics information of your level such as:
 |`<header>`|Header for ending lines|✔|
 |`<People>`|Array of strings for ending lines|✔|
 |`<string>`|Ending lines (from 1 to 5 work fine)|✔|
-
 
 ---
 
