@@ -16,6 +16,13 @@ pinned: false
         border-radius: 5px;
         display: inline-block;
     }
+    .rectangle-gradient {
+        width:40px;
+        height:20px;
+        border: solid 1px grey;
+        border-radius: 5px;
+        display: inline-block;
+    }
 </style>
 
 Welcome to the documentation for custom levels on Jump King using JumpKingPlus! On your left you can find the table of contents with everything you should need to make a custom level.
@@ -130,9 +137,9 @@ The hitbox file is a **Texture2D** (.png image with alpha channel or transparent
     </tr>
     <tr>
       <td>Teleport</td>
-      <td>If placed on a screen, it teleports the player to a specific screen using the RED of the RGB as the screen number</td>
+      <td>If placed on a screen, it teleports the player to a specific screen using the <b>RED</b> of the RGB as the screen number</td>
       <td>Works both left and right side of the screen</td>
-      <td>From <div class="rectangle" style="background:rgb(1,0,255);"></div> to <div class="rectangle" style="background:rgb(255,0,255);"></div></td>
+      <td><div class="rectangle-gradient" style="background-image: linear-gradient(to right, rgb(1,0,255), rgb(255,0,255));"></div></td>
     </tr>
     <tr style="background-color: #fff3b2;">
       <td>Low gravity</td>
