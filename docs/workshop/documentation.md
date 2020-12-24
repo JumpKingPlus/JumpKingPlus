@@ -83,9 +83,8 @@ After installing and downloading all the files needed; you can start working on 
 
 ### `mod.xml` file
 [__Blank mod.xml file__]()
-<a class="ws-button">
-  <ion-icon name="code-download"></ion-icon> Download
-</a>
+
+<a class="ws-button"><ion-icon name="code-download"></ion-icon> Download</a>
 
 In this file, you will set up the basics information of your level such as:
 
