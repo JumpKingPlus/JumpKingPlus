@@ -8,7 +8,6 @@ toc: false
 pinned: false
 ---
 
-# Common rules
 Level design in Jump King is a delicate balance between fairness and hardness. These rules are not only made to prevent unfair and impossible levels but to respect Nexile's original ideas on mapping. Also in order to get your map approved on the site, these rules **need** to be followed.
 
 1. __Screen transitions must be full jumps__; it would be unfair for a player not knowing how to jump over a new screen

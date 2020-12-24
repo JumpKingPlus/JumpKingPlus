@@ -8,8 +8,6 @@ toc: true
 pinned: false
 ---
 
-# Documentation
-
 ## Title
 
 ### Another title
