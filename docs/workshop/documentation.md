@@ -30,7 +30,7 @@ After installing and downloading all the files needed; you can start working on 
 In this file, you will set up the basics information of your level such as:
 |name|about|optional|
 |---|---|---|
-|`<About>`|Contains the fundamentals of the mod|
+|`<About>`|Contains the fundamentals of the mod|✖️|
 |`<title>`|Title of the custom level (will show up in the Stats Display window)|✖️|
 |`<ending_screen>`|Screen where the babe will spawn|✖️|
 |`<Fonts>`|Array of available fonts (MenuFont, MenuFontSmall, StyleFont, OptimusUnderline, Tangerine, LocationFont, GargoyleFont)|✔|
