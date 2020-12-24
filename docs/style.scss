@@ -89,6 +89,28 @@ a {
   }
 }
 
+.buttons {
+  display: inline-block;
+
+  @include mobile {
+    font-size: $small-font-size;
+    padding: 24px 0;
+  }
+}
+
+a.ws-button {
+  color: $base-lighten-color;
+  border: 1px solid $divider-color;
+  padding: 10px 20px;
+  background: $background-color;
+
+  &:hover, &:focus {
+    color: $link-lighten-color;
+    border: 1px solid $link-lighten-color;
+    background-color: $link-bghv-color;
+  }
+}
+
 article.post .entry {
   padding: 1em 1.2em 0 1.2em;
 }
