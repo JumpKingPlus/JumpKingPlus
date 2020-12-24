@@ -30,13 +30,13 @@ After installing and downloading all the files needed; you can start working on 
 In this file, you will set up the basics information of your level such as:
 |name|about|optional|
 |---|---|---|
-|`<About>`|Contains the fundamentals of the mod|✖️|
-|`<title>`|Title of the custom level (will show up in the Stats Display window)|✖️|
-|`<ending_screen>`|Screen where the babe will spawn|✖️|
+|`<About>`|Contains the fundamentals of the mod|✖|
+|`<title>`|Title of the custom level (will show up in the Stats Display window)|✖|
+|`<ending_screen>`|Screen where the babe will spawn|✖|
 |`<Fonts>`|Array of available fonts (MenuFont, MenuFontSmall, StyleFont, OptimusUnderline, Tangerine, LocationFont, GargoyleFont)|✔|
-|`<Ending>`|Contains the babe ending images, only one story is available for now|✖️|
-|`<MainBabe>`|Screen for beating the custom game|✖️|
-|`<MainShoes>`|Screen for beating the custom game with the Giant Boots|✖️|
+|`<Ending>`|Contains the babe ending images, only one story is available for now|✖|
+|`<MainBabe>`|Screen for beating the custom game|✖|
+|`<MainShoes>`|Screen for beating the custom game with the Giant Boots|✖|
 |`<EndingLines>`|Credit[] (or array of credit)|✔|
 |`<Credit>`|Contains the header and the strings for the ending lines|✔|
 |`<header>`|Header for ending lines|✔|
