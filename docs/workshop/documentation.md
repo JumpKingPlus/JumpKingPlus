@@ -10,9 +10,11 @@ pinned: false
 
 <style>
     .rectangle {
-        display:block;
         width:20px;
         height:20px;
+        border: solid 1px grey;
+        border-radius: 5px;
+        display: inline-block;
     }
 </style>
 
@@ -56,20 +58,91 @@ In this file, you will set up the basics information of your level such as:
 
 The hitbox file is a **Texture2D** (.png image with alpha channel or transparent) with the size of 780x585 pixels. Every screen is ordered by column starting from top to bottom which means every screen has 60x45 pixels. Jump King uses a specific color to define what a block is inside of this file.
 
-|block|description|usage|color|rgb|
-|---|---|---|---|---|
-|Solid|A normal block you can stand on|| <div class="rectangle" style="background:black;"></div> |(0,0,0)|
-|Slope|You will slide standing on it|needs two adjacent blocks|<div class="rectangle" style="background:red;"></div>|(255,0,0)|
-|Fake|You will fall through it|wind affect it|<div class="rectangle" style="background:rgb(128,128,128);"></div>|(128,128,128)|
-||||||
-||||||
-||||||
-||||||
-||||||
-||||||
-||||||
-||||||
-||||||
+<table>
+  <thead>
+    <tr>
+      <th>block</th>
+      <th>description</th>
+      <th>usage</th>
+      <th>color</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Solid</td>
+      <td>A normal block you can stand on</td>
+      <td></td>
+      <td><div class="rectangle" style="background:black;"></div></td>
+    </tr>
+    <tr>
+      <td>Slope</td>
+      <td>The player will slide standing on it</td>
+      <td>Needs two adjacent blocks</td>
+      <td><div class="rectangle" style="background:red;"></div></td>
+    </tr>
+    <tr>
+      <td>Fake</td>
+      <td>The player will fall through it</td>
+      <td>Wind, water and low gravity affects it</td>
+      <td><div class="rectangle" style="background:rgb(128,128,128);"></div></td>
+    </tr>
+    <tr>
+      <td>Ice</td>
+      <td>The player will slide on it but can still stand on it</td>
+      <td></td>
+      <td><div class="rectangle" style="background:rgb(0,255,255);"></div></td>
+    </tr>
+    <tr>
+      <td>Snow</td>
+      <td>The player will remain at their position unless trying with another jump</td>
+      <td>Snake Ring bypasses it</td>
+      <td><div class="rectangle" style="background:rgb(255,255,0);"></div></td>
+    </tr>
+    <tr>
+      <td>Wind</td>
+      <td>If placed on a screen, it will slide the player slowly to a direction</td>
+      <td>The wind polarity reverses every 5 seconds</td>
+      <td><div class="rectangle" style="background:rgb(0,255,0);"></div></td>
+    </tr>
+    <tr>
+      <td>Sand</td>
+      <td>The player will slowly fall through the block, while jumping and walking is still possible</td>
+      <td></td>
+      <td><div class="rectangle" style="background:rgb(255,106,0);"></div></td>
+    </tr>
+    <tr>
+      <td>No Wind</td>
+      <td>The player will fall through it</td>
+      <td>Wind, water and low gravity does not affect it</td>
+      <td><div class="rectangle" style="background:white;"></div></td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>Velocity and gravity is halved</td>
+      <td></td>
+      <td><div class="rectangle" style="background:rgb(0,170,170);"></div></td>
+    </tr>
+    <tr>
+      <td>Quark</td>
+      <td>Rounds the player's Y position to make falls less different; reference <b><a href="https://media.discordapp.net/attachments/623779998494490624/782275174916685864/unknown.png">here</a></b></td>
+      <td>Used when player is in full velocity</td>
+      <td><div class="rectangle" style="background:rgb(182,255,0);"></div></td>
+    </tr>
+    <tr>
+      <td>Teleport</td>
+      <td>If placed on a screen, it teleports the player to a specific screen using the RED of the RGB as the screen number</td>
+      <td>Works both left and right side of the screen</td>
+      <td>From <div class="rectangle" style="background:rgb(1,0,255);"></div> to <div class="rectangle" style="background:rgb(255,0,255);"></div></td>
+    </tr>
+    <tr style="background-color: #fff3b2;">
+      <td>Low gravity</td>
+      <td>Velocity and gravity is between water and normal, distance is slightly higher</td>
+      <td></td>
+      <td><div class="rectangle" style="background:rgb(128,255,255);"></div></td>
+    </tr>
+  </tbody>
+</table>
+The yellowish color defines a custom hitbox added with JumpKingPlus.
 
 
 ---
