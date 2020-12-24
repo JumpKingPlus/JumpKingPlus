@@ -8,6 +8,14 @@ toc: true
 pinned: false
 ---
 
+<style>
+    .rectangle {
+        display:block;
+        width:20px;
+        height:20px;
+    }
+</style>
+
 Welcome to the documentation for custom levels on Jump King using JumpKingPlus! On your left you can find the table of contents with everything you should need to make a custom level.
 
 ## Installation
@@ -43,6 +51,26 @@ In this file, you will set up the basics information of your level such as:
 |`<header>`|Header for ending lines|✔|
 |`<People>`|Array of strings for ending lines|✔|
 |`<string>`|Ending lines (from 1 to 5 work fine)|✔|
+
+### Hitbox file
+
+The hitbox file is a **Texture2D** (.png image with alpha channel or transparent) with the size of 780x585 pixels. Every screen is ordered by column starting from top to bottom which means every screen has 60x45 pixels. Jump King uses a specific color to define what a block is inside of this file.
+
+|block|description|usage|color|rgb|
+|---|---|---|---|---|
+|Solid|A normal block you can stand on|| <div class="rectangle" style="background:black;"></div> |(0,0,0)|
+|Slope|You will slide standing on it|needs two adjacent blocks|<div class="rectangle" style="background:red;"></div>|(255,0,0)|
+|Fake|You will fall through it|wind affect it|<div class="rectangle" style="background:rgb(128,128,128);"></div>|(128,128,128)|
+||||||
+||||||
+||||||
+||||||
+||||||
+||||||
+||||||
+||||||
+||||||
+
 
 ---
 
