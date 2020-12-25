@@ -93,7 +93,7 @@ In this file, you will set up the basics information of your level such as:
 |---|---|---|
 |`<About>`|Contains the fundamentals of the mod|✖|
 |`<title>`|Title of the custom level (will show up in the Stats Display window)|✖|
-|`<ending_screen>`|Screen where the babe will spawn|✖|
+|`<ending_screen>`|Screen where the babe spawns|✖|
 |`<Fonts>`|Array of available fonts (MenuFont, MenuFontSmall, StyleFont, OptimusUnderline, Tangerine, LocationFont, GargoyleFont)|✔|
 |`<Ending>`|Contains the babe ending images, only one story is available for now|✖|
 |`<MainBabe>`|Screen for beating the custom game|✖|
@@ -102,7 +102,15 @@ In this file, you will set up the basics information of your level such as:
 |`<Credit>`|Contains the header and the strings for the ending lines|✔|
 |`<header>`|Header for ending lines|✔|
 |`<People>`|Array of strings for ending lines|✔|
-|`<string>`|Ending lines (from 1 to 5 work fine)|✔|
+|`<string>`|Ending lines (from 1 to 5 works fine)|✔|
+
+The title and the ending screen are necessary to make the custom level playable. The title will show up only when the game started is Main Babe / Normal Game.
+
+Custom fonts are optional as specified, if left to blank, JumpKingPlus will automatically pick the default ones.
+
+Both MainBabe and MainShoes are supposed to be called as the .xnb files located into `/mods/ending`. **Do not** include the extensions in the name, the game is automatically set to find the .xnb files.
+
+Inside the Ending Lines, it's possible to use the default library for translations included in the game, LanguageJK. 
 
 ### Hitbox file
 
