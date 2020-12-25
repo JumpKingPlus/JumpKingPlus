@@ -101,11 +101,7 @@ ion-icon {
 .ws-buttons {
   display: inline-block;
   margin-top: 1em;
-
-  @include mobile {
-    font-size: $small-font-size;
-    margin-top: 1em;
-  }
+  font-size: $small-font-size;
 }
 
 a.ws-button {
