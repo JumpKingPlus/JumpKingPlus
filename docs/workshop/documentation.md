@@ -82,9 +82,8 @@ Not yet.
 After installing and downloading all the files needed; you can start working on your first custom level. In order to make the custom level working you will need to create two files inside your `JumpKing/Contents/mods` folder. JumpKingPlus loads the custom mode when both the `level.xnb` and the `mod.xml` files are in the folder above.
 
 ### `mod.xml` file
-[__Blank mod.xml file__]()
 
-<a class="ws-button"><ion-icon name="code-download"></ion-icon> Download</a>
+<div class="ws-buttons"><a class="ws-button"><ion-icon name="code-download"></ion-icon> Blank mod.xml</a>&nbsp;<ion-icon name="code-download"></ion-icon> Example mod.xml</a></div>
 
 In this file, you will set up the basics information of your level such as:
 

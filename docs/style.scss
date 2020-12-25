@@ -89,6 +89,12 @@ a {
   }
 }
 
+ion-icon {
+    vertical-align: text-bottom;
+    font-size: 17px;
+    display: inline-block;
+}
+
 .buttons {
   display: inline-block;
 
@@ -101,6 +107,7 @@ a {
 a.ws-button {
   color: $base-lighten-color;
   border: 1px solid $divider-color;
+  border-radius: 20px;
   padding: 10px 20px;
   background: $background-color;
 
