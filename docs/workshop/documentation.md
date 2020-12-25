@@ -51,7 +51,7 @@ If you want to pack an image to put on the mod, make sure you have the .json fil
 
 If you never unpacked an image you can use this simple .json and modify for your own use!
 
-<span style="color: grey; font-size: small; font-weight:600;">YOURFILENAMEHERE.json</span>
+<span style="color: grey; font-size: small; font-weight:600;">YOURFILENAMEHERE.json&nbsp;&nbsp;<a class="ws-button code-show" href="#"><ion-icon name="code-download"></ion-icon> Download</a></span>
 ```json
 {
     "header": {
