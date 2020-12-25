@@ -88,6 +88,9 @@ a {
     color: $link-lighten-color;
   }
 }
+.ws-button.code-show ion-icon {
+  vertical-align: sub;
+}
 
 ion-icon {
     vertical-align: text-bottom;
@@ -95,12 +98,12 @@ ion-icon {
     display: inline-block;
 }
 
-.buttons {
+.ws-buttons {
   display: inline-block;
 
   @include mobile {
     font-size: $small-font-size;
-    padding: 24px 0;
+    margin-top: 1em;
   }
 }
 
@@ -110,6 +113,7 @@ a.ws-button {
   border-radius: 20px;
   padding: 10px 20px;
   background: $background-color;
+  margin-right: 1em;
 
   &:hover, &:focus {
     color: $link-lighten-color;

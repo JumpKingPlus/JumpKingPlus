@@ -27,6 +27,8 @@ pinned: false
 
 Welcome to the documentation for custom levels on Jump King using JumpKingPlus! On your left you can find the table of contents with everything you should need to make a custom level.
 
+<a class="ws-button" href="#" title="Saves as a .pdf file"><ion-icon name="cloud-download"></ion-icon> Save documentation</a>
+
 ## Installation
 Custom levels are available only using __JumpKingPlus on [v1.2.0](https://github.com/Phoenixx19/JumpKingPlus/releases/tag/v1.2.0) or above__.
 
@@ -83,7 +85,7 @@ After installing and downloading all the files needed; you can start working on 
 
 ### `mod.xml` file
 
-<div class="ws-buttons"><a class="ws-button"><ion-icon name="code-download"></ion-icon> Blank mod.xml</a>&nbsp;<ion-icon name="code-download"></ion-icon> Example mod.xml</a></div>
+<div class="ws-buttons"><a class="ws-button" href="#"><ion-icon name="code"></ion-icon> Blank mod.xml</a><a class="ws-button" href="#"><ion-icon name="code-download"></ion-icon> Example mod.xml</a></div>
 
 In this file, you will set up the basics information of your level such as:
 
