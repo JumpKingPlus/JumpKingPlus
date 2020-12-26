@@ -31,8 +31,10 @@ Welcome to the documentation for custom levels on Jump King using JumpKingPlus! 
 
 ## Requirements
 > Custom levels are available only using __JumpKingPlus on [v1.2.0](https://github.com/Phoenixx19/JumpKingPlus/releases/tag/v1.2.0) or above__.
+
 - A simple pixel art editor (Aseprite or GraphicsGale)
 - A good image editor for editing and exporting hitboxes (GIMP or Adobe Photoshop)
+- [JumpKingManager](https://github.com/ShootMe/LiveSplit.JumpKing/releases/latest) to access one area quickly
 - [XNBCLI](https://github.com/LeonBlade/xnbcli/releases/latest) for converting images into XNB
 - Visual Studio 2019 (or above) using MonoGame for converting audio and music, project file [**here**]().
 
@@ -203,18 +205,18 @@ The scrolling images are managed by an .xml file, that determines their texture,
 ### Props folder
 The props folder contains textures and settings of props used in-game; their categories are: worlditems, textures, messages, hidden walls and hidden walls props.
 
-#### World items
+#### World items*
 
-#### NPCs
+#### NPCs*
 `textures/old_man`
 
-#### Raven
+#### Raven*
 `textures/raven`
 
-#### Props
+#### Props*
 `textures`
 
-#### Hidden walls
+#### Hidden walls*
 
 ### King folder
 The king folder contains the textures of the wearable items by the player, by changing these you will have a different texture for the item only when the custom mode is triggered. Keep the same item name in order to get it working.
@@ -231,13 +233,13 @@ The locations in-game can be changed using the `gui/location_settings.xml` file.
 |`<unlock>`|Screen number where location name pops up|
 |`<name>`|Location name|
 
-### Font folder
+### Font folder*
 
-### Audio folder
+### Audio folder*
 
-#### Background
+#### Background*
 
-#### Music
+#### Music*
 
 ---
 
@@ -281,6 +283,14 @@ If you never unpacked an image you can use this simple .json and modify for your
 
 Once put your image inside the `unpacked` folder with the .json file, you can open the `pack.bat`. And if succeeded, you managed to create your very own custom texture! The packed file can be found inside the `packed` folder.
 
-### Convert music & fonts
+### Convert music & fonts*
 Not yet.
 
+---
+
+## Publishing
+To get it published on the site, post your map in the [#modding](https://github.com/ShootMe/LiveSplit.JumpKing/releases/latest) channel on Discord where it will get "verified" by the players. The zip file should contain your mods folder.
+
+
+<br>
+~Phoenixx19, 2020
