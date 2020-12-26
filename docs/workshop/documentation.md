@@ -32,7 +32,7 @@ Welcome to the documentation for custom levels on Jump King using JumpKingPlus! 
 ## Installation
 Custom levels are available only using __JumpKingPlus on [v1.2.0](https://github.com/Phoenixx19/JumpKingPlus/releases/tag/v1.2.0) or above__.
 
-## Requirements for custom levels
+### Requirements for custom levels
 - A simple pixel art editor (Aseprite or GraphicsGale)
 - A good image editor for editing and exporting hitboxes (GIMP or Adobe Photoshop)
 - [XNBCLI](https://github.com/LeonBlade/xnbcli/releases/latest) for converting images into XNB
@@ -174,6 +174,33 @@ The hitbox file is a **Texture2D** (.png image with alpha channel or transparent
   </tbody>
 </table>
 The yellowish color defines a custom hitbox added with JumpKingPlus.
+
+### Screens
+The screen folder contains images such as background, foreground, midground, scrolling images and masks.
+
+#### Background
+The background is usually used for skies or gradients to put back on a certain or multiple screens.
+The name of the file should be `bg(SCREEN NUMBER).xnb`, or as an example, `bg1.xnb`.
+
+#### Foreground
+The foreground is used for details that are in front of the player, such as vines or grass.
+The name of the file should be `fg(SCREEN NUMBER).xnb`, or as an example, `fg1.xnb`.
+
+#### Masks
+The masks are animated backgrounds that are stored inside the default `particles` folder. Masks can be used to give more depth to the level, some examples of masks are ash, rain and snow. 
+The name of the file should be `(MASK NAME)mask(SCREEN NUMBER).xnb`, or as an example `light_snow_bgmask1.xnb`.
+
+#### Midground
+The midground is usually used for platforms and detail that want to be behind the player (the player can go over them).
+The name of the file should be `(SCREEN NUMBER).xnb`, or as an example, `1.xnb`.
+
+#### Scrolling images
+
+<div class="ws-buttons"><a class="ws-button" href="#"><ion-icon name="code-slash"></ion-icon> Example scroll.xml</a></div>
+
+The scrolling images are managed by an .xml file, that determines their texture, position, velocity and layer mode (see example scroll.xml above). The texture name should be the same of the namefile. Which means if you created a new scrolling texture called `clouds.xnb` the name of the texture inside the scroll setting file should be `<texture>clouds</texture>`.
+
+![Image]()
 
 ---
 
