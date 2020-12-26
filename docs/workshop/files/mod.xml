@@ -1,0 +1,49 @@
+<Mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<!-- 
+		JUMPKINGPLUS V1.2.0 by Phoenixx19
+		 https://phoenixx19.github.io/JumpKingPlus/workshop/documentation
+		 Custom Mod support file for reading (most of) the mod files.
+		
+		Details:
+		 <title> will appear ingame instead of the "Main Babe" text.
+		 <ending_screen> is the screen of the babe, do not change this unless you know what you are doing!
+		 Inside <Fonts> you can change various JK fonts, idk why you would change them but more freedom I guess.
+		 <Ending> is the category for ending images, only one story is available for now.
+	-->
+	
+	<!-- About the mod -->
+	<About>
+		<title></title>
+		<ending_screen></ending_screen>
+	</About>
+	
+	<!-- Custom fonts, leave blank if default -->
+	<Fonts>
+		<MenuFont></MenuFont>
+		<MenuFontSmall></MenuFontSmall>
+		<StyleFont></StyleFont>
+		<OptimusUnderline></OptimusUnderline>
+		<Tangerine></Tangerine>
+		<LocationFont></LocationFont>
+		<GargoyleFont></GargoyleFont>
+	</Fonts>
+	
+	<!-- Custom images after ending -->
+	<Ending>
+		<MainBabe></MainBabe>
+		<MainShoes></MainShoes>
+	</Ending>
+	
+	<!-- Ending lines for finishing the mod -->
+	<EndingLines>
+		<Credit>
+			<header></header>
+			<People>
+				<string></string>
+				<string></string>
+				<string></string>
+			</People>
+		</Credit>
+	</EndingLines>
+</Mod>

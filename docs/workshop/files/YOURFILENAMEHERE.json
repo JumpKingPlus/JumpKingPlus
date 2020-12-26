@@ -1,0 +1,18 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": false,
+        "compressed": false
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.Texture2DReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "format": 0,
+        "export": "YOURFILENAMEHERE.png"
+    }
+}

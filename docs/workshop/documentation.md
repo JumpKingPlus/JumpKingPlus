@@ -59,7 +59,7 @@ After installing and downloading all the files needed; you can start working on 
 
 ### `mod.xml` file
 
-<div class="ws-buttons"><a class="ws-button" href="#"><ion-icon name="code"></ion-icon> Blank mod.xml</a><a class="ws-button" href="#"><ion-icon name="code-download"></ion-icon> Example mod.xml</a></div>
+<div class="ws-buttons"><a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/mod.xml"><ion-icon name="code"></ion-icon> Blank mod.xml</a><a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/example_mod.xml"><ion-icon name="code-download"></ion-icon> Example mod.xml</a></div>
 
 In this file, you will set up the basics information of your level such as:
 
@@ -183,25 +183,37 @@ The screen folder contains textures such as background, foreground, midground, s
 The background is usually used for skies or gradients to put back on a certain or multiple screens.
 The name of the file should be `bg(SCREEN NUMBER).xnb`, or as an example, `bg1.xnb`.
 
+![BG](https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/background.png)
+
 #### Foreground
 The foreground is used for details that are in front of the player, such as vines or grass.
 The name of the file should be `fg(SCREEN NUMBER).xnb`, or as an example, `fg1.xnb`.
+
+![FG](https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/foreground.png)
 
 #### Masks
 The masks are animated backgrounds that are stored inside the default `particles` folder. Masks can be used to give more depth to the level, some examples of masks are ash, rain and snow. 
 The name of the file should be `(MASK NAME)mask(SCREEN NUMBER).xnb`, or as an example `light_snow_bgmask1.xnb`.
 
+![Mask](https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/mask.png)
+
 #### Midground
 The midground is usually used for platforms and detail that want to be behind the player (the player can go over them).
 The name of the file should be `(SCREEN NUMBER).xnb`, or as an example, `1.xnb`.
 
+![MG](https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/midground.png)
+
 #### Scrolling images
 
-<div class="ws-buttons"><a class="ws-button" href="#"><ion-icon name="code-slash"></ion-icon> Example scroll.xml</a></div>
+<div class="ws-buttons"><a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/scroll.xml"><ion-icon name="code-slash"></ion-icon> Example scroll.xml</a></div>
 
 The scrolling images are managed by an .xml file, that determines their texture, position, velocity and layer mode (see example scroll.xml above). The scrolling texture is usually used for clouds or birds flying in the distance. The texture name should be the same of the namefile. Which means if you created a new scrolling texture called `clouds.xnb` the name of the texture inside the scroll setting file should be `<texture>clouds</texture>`.
 
-![Example Image]()
+![Scrolling](https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/scroll.png)
+
+All of them together make this:
+
+![Example Image](https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/final.jpg)
 
 ### Props folder
 The props folder contains textures and settings of props used in-game; their categories are: worlditems, textures, messages, hidden walls and hidden walls props.
@@ -263,7 +275,7 @@ If you want to unpack an image from the game, put the file inside the `packed` f
 
 If you want to pack an image to put on the mod, make sure you have the .json file of your file ready to get packed with your image. If you never unpacked an image you can use this simple .json and modify for your own use! 
 
-<span style="color: grey; font-size: small; font-weight:600;">YOURFILENAMEHERE.json&nbsp;&nbsp;<a class="ws-button code-show" href="#"><ion-icon name="code-download"></ion-icon> Download</a></span>
+<span style="color: grey; font-size: small; font-weight:600;">YOURFILENAMEHERE.json&nbsp;&nbsp;<a class="ws-button code-show" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/YOURFILENAMEHERE.json"><ion-icon name="code-download"></ion-icon> Download</a></span>
 ```json
 {
     "header": {
