@@ -29,10 +29,8 @@ Welcome to the documentation for custom levels on Jump King using JumpKingPlus! 
 
 <a class="ws-button" href="#" title="Saves as a .pdf file"><ion-icon name="cloud-download"></ion-icon> Save documentation</a>
 
-## Installation
-Custom levels are available only using __JumpKingPlus on [v1.2.0](https://github.com/Phoenixx19/JumpKingPlus/releases/tag/v1.2.0) or above__.
-
-### Requirements for custom levels
+## Requirements
+> Custom levels are available only using __JumpKingPlus on [v1.2.0](https://github.com/Phoenixx19/JumpKingPlus/releases/tag/v1.2.0) or above__.
 - A simple pixel art editor (Aseprite or GraphicsGale)
 - A good image editor for editing and exporting hitboxes (GIMP or Adobe Photoshop)
 - [XNBCLI](https://github.com/LeonBlade/xnbcli/releases/latest) for converting images into XNB
@@ -207,19 +205,22 @@ The props folder contains textures and settings of props used in-game; their cat
 
 #### World items
 
-#### NPCs (`textures/old_man`)
+#### NPCs
+`textures/old_man`
 
-#### Raven (`textures/raven`)
+#### Raven
+`textures/raven`
 
-#### Props (`textures`)
+#### Props
+`textures`
 
 #### Hidden walls
 
 ### King folder
 The king folder contains the textures of the wearable items by the player, by changing these you will have a different texture for the item only when the custom mode is triggered. Keep the same item name in order to get it working.
 
-### Locations (`gui/location_settings.xml`)
-The locations in-game can be changed using the `location_settings.xml` file.
+### Locations
+The locations in-game can be changed using the `gui/location_settings.xml` file.
 
 |tag|description|
 |---|---|
@@ -243,7 +244,7 @@ The locations in-game can be changed using the `location_settings.xml` file.
 ## Testing
 As said before, testing is a very important part of creating a custom level. In order to get your files working in-game; here's a section dedicated for that.
 
-### Convert images into XNB and viceversa
+### Convert images
 0. Install prerequisites of XNBCLI available [here](https://github.com/LeonBlade/xnbcli/blob/master/README.md).
 1. Download the latest release for XNBCLI in the links above.
 2. Export the `xnbcli-windows-x64.zip` file
@@ -280,6 +281,6 @@ If you never unpacked an image you can use this simple .json and modify for your
 
 Once put your image inside the `unpacked` folder with the .json file, you can open the `pack.bat`. And if succeeded, you managed to create your very own custom texture! The packed file can be found inside the `packed` folder.
 
-### Convert music and fonts into XNB and viceversa
+### Convert music & fonts
 Not yet.
 
