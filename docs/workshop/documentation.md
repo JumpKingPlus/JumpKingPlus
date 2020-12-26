@@ -32,6 +32,7 @@ Welcome to the documentation for custom levels on Jump King using JumpKingPlus! 
 ## Requirements
 > Custom levels are available only using __JumpKingPlus on [v1.2.0](https://github.com/Phoenixx19/JumpKingPlus/releases/tag/v1.2.0) or above__.
 
+- The [__sample custom level__]() by Phoenixx19
 - A simple pixel art editor (Aseprite or GraphicsGale)
 - A good image editor for editing and exporting hitboxes (GIMP or Adobe Photoshop)
 - [JumpKingManager](https://github.com/ShootMe/LiveSplit.JumpKing/releases/latest) to access one area quickly
@@ -246,18 +247,21 @@ The locations in-game can be changed using the `gui/location_settings.xml` file.
 ## Testing
 As said before, testing is a very important part of creating a custom level. In order to get your files working in-game; here's a section dedicated for that.
 
+### Getting started
+0. Download the sample level from the requirements.
+1. Drag the `mods` folder from the zip file to `Jump King/Content` folder.
+2. You now have a custom map ready to work on!
+
 ### Convert images
 0. Install prerequisites of XNBCLI available [here](https://github.com/LeonBlade/xnbcli/blob/master/README.md).
 1. Download the latest release for XNBCLI in the links above.
-2. Export the `xnbcli-windows-x64.zip` file
+2. Export the `xnbcli-windows-x64.zip` file.
 
-#### Unpack images
 If you want to unpack an image from the game, put the file inside the `packed` folder and open the `unpack.bat`. If succeeded, you will find your files inside the `unpacked` folder.
 
-#### Pack images
-If you want to pack an image to put on the mod, make sure you have the .json file of your file ready to get packed with your image.
+<br>
 
-If you never unpacked an image you can use this simple .json and modify for your own use!
+If you want to pack an image to put on the mod, make sure you have the .json file of your file ready to get packed with your image. If you never unpacked an image you can use this simple .json and modify for your own use! 
 
 <span style="color: grey; font-size: small; font-weight:600;">YOURFILENAMEHERE.json&nbsp;&nbsp;<a class="ws-button code-show" href="#"><ion-icon name="code-download"></ion-icon> Download</a></span>
 ```json
