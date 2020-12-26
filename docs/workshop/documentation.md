@@ -176,7 +176,7 @@ The hitbox file is a **Texture2D** (.png image with alpha channel or transparent
 The yellowish color defines a custom hitbox added with JumpKingPlus.
 
 ### Screens
-The screen folder contains images such as background, foreground, midground, scrolling images and masks.
+The screen folder contains textures such as background, foreground, midground, scrolling images and masks.
 
 #### Background
 The background is usually used for skies or gradients to put back on a certain or multiple screens.
@@ -198,9 +198,45 @@ The name of the file should be `(SCREEN NUMBER).xnb`, or as an example, `1.xnb`.
 
 <div class="ws-buttons"><a class="ws-button" href="#"><ion-icon name="code-slash"></ion-icon> Example scroll.xml</a></div>
 
-The scrolling images are managed by an .xml file, that determines their texture, position, velocity and layer mode (see example scroll.xml above). The texture name should be the same of the namefile. Which means if you created a new scrolling texture called `clouds.xnb` the name of the texture inside the scroll setting file should be `<texture>clouds</texture>`.
+The scrolling images are managed by an .xml file, that determines their texture, position, velocity and layer mode (see example scroll.xml above). The scrolling texture is usually used for clouds or birds flying in the distance. The texture name should be the same of the namefile. Which means if you created a new scrolling texture called `clouds.xnb` the name of the texture inside the scroll setting file should be `<texture>clouds</texture>`.
 
-![Image]()
+![Example Image]()
+
+### Props folder
+The props folder contains textures and settings of props used in-game; their categories are: worlditems, textures, messages, hidden walls and hidden walls props.
+
+#### World items
+
+#### NPCs (`textures/old_man`)
+
+#### Raven (`textures/raven`)
+
+#### Props (`textures`)
+
+#### Hidden walls
+
+### King folder
+The king folder contains the textures of the wearable items by the player, by changing these you will have a different texture for the item only when the custom mode is triggered. Keep the same item name in order to get it working.
+
+### Locations (`gui/location_settings.xml`)
+The locations in-game can be changed using the `location_settings.xml` file.
+
+|tag|description|
+|---|---|
+|`<locations>`|Location[] or array of locations|
+|`<Location>`|Location information|
+|`<start>`|Screen number where location starts|
+|`<end>`|Screen number where location ends|
+|`<unlock>`|Screen number where location name pops up|
+|`<name>`|Location name|
+
+### Font folder
+
+### Audio folder
+
+#### Background
+
+#### Music
 
 ---
 
@@ -244,6 +280,6 @@ If you never unpacked an image you can use this simple .json and modify for your
 
 Once put your image inside the `unpacked` folder with the .json file, you can open the `pack.bat`. And if succeeded, you managed to create your very own custom texture! The packed file can be found inside the `packed` folder.
 
-### Convert music into XNB and viceversa
+### Convert music and fonts into XNB and viceversa
 Not yet.
 
