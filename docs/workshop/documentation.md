@@ -38,6 +38,19 @@ Custom levels are available only using __JumpKingPlus on [v1.2.0](https://github
 - [XNBCLI](https://github.com/LeonBlade/xnbcli/releases/latest) for converting images into XNB
 - Visual Studio 2019 (or above) using MonoGame for converting audio and music, project file [**here**]().
 
+## Common rules
+Level design in Jump King is a delicate balance between fairness and hardness. These rules are not only made to prevent unfair and impossible levels but to respect Nexile's original ideas on level design. Also in order to get your map approved on the site, these rules **need** to be followed.
+
+1. __Screen transitions must be full jumps__; it would be unfair for a player not knowing how to jump over a new screen
+
+2. __Transition platforms should always work__ (with a full jump) and they __must not be related to a specific position__ in the platform before the transition to the new screen
+
+3. __Platforms must be bordered with a line__ (with at least 1px)
+
+4. Do not exaggerate with the Lost Frontier jumps (8px platform equals to 1px in the hitboxes file), that area sucks
+
+Testing is the most important phase of your level that should take you a lot of time, a good level has every single fall calculated, nothing is left to be random. Check out some more tips [**here**](https://phoenixx19.github.io/JumpKingPlus/workshop/commonrules/).
+
 ---
 
 ## Modding
@@ -165,8 +178,7 @@ The yellowish color defines a custom hitbox added with JumpKingPlus.
 ---
 
 ## Testing
-
-Testing is the most important phase of your level that should take you a lot of time, a good level has every single fall calculated, nothing is left to be random. Check out some more tips [**here**](https://phoenixx19.github.io/JumpKingPlus/workshop/commonrules/).
+As said before, testing is a very important part of creating a custom level. In order to get your files working in-game; here's a section dedicated for that.
 
 ### Convert images into XNB and viceversa
 0. Install prerequisites of XNBCLI available [here](https://github.com/LeonBlade/xnbcli/blob/master/README.md).
