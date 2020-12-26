@@ -211,7 +211,7 @@ The scrolling images are managed by an .xml file, that determines their texture,
 
 ![Scrolling](https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/scroll.png)
 
-All of them together make this:
+All of the layers together make this (not counting the hidden wall because that's a prop):
 
 ![Example Image](https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/final.jpg)
 
