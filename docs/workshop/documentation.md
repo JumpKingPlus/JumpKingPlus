@@ -38,46 +38,6 @@ Custom levels are available only using __JumpKingPlus on [v1.2.0](https://github
 - [XNBCLI](https://github.com/LeonBlade/xnbcli/releases/latest) for converting images into XNB
 - Visual Studio 2019 (or above) using MonoGame for converting audio and music, project file [**here**]().
 
-### Convert images into XNB and viceversa
-0. Install prerequisites of XNBCLI available [here](https://github.com/LeonBlade/xnbcli/blob/master/README.md).
-1. Download the latest release for XNBCLI in the links above.
-2. Export the `xnbcli-windows-x64.zip` file
-
-#### Unpack images
-If you want to unpack an image from the game, put the file inside the `packed` folder and open the `unpack.bat`. If succeeded, you will find your files inside the `unpacked` folder.
-
-#### Pack images
-If you want to pack an image to put on the mod, make sure you have the .json file of your file ready to get packed with your image.
-
-If you never unpacked an image you can use this simple .json and modify for your own use!
-
-<span style="color: grey; font-size: small; font-weight:600;">YOURFILENAMEHERE.json&nbsp;&nbsp;<a class="ws-button code-show" href="#"><ion-icon name="code-download"></ion-icon> Download</a></span>
-```json
-{
-    "header": {
-        "target": "w",
-        "formatVersion": 5,
-        "hidef": false,
-        "compressed": false
-    },
-    "readers": [
-        {
-            "type": "Microsoft.Xna.Framework.Content.Texture2DReader",
-            "version": 0
-        }
-    ],
-    "content": {
-        "format": 0,
-        "export": "YOURFILENAMEHERE.png"
-    }
-}
-```
-
-Once put your image inside the `unpacked` folder with the .json file, you can open the `pack.bat`. And if succeeded, you managed to create your very own custom texture! The packed file can be found inside the `packed` folder.
-
-### Convert music into XNB and viceversa
-Not yet.
-
 ---
 
 ## Modding
@@ -202,7 +162,49 @@ The hitbox file is a **Texture2D** (.png image with alpha channel or transparent
 </table>
 The yellowish color defines a custom hitbox added with JumpKingPlus.
 
-
 ---
 
 ## Testing
+
+Testing is the most important phase of your level that should take you a lot of time, a good level has every single fall calculated, nothing is left to be random. Check out some more tips [**here**](https://phoenixx19.github.io/JumpKingPlus/workshop/commonrules/).
+
+### Convert images into XNB and viceversa
+0. Install prerequisites of XNBCLI available [here](https://github.com/LeonBlade/xnbcli/blob/master/README.md).
+1. Download the latest release for XNBCLI in the links above.
+2. Export the `xnbcli-windows-x64.zip` file
+
+#### Unpack images
+If you want to unpack an image from the game, put the file inside the `packed` folder and open the `unpack.bat`. If succeeded, you will find your files inside the `unpacked` folder.
+
+#### Pack images
+If you want to pack an image to put on the mod, make sure you have the .json file of your file ready to get packed with your image.
+
+If you never unpacked an image you can use this simple .json and modify for your own use!
+
+<span style="color: grey; font-size: small; font-weight:600;">YOURFILENAMEHERE.json&nbsp;&nbsp;<a class="ws-button code-show" href="#"><ion-icon name="code-download"></ion-icon> Download</a></span>
+```json
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": false,
+        "compressed": false
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.Texture2DReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "format": 0,
+        "export": "YOURFILENAMEHERE.png"
+    }
+}
+```
+
+Once put your image inside the `unpacked` folder with the .json file, you can open the `pack.bat`. And if succeeded, you managed to create your very own custom texture! The packed file can be found inside the `packed` folder.
+
+### Convert music into XNB and viceversa
+Not yet.
+
