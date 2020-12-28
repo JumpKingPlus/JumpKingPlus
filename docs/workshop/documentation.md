@@ -58,7 +58,7 @@ Testing is the most important phase of your level that should take you a lot of 
 After installing and downloading all the files needed; you can start working on your first custom level. In order to make the custom level working you will need to create two files inside your `JumpKing/Contents/mods` folder. JumpKingPlus loads the custom mode when both the `level.xnb` and the `mod.xml` files are in the folder above.
 
 ### `mod.xml` file
-<div class="ws-buttons"><a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/mod.xml"><ion-icon name="code"></ion-icon> Blank mod.xml</a><a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/example_mod.xml"><ion-icon name="code-download"></ion-icon> Example mod.xml</a></div>
+<div class="ws-buttons"><a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/mod.xml"><ion-icon name="code"></ion-icon> Blank mod.xml</a><a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/example_mod.xml"><ion-icon name="code-slash"></ion-icon> Example mod.xml</a></div>
 
 In this file, you will set up the basics information of your level such as:
 
@@ -214,9 +214,15 @@ All of the layers together make this (not counting the hidden wall because that'
 ![Example Image](https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/final.jpg)
 
 ### Props folder
-The props folder contains textures and settings of props used in-game; their categories are: worlditems, textures, messages, hidden walls and hidden walls props.
+The props folder contains textures and settings of props used in-game; their categories are: worlditems, textures, messages, hidden walls and hidden walls props. Avoid using props in the final screen to prevent slight visual bugs from the game itself.
 
-#### World items*
+#### World items
+
+<div class="ws-buttons"><a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/worlditems.xml"><ion-icon name="code-slash"></ion-icon> Example worlditems.xml</a></div>
+
+The world items are items that the player can pick up by walking on them. These have their own texture from the wearable items and they are stored in `props/worlditems`.
+
+The game to position and read their texture reads a configuration file called `worlditems.xml`. The file is self explainatory so there's no need of a table.
 
 #### NPCs*
 `textures/old_man`
@@ -224,15 +230,44 @@ The props folder contains textures and settings of props used in-game; their cat
 #### Raven*
 `textures/raven`
 
-#### Props*
-`textures`
+#### Props
 
-#### Hidden walls*
+<div class="ws-buttons"><a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/prop_settings.xml"><ion-icon name="code-slash"></ion-icon> Example prop_settings.xml</a><a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/prop1.xml"><ion-icon name="code-slash"></ion-icon> Example prop.xml</a></div>
+
+The props in-game (such as the bonfire in the first screen) are stored in the `props/textures` and they have one setting file named `prop_settings.xml` which contains:
+
+|name|description|
+|---|---|
+|`<settings>`|PropSetting[]|
+|`<PropSetting>`|Contains settings of a single prop|
+|`<name>`|Name of the file|
+|`<fps>`|Frames per second|
+|`<frames>`|float[]|
+|`<float>`|???|
+|`<sheet_cells>`||
+|`<X>`||
+|`<Y>`||
+|`<random_offset>`|Optional tag to get random offsets|
+
+To add a prop on a screen, you will need to create a configuration file called `prop(SCREEN NUMBER).xml` and add each prop with their type (name of the prop), position on X and Y axis (__0,0 is top-left!__) and optional if the prop should be flipped.
+
+#### Hidden walls
+
+<div class="ws-buttons"><a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/hidden_wall.xml"><ion-icon name="code-slash"></ion-icon> Example hidden_wall.xml</a><a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/prop.xml"><ion-icon name="code-slash"></ion-icon> Example prop.xml</a></div>
+
+Hidden walls are used in-game to hide areas or make the screen more realistic, the hidden wall works as foreground until the player gets into its position where it gets transparent.
+
+The hidden walls are located in `props/hidden_walls/textures` and they are managed by a configuration file called `hidden_wall(SCREEN NUMBER).xml`.
+
+Hidden walls can have props too; these can be added creating a different prop configuration file inside `props/hidden walls props` called `prop(SCREEN NUMBER).xml`.
 
 ### King folder
 The king folder contains the textures of the wearable items by the player, by changing these you will have a different texture for the item only when the custom mode is triggered. Keep the same item name in order to get it working.
 
 ### Locations
+
+<div class="ws-buttons"><a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/location_settings.xml"><ion-icon name="code-slash"></ion-icon> Example location_settings.xml</a></div>
+
 The locations in-game can be changed using the `gui/location_settings.xml` file.
 
 |tag|description|
