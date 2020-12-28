@@ -58,7 +58,6 @@ Testing is the most important phase of your level that should take you a lot of 
 After installing and downloading all the files needed; you can start working on your first custom level. In order to make the custom level working you will need to create two files inside your `JumpKing/Contents/mods` folder. JumpKingPlus loads the custom mode when both the `level.xnb` and the `mod.xml` files are in the folder above.
 
 ### `mod.xml` file
-
 <div class="ws-buttons"><a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/mod.xml"><ion-icon name="code"></ion-icon> Blank mod.xml</a><a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/example_mod.xml"><ion-icon name="code-download"></ion-icon> Example mod.xml</a></div>
 
 In this file, you will set up the basics information of your level such as:
@@ -87,7 +86,6 @@ Both MainBabe and MainShoes are supposed to be called as the .xnb files located 
 Inside the Ending Lines, it's possible to use the default library for translations included in the game, LanguageJK. 
 
 ### Hitbox file
-
 The hitbox file is a **Texture2D** (.png image with alpha channel or transparent) with the size of 780x585 pixels. Every screen is ordered by column starting from top to bottom which means every screen has 60x45 pixels. Jump King uses a specific color to define what a block is inside of this file.
 
 <table>
@@ -246,7 +244,8 @@ The locations in-game can be changed using the `gui/location_settings.xml` file.
 |`<unlock>`|Screen number where location name pops up|
 |`<name>`|Location name|
 
-### Font folder*
+### Font folder
+The font folder should include the custom fonts included for the custom level. Sadly MonoGame, and so Jump King, does not support TrueType fonts (.TTF) so to make them compatible in-game, you should check out how to convert the font to make it compatibile below [**here**](#convert-music--fonts). 
 
 ### Audio folder*
 
