@@ -29,7 +29,7 @@ Welcome to the documentation for custom levels on Jump King using JumpKingPlus! 
 
 <a class="ws-button" href="#" title="Saves as a .pdf file"><ion-icon name="cloud-download"></ion-icon> Save documentation</a>
 
-## Requirements
+## Requirements for building custom levels
 > Custom levels are available only using __JumpKingPlus on [v1.2.0](https://github.com/Phoenixx19/JumpKingPlus/releases/tag/v1.2.0) or above__.
 
 - The [__sample custom level__]() by Phoenixx19
@@ -54,10 +54,58 @@ Testing is the most important phase of your level that should take you a lot of 
 
 ---
 
+## Testing
+As said before, testing is a very important part of creating a custom level. In order to get your files working in-game; here's a section dedicated for that.
+
+### Getting started
+0. Download the sample level from the requirements.
+1. Drag the `mods` folder from the zip file to `Jump King/Content` folder.
+2. You now have a custom map ready to work on!
+
+### Convert images
+0. Install prerequisites of XNBCLI available [here](https://github.com/LeonBlade/xnbcli/blob/master/README.md).
+1. Download the latest release for XNBCLI in the links above.
+2. Export the `xnbcli-windows-x64.zip` file.
+
+#### Unpack images
+If you want to unpack an image from the game, put the file inside the `packed` folder and open the `unpack.bat`. If succeeded, you will find your files inside the `unpacked` folder.
+
+#### Pack images
+If you want to pack an image to put on the mod, make sure you have the .json file of your file ready to get packed with your image. If you never unpacked an image you can use this simple .json and modify for your own use! 
+
+<span style="color: grey; font-size: small; font-weight:600;">YOURFILENAMEHERE.json&nbsp;&nbsp;<a class="ws-button code-show" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/YOURFILENAMEHERE.json"><ion-icon name="code-download"></ion-icon> Download</a></span>
+```json
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": false,
+        "compressed": false
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.Texture2DReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "format": 0,
+        "export": "YOURFILENAMEHERE.png"
+    }
+}
+```
+
+Once put your image inside the `unpacked` folder with the .json file, you can open the `pack.bat`. And if succeeded, you managed to create your very own custom texture! The packed file can be found inside the `packed` folder.
+
+### Convert music & fonts*
+Not yet.
+
+---
+
 ## Modding
 After installing and downloading all the files needed; you can start working on your first custom level. In order to make the custom level working you will need to create two files inside your `JumpKing/Contents/mods` folder. JumpKingPlus loads the custom mode when both the `level.xnb` and the `mod.xml` files are in the folder above.
 
-### `mod.xml` file
+### Mod config file
 <div class="ws-buttons"><a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/mod.xml"><ion-icon name="code"></ion-icon> Blank mod.xml</a><a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/example_mod.xml"><ion-icon name="code-slash"></ion-icon> Example mod.xml</a></div>
 
 In this file, you will set up the basics information of your level such as:
@@ -174,7 +222,7 @@ The hitbox file is a **Texture2D** (.png image with alpha channel or transparent
 </table>
 The yellowish color defines a custom hitbox added with JumpKingPlus.
 
-### Screens
+### Screens folder
 The screen folder contains textures such as background, foreground, midground, scrolling images and masks.
 
 #### Background
@@ -287,54 +335,6 @@ The font folder should include the custom fonts included for the custom level. S
 #### Background*
 
 #### Music*
-
----
-
-## Testing
-As said before, testing is a very important part of creating a custom level. In order to get your files working in-game; here's a section dedicated for that.
-
-### Getting started
-0. Download the sample level from the requirements.
-1. Drag the `mods` folder from the zip file to `Jump King/Content` folder.
-2. You now have a custom map ready to work on!
-
-### Convert images
-0. Install prerequisites of XNBCLI available [here](https://github.com/LeonBlade/xnbcli/blob/master/README.md).
-1. Download the latest release for XNBCLI in the links above.
-2. Export the `xnbcli-windows-x64.zip` file.
-
-If you want to unpack an image from the game, put the file inside the `packed` folder and open the `unpack.bat`. If succeeded, you will find your files inside the `unpacked` folder.
-
-<br>
-
-If you want to pack an image to put on the mod, make sure you have the .json file of your file ready to get packed with your image. If you never unpacked an image you can use this simple .json and modify for your own use! 
-
-<span style="color: grey; font-size: small; font-weight:600;">YOURFILENAMEHERE.json&nbsp;&nbsp;<a class="ws-button code-show" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/YOURFILENAMEHERE.json"><ion-icon name="code-download"></ion-icon> Download</a></span>
-```json
-{
-    "header": {
-        "target": "w",
-        "formatVersion": 5,
-        "hidef": false,
-        "compressed": false
-    },
-    "readers": [
-        {
-            "type": "Microsoft.Xna.Framework.Content.Texture2DReader",
-            "version": 0
-        }
-    ],
-    "content": {
-        "format": 0,
-        "export": "YOURFILENAMEHERE.png"
-    }
-}
-```
-
-Once put your image inside the `unpacked` folder with the .json file, you can open the `pack.bat`. And if succeeded, you managed to create your very own custom texture! The packed file can be found inside the `packed` folder.
-
-### Convert music & fonts*
-Not yet.
 
 ---
 

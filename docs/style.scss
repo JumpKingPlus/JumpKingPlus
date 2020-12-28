@@ -592,12 +592,15 @@ nav {
 // TOC
 
 .toc {
-  width: 240px;
-  height: 100%;
-  left: 30%;
-  position: fixed;
-  z-index: 4;
-  padding: 20px 20px 0 20px;
+  width: 260px;
+    height: 100%;
+    left: 30%;
+    position: fixed;
+    z-index: 4;
+    padding: 20px;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
   
   &:before{
     content:"Contents";
@@ -614,7 +617,7 @@ nav {
   }
 
   @include mobile{
-    display:none;
+    display:contents;
   }
 }
 
