@@ -9,6 +9,8 @@ layout: default
 
 <div class="posts">
   {% for post in paginator.posts %}
+  {% if post.islevel==true %}
+  {% endif %}
   {% unless post.islevel %}
   {% if post.pinned==true %}
     <article class="post pinned">
@@ -51,6 +53,8 @@ layout: default
   {% endfor %}
   
   {% for post in paginator.posts %}
+  {% if post.islevel==true %}
+  {% endif %}
   {% unless post.islevel %}
     {% unless post.pinned %}
     <article class="post">
