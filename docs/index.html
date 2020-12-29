@@ -9,7 +9,7 @@ layout: default
 
 <div class="posts">
   {% for post in paginator.posts %}
-  {% if post.islevel==false %}
+  {% unless post.islevel %}
   {% if post.pinned==true %}
     <article class="post pinned">
       <div class="meta">
@@ -47,11 +47,11 @@ layout: default
       </div>-->
     </article>
     {% endif %}
-    {% endif %}
+    {% endunless %}
   {% endfor %}
   
   {% for post in paginator.posts %}
-  {% if post.islevel==false %}
+  {% unless post.islevel %}
     {% unless post.pinned %}
     <article class="post">
       <div class="meta">
@@ -85,7 +85,7 @@ layout: default
       </div>-->
     </article>
     {% endunless %}
-    {% endif %}
+    {% endunless %}
   {% endfor %}
 </div>
 
