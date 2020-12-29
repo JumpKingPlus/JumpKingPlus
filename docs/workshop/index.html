@@ -48,6 +48,8 @@ layout: default
     </article>
     {% endif %}
     {% endif %}
+    {% unless post.islevel %}
+    {% endunless %}
   {% endfor %}
   
   {% for post in paginator.posts %}
@@ -86,6 +88,8 @@ layout: default
     </article>
     {% endunless %}
     {% endif %}
+    {% unless post.islevel %}
+    {% endunless %}
   {% endfor %}
 </div>
 
