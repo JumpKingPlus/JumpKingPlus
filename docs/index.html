@@ -7,15 +7,9 @@ layout: default
   <h2>No post found</h2>
 {% endif %}
 
-{% for post in paginator.posts %}
-{% if post.islevel==true %}
-  {{ post.title }} {{ post.islevel }}
-{% endif %}
-{% endfor %}
-
-
 <div class="posts">
   {% for post in paginator.posts %}
+  {% if post.islevel==false %}
   {% if post.pinned==true %}
     <article class="post pinned">
       <div class="meta">
@@ -53,9 +47,11 @@ layout: default
       </div>-->
     </article>
     {% endif %}
+    {% endif %}
   {% endfor %}
   
   {% for post in paginator.posts %}
+  {% if post.islevel==false %}
     {% unless post.pinned %}
     <article class="post">
       <div class="meta">
@@ -89,6 +85,7 @@ layout: default
       </div>-->
     </article>
     {% endunless %}
+    {% endif %}
   {% endfor %}
 </div>
 
