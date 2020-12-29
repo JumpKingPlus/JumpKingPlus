@@ -7,6 +7,13 @@ layout: default
   <h2>No post found</h2>
 {% endif %}
 
+{% for post in paginator.posts %}
+{% if post.islevel==true %}
+  {{ post.title }} {{ post.islevel }}
+{% endif %}
+{% endfor %}
+
+
 <div class="posts">
   {% for post in paginator.posts %}
   {% if post.pinned==true %}
