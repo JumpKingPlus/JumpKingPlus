@@ -130,6 +130,7 @@ Last warning. This takes a lot in both space on your drive and time. Choose only
 9. Save the Content file and build it.
 
 10. You will find all your packed file in: `project directory/bin/x86/Debug/Content/`.
+
 ---
 
 ## Modding
