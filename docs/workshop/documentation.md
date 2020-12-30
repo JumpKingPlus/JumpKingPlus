@@ -41,7 +41,7 @@ Welcome to the documentation for custom levels on Jump King using JumpKingPlus! 
 
   - [Fast XNB Builder](https://github.com/Phoenixx19/Fast-XNB-Builder/releases/tag/r3) for converting **images and music** into XNB
 
-  - Visual Studio 2019 (or above) using MonoGame for converting audio, music and fonts; project file [**here**]().
+  - Visual Studio 2019 (or above) using MonoGame for converting all files; check out more [**here**](#convert-all-(vs2019+monogame)), this is pretty long and time consuming I suggest you to not use it unless you have to.
 
 ## Common rules
 Level design in Jump King is a delicate balance between fairness and hardness. These rules are not only made to prevent unfair and impossible levels but to respect Nexile's original ideas on level design. Also in order to get your map approved on the site, these rules **need** to be followed.
@@ -109,9 +109,27 @@ If you want to pack an image to put on the mod, make sure you have the .json fil
 
 Once put your image inside the `unpacked` folder with the .json file, you can open the `pack.bat`. And if succeeded, you managed to create your very own custom texture! The packed file can be found inside the `packed` folder.
 
-### Convert fonts*
-Not yet.
+### Convert all (VS2019+MonoGame)
+Last warning. This takes a lot in both space on your drive and time. Choose only if this is your last hope.
+1. Install Visual Studio Community 2019.
 
+2. Download *.NET desktop development*.
+
+3. Install MonoGame from the ufficial website.
+
+4. [**Follow these instructions**](https://docs.monogame.net/articles/getting_started/1_setting_up_your_development_environment_windows.html#install-monogame-extension-for-visual-studio-2019) (from __Install MonoGame extension for Visual Studio 2019__ to __Install MGCB Editor__ included!).
+
+5. Reopen and create a new project in Visual Studio with the template: ![Project](https://docs.monogame.net/images/getting_started/vswin-mg-new-2.png) (the project name does not matter)
+
+6. On the right side of the screen (Solution Explorer), open the folder Content and open the file `Content.mgcb`. If you have installed MGCB Editor this will show up: ![MGCBE](https://docs.monogame.net/images/MGCB-editor.png)
+
+7. To add convert images, audio files and fonts you need to add files using the rectangle with a yellow asterisk with tool tip saying Add Item.
+
+8. Select all the items you have to convert. To convert fonts, [__follow these instructions__](https://stackoverflow.com/questions/55045066/how-do-i-convert-a-ttf-or-other-font-to-a-xnb-xna-game-studio-font).
+
+9. Save the Content file and build it.
+
+10. You will find all your packed file in: `project directory/bin/x86/Debug/Content/`.
 ---
 
 ## Modding
