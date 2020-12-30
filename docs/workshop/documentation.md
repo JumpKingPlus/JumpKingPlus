@@ -36,8 +36,12 @@ Welcome to the documentation for custom levels on Jump King using JumpKingPlus! 
 - A simple pixel art editor (Aseprite or GraphicsGale)
 - A good image editor for editing and exporting hitboxes (GIMP or Adobe Photoshop)
 - [JumpKingManager](https://github.com/ShootMe/LiveSplit.JumpKing/releases/latest) to access one area quickly
-- [XNBCLI](https://github.com/LeonBlade/xnbcli/releases/latest) for converting images into XNB
-- Visual Studio 2019 (or above) using MonoGame for converting audio and music, project file [**here**]().
+- Programs to convert images, music and fonts:
+  - [XNBCLI](https://github.com/LeonBlade/xnbcli/releases/latest) for converting **images** into XNB and viceversa
+
+  - [Fast XNB Builder](https://github.com/Phoenixx19/Fast-XNB-Builder/releases/tag/r3) for converting **images and music** into XNB
+
+  - Visual Studio 2019 (or above) using MonoGame for converting audio, music and fonts; project file [**here**]().
 
 ## Common rules
 Level design in Jump King is a delicate balance between fairness and hardness. These rules are not only made to prevent unfair and impossible levels but to respect Nexile's original ideas on level design. Also in order to get your map approved on the site, these rules **need** to be followed.
@@ -62,7 +66,15 @@ As said before, testing is a very important part of creating a custom level. In 
 1. Drag the `mods` folder from the zip file to `Jump King/Content` folder.
 2. You now have a custom map ready to work on!
 
-### Convert images
+### Convert images and music (Fast XNB Builder)
+Fast XNB Builder can only pack images.
+
+1. Download the release for Fast XNB Builder in the links above.
+2. Create a folder with all the items you want to pack.
+3. Open `Fast XNB Builder.exe` and select the folder you previously created.
+4. If succeded, you will find your files inside `/Final` folder.
+
+### Convert images (XNBCLI)
 0. Install prerequisites of XNBCLI available [here](https://github.com/LeonBlade/xnbcli/blob/master/README.md).
 1. Download the latest release for XNBCLI in the links above.
 2. Export the `xnbcli-windows-x64.zip` file.
@@ -97,7 +109,7 @@ If you want to pack an image to put on the mod, make sure you have the .json fil
 
 Once put your image inside the `unpacked` folder with the .json file, you can open the `pack.bat`. And if succeeded, you managed to create your very own custom texture! The packed file can be found inside the `packed` folder.
 
-### Convert music & fonts*
+### Convert fonts*
 Not yet.
 
 ---
@@ -291,10 +303,10 @@ The props in-game (such as the bonfire in the first screen) are stored in the `p
 |`<name>`|Name of the file|
 |`<fps>`|Frames per second|
 |`<frames>`|float[]|
-|`<float>`|???|
-|`<sheet_cells>`||
-|`<X>`||
-|`<Y>`||
+|`<float>`|Time per frame|
+|`<sheet_cells>`|Size of the spritesheet|
+|`<X>`|Columns|
+|`<Y>`|Rows|
 |`<random_offset>`|Optional tag to get random offsets|
 
 To add a prop on a screen, you will need to create a configuration file called `prop(SCREEN NUMBER).xml` and add each prop with their type (name of the prop), position on X and Y axis (__0,0 is top-left!__) and optional if the prop should be flipped.
