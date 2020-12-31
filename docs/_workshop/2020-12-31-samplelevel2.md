@@ -1,6 +1,6 @@
 ---
 layout: wspage
-title: Sample level
+title: Sample level 2
 date: 2020-12-29
 Author: Phoenixx19
 tags: [sample]

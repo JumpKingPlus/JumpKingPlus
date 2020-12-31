@@ -18,7 +18,7 @@ Level design in Jump King is a delicate balance between fairness and hardness. T
 
 4. Do not exaggerate with the Lost Frontier jumps (8px platform equals to 1px in the hitboxes file), that area sucks
 
-<br>
+<hr>
 
 ## Reccomendations
 Here are some rules and tips that you can pick to make a great level. You don't necessarily need to follow any of these below.
