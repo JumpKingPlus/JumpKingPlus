@@ -1,9 +1,9 @@
 ---
 layout: wspage
-title: Sample level
+title: Sample custom level
 date: 2020-12-29
 Author: Phoenixx19
-tags: [sample]
+tags: [sample, testing]
 comments: false
 toc: false
 pinned: true
