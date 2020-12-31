@@ -15,6 +15,7 @@ description: An enhanced version of Jump King. ✨
 
 # 你的博客logo图片URL，建议尺寸不超过300px × 300px
 avatar: https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/images/jkpluslogo.png
+customavatar: https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/images/jkcustomapslogo.png
 
 # 你的favicon（出现在浏览器tab上）图片URL，建议使用较小(64px × 64px)的图片
 favicon: https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/images/favicon.png
@@ -28,6 +29,14 @@ navigation:
     url: /about
   - name: faq
     url: /faq
+
+wsnavigation:
+  - name: levels
+    url: /workshop
+  - name: rules
+    url: /workshop/commonrules
+  - name: documentation
+    url: /workshop/documentation
 
 # 每页的文章数
 paginate: 8

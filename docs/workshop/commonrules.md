@@ -1,6 +1,6 @@
 ---
 title: Common rules
-layout: page
+layout: wspage
 date: 2020-11-24
 Author: Phoenixx19
 comments: false

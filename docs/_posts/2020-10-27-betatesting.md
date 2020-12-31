@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Betatesting
+title: Beta testing
 date: 2020-10-27
 Author: Phoenixx19
 tags: [info, not-release]
