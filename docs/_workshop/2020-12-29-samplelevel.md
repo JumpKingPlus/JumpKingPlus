@@ -7,7 +7,6 @@ tags: [sample]
 comments: false
 toc: false
 pinned: true
-islevel: true
 ---
 
 Build your own level with this sample level!

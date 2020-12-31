@@ -3,17 +3,9 @@ layout: default
 ---
 <script src="https://unpkg.com/feather-icons"></script>
 
-{% if site.posts.size == 0 %}
-  <h2>No post found</h2>
-{% endif %}
-
 <div class="posts">
-  {% for post in paginator.posts %}
-    {% if post.islevel==true %}
-        {{ post.title }}
-        {{ post.islevel }}
-        <hr>
-    <!--<article class="post pinned">
+  {% for post in workshop %}
+    <article class="post pinned">
       <div class="meta">
         <h1>
           <span title="pinned"><i data-feather="anchor"></i></span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
@@ -40,14 +32,6 @@ layout: default
       <div class="entry">
         {{ post.excerpt | truncate: 300 }}
       </div>
-      <div class="pagination" style="border-top: 0; padding: 10px 0;">
-      <span class="prev">
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          Read More
-        </a>
-      </span>
-      </div>
-    </article>-->
-    {% endif %}
+    </article>
   {% endfor %}
 </div>

@@ -7,7 +7,7 @@ tags: [info, not-release]
 comments: false
 toc: false
 pinned: false
-islevel: false
+hidden: false
 ---
 
 ![Early Access](https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/images/Banner.png)
