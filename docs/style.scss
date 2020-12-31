@@ -147,10 +147,19 @@ article.post.pinned {
   color: #343a40;
 }
 
+.levels {
+  display: flex;
+  place-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.levels>div {
+  flex: 0 calc(50% - 60px);
+}
+
 .card {
   box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
   overflow: hidden;
-  max-width: 440px;
   border-radius: 20px;
   float: left;
   margin: 30px;
@@ -809,6 +818,7 @@ nav {
   
   @include mobile {
     display: block;
+    clear:both;
     width: 100%;
     border-top: 1px solid $footer-border-color;
     background-color: $footer-background-color;

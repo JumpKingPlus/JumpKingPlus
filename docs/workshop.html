@@ -8,7 +8,7 @@ layout: wsdefault
     <div class="card">
       <img src="{{ post.banner }}" style="border-radius: 0;" alt="Sunset in the mountains">
       <div class="details">
-        <div class="title-level"><a href="">{{ post.title }}</a></div>
+        <div class="title-level"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>
         <p class="desc">
           {{ post.excerpt | truncate: 300 }}
         </p>
