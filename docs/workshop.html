@@ -6,7 +6,7 @@ layout: wsdefault
   <div class="levels">
     {% for post in site.workshop %}
     <div class="card">
-      <img src="https://source.unsplash.com/random/1600x900" alt="Sunset in the mountains">
+      <img src="{{ post.banner }}" style="border-radius: 0;" alt="Sunset in the mountains">
       <div class="details">
         <div class="title-level"><a href="">{{ post.title }}</a></div>
         <p class="desc">

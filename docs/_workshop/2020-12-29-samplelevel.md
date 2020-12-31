@@ -7,7 +7,7 @@ tags: [sample]
 comments: false
 toc: false
 pinned: true
-banner: https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/images/jkcustomapslogo.png
+banner: https://source.unsplash.com/random/1920x1080
 ---
 
 Build your own level with this sample level!
