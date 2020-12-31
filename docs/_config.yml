@@ -90,7 +90,7 @@ paginate_path: /page:num/
 
 collections:
   workshop:
-    permalink: /workshop/:name/
+    permalink: /workshop/:title/
     output: true
 
 
