@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<LocationSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <locations>
+
+    <Location>
+      <start>1</start>
+      <end>5</end>
+      <unlock>2</unlock>
+      <name>Jungle</name>
+    </Location>
+
+    <Location>
+      <start>6</start>
+      <end>10</end>
+      <unlock>7</unlock>
+      <name>Sewer</name>
+    </Location>
+
+    <Location>
+      <start>11</start>
+      <end>16</end>
+      <unlock>11</unlock>
+      <name>City</name>
+    </Location>
+
+    <Location>
+      <start>17</start>
+      <end>18</end>
+      <unlock>22</unlock>
+      <name>Cold place idk</name>
+    </Location>
+
+  </locations>
+</LocationSettings>
+

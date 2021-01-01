@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<PropCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Bonfire, DungeonTorch, Candle -->
+
+  <Props>
+
+    <PropData>
+      <type>Bonfire</type>
+      <Position>
+        <X>397</X>
+        <Y>179</Y>
+      </Position>
+    </PropData>
+
+  </Props>
+</PropCollection>

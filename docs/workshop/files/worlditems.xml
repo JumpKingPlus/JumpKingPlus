@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<WorldItemsSave xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Bonfire, DungeonTorch, Candle -->
+
+  <items>
+
+    <WorldItemState>
+      <item>Cap</item>
+      <screen>6</screen>
+      <_x>320</_x>
+      <_y>144</_y>
+    </WorldItemState>
+
+    <WorldItemState>
+      <item>GiantBoots</item>
+      <screen>71</screen>
+      <_x>125</_x>
+      <_y>120</_y>
+    </WorldItemState>
+
+    <WorldItemState>
+      <item>GnomeHat</item>
+      <screen>160</screen> <!--TOP OF DREEG-->
+      <_x>154</_x>
+      <_y>192</_y>
+    </WorldItemState>
+
+    <!-- 10 silver coins -->
+    <WorldItemState>
+      <item>Silver</item>
+      <screen>52</screen>
+      <_x>239</_x>
+      <_y>298</_y>
+    </WorldItemState>
+
+    <WorldItemState>
+      <item>Silver</item>
+      <screen>53</screen>
+      <_x>346</_x>
+      <_y>120</_y>
+    </WorldItemState>
+
+    <WorldItemState>
+      <item>Silver</item>
+      <screen>54</screen>
+      <_x>16</_x>
+      <_y>72</_y>
+    </WorldItemState>
+
+    <WorldItemState>
+      <item>Silver</item>
+      <screen>56</screen>
+      <_x>21</_x>
+      <_y>88</_y>
+    </WorldItemState>
+
+    <WorldItemState>
+      <item>Silver</item>
+      <screen>60</screen>
+      <_x>299</_x>
+      <_y>80</_y>
+    </WorldItemState>
+
+    <WorldItemState>
+      <item>Silver</item>
+      <screen>68</screen>
+      <_x>464</_x>
+      <_y>136</_y>
+    </WorldItemState>
+
+    <WorldItemState>
+      <item>Silver</item>
+      <screen>81</screen>
+      <_x>417</_x>
+      <_y>136</_y>
+    </WorldItemState>
+
+    <WorldItemState>
+      <item>Silver</item>
+      <screen>91</screen>
+      <_x>96</_x>
+      <_y>24</_y>
+    </WorldItemState>
+
+    <WorldItemState>
+      <item>Silver</item>
+      <screen>93</screen>
+      <_x>27</_x>
+      <_y>344</_y>
+    </WorldItemState>
+
+    <WorldItemState>
+      <item>Silver</item>
+      <screen>94</screen>
+      <_x>432</_x>
+      <_y>104</_y>
+    </WorldItemState>
+
+
+    <WorldItemState>
+      <item>BabeGhostItem</item>
+      <screen>108</screen>
+      <_x>230</_x>
+      <_y>140</_y>
+    </WorldItemState>
+
+    <WorldItemState>
+      <item>GhostFragment</item>
+      <screen>108</screen>
+      <_x>245</_x>
+      <_y>176</_y>
+    </WorldItemState>
+
+    <WorldItemState>
+      <item>GhostFragment</item>
+      <screen>111</screen>
+      <_x>114</_x>
+      <_y>272</_y>
+    </WorldItemState>
+
+    <WorldItemState>
+      <item>GhostFragment</item>
+      <screen>113</screen>
+      <_x>162</_x>
+      <_y>240</_y>
+    </WorldItemState>
+
+    <WorldItemState>
+      <item>GhostFragment</item>
+      <screen>115</screen>
+      <_x>122</_x>
+      <_y>64</_y>
+    </WorldItemState>
+
+      <WorldItemState>
+      <item>Shroom</item>
+      <screen>157</screen>
+      <_x>52</_x>
+      <_y>338</_y>
+    </WorldItemState>
+
+     <WorldItemState>
+      <item>Shroom</item>
+      <screen>157</screen>
+      <_x>406</_x>
+      <_y>58</_y>
+    </WorldItemState>
+
+    <WorldItemState>
+      <item>Shroom</item>
+      <screen>158</screen>
+      <_x>70</_x>
+      <_y>72</_y>
+    </WorldItemState>
+
+    <WorldItemState>
+      <item>Shroom</item>
+      <screen>158</screen>
+      <_x>414</_x>
+      <_y>242</_y>
+    </WorldItemState>
+
+
+    <WorldItemState>
+      <item>Shroom</item>
+      <screen>159</screen>
+      <_x>69</_x>
+      <_y>87</_y>
+    </WorldItemState>
+
+    <WorldItemState>
+      <item>Shroom</item>
+      <screen>159</screen>
+      <_x>406</_x>
+      <_y>240</_y>
+    </WorldItemState>
+
+      <WorldItemState>
+      <item>Shroom</item>
+      <screen>159</screen>
+      <_x>424</_x>
+      <_y>73</_y>
+    </WorldItemState>
+
+      <WorldItemState>
+      <item>Shroom</item>
+      <screen>160</screen>
+      <_x>85</_x>
+      <_y>336</_y>
+    </WorldItemState>
+
+      <WorldItemState>
+      <item>Shroom</item>
+      <screen>160</screen>
+      <_x>415</_x>
+      <_y>315</_y>
+    </WorldItemState>
+
+    <WorldItemState>
+      <item>YellowShoes</item>
+      <screen>109</screen>
+      <_x>276</_x>
+      <_y>304</_y>
+    </WorldItemState>
+
+  </items>
+</WorldItemsSave>

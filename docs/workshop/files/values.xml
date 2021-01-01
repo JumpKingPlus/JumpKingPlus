@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<AmbienceSaveValues xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <special_info>
+<AmbienceInfo>
+      <name>NB_icetest</name>
+      <type>Music</type>
+      <restart>true</restart>
+      <fade_out_length>4</fade_out_length>
+      <fade_in_length>4</fade_in_length>
+    </AmbienceInfo>
+  </special_info>
+
+  <sections>
+
+    <!--FOREST#############################################################-->
+    <!--Forest screen 1-->
+    <AmbienceSave>
+      <!--starts section-->
+      <ambience>
+        <Ambience>
+          <!--starts a sound-->
+          <name>Nature bg</name>
+          <!--name of file-->
+          <volume>0.85</volume>
+        </Ambience>
+        <!--ends a sound-->
+
+        <Ambience>
+          <!--starts a sound-->
+          <name>Small fire and stream</name>
+          <!--name of file-->
+          <volume>0.9</volume>
+        </Ambience>
+		
+		<Ambience>
+          <name>NB_icetest</name>
+          <volume>0.75</volume>
+		</Ambience>
+
+        <!--ends a sound-->
+      </ambience>
+
+      <screens>1</screens>
+    </AmbienceSave>
+    <!--ends section-->
+
+    <!--Forest screen 2 + 3-->
+    <AmbienceSave>
+      <ambience>
+        <Ambience>
+          <name>Nature bg</name>
+          <volume>0.85</volume>
+        </Ambience>
+      </ambience>
+
+      <screens>2</screens>
+    </AmbienceSave>
+
+  </sections>
+</AmbienceSaveValues>

@@ -46,7 +46,7 @@ I reccomend you to use the **working sample level** to start with, and edit it f
 
   - [Fast XNB Builder](https://github.com/Phoenixx19/Fast-XNB-Builder/releases/tag/r3) for converting **images and music** into XNB
 
-  - Visual Studio 2019 (or above) using MonoGame for converting all files; check out more [**here**](#convert-all-(vs2019+monogame)), this is pretty long and time consuming I suggest you to not use it unless you have to.
+  - Visual Studio 2019 (or above) using MonoGame for converting all files; check out more [**here**](#convert-all-vs2019monogame), this is pretty long and time consuming I suggest you to not use it unless you have to.
 
 ## Common rules
 Level design in Jump King is a delicate balance between fairness and hardness. These rules are not only made to prevent unfair and impossible levels but to respect Nexile's original ideas on level design. Also in order to get your map approved on the site, these rules **need** to be followed.
@@ -438,7 +438,7 @@ The locations in-game can be changed using the `gui/location_settings.xml` file.
 |`<name>`|Location name|
 
 ### Font folder
-The font folder should include the custom fonts included for the custom level. Sadly MonoGame, and so Jump King, does not support TrueType fonts (.TTF) so to make them compatible in-game, you should check out how to convert the font to make it compatibile below [**here**](#convert-music--fonts). 
+The font folder should include the custom fonts included for the custom level. Sadly MonoGame, and so Jump King, does not support TrueType fonts (.TTF) so to make them compatible in-game, you should check out how to convert the font to make it compatibile below [**here**](#convert-all-vs2019monogame). 
 
 ### Audio folder
 The audio folder should contain all the possible sound related content such as: background (ambiental music or music of a specific zone), music (ending songs) and event effects sounds.

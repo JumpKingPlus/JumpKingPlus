@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<PropSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ??? -->
+
+  <settings>
+
+    <PropSetting>
+      <name>Bonfire</name>
+      <fps>10</fps>
+      <sheet_cells>
+        <X>3</X>
+        <Y>1</Y>
+      </sheet_cells>
+    </PropSetting>
+
+  </settings>
+</PropSettings>
