@@ -361,11 +361,106 @@ The locations in-game can be changed using the `gui/location_settings.xml` file.
 ### Font folder
 The font folder should include the custom fonts included for the custom level. Sadly MonoGame, and so Jump King, does not support TrueType fonts (.TTF) so to make them compatible in-game, you should check out how to convert the font to make it compatibile below [**here**](#convert-music--fonts). 
 
-### Audio folder*
+### Audio folder
+The audio folder should contain all the possible sound related content such as: background (ambiental music or music of a specific zone), music (ending songs) and event effects sounds.
 
-#### Background*
+#### Ambient as background
+The ambient music should be placed inside `audio/background` as an .xnb file. To add this to a specific zone, simply edit the `audio/background/data/values.xml` and add on the AmbienceSave section like so:
+```xml 
+<sections>
+  <AmbienceSave>
+    <ambience>
+      <Ambience>
+        <name>Water</name>
+        <volume>0.7</volume>
+      </Ambience>
+      <!-- more Ambience -->
+    </ambience>
+  </AmbienceSave>
+  <!-- more AmbienceSaves -->
 
-#### Music*
+  <screens>5</screens>
+</sections>
+```
+
+
+#### values.xml file
+
+<div class="ws-buttons"><a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/values.xml"><ion-icon name="code-slash"></ion-icon> Example values.xml</a></div>
+
+|tag|description|
+|---|---|
+|`<special_info>`|AmbienceInfo[]|
+|`<AmbienceInfo>`|Contains all the information about a music piece|
+|`<name>`|Name of the music file|
+|`<type>`|Should be always `Music`|
+|`<restart>`|Boolean value. If true, the song will be looped|
+|`<fade_out_length>`|Fade out length in seconds|
+|`<fade_in_length>`|Fade in length in seconds|
+|`<sections>`|AmbienceSave[]|
+|`<AmbienceSave>`|Contains a section with sounds|
+|`<ambience>`|Ambience[]|
+|`<Ambience>`|Contains name and volume of a sounds|
+|`<name>`|Name of the file|
+|`<volume>`|Volume from 0 to 1 (basically 0-100%)|
+|`<screens>`|Amount of screens for sections|
+
+__WARNING:__ The `<screens>` tag doesnt work with the name logic of the screen number. This is precisely made to avoid mixmatches.
+From the first `<AmbienceSave>` it keeps the `<screens>` number counting. <br>So if you have two AmbienceSaves where the first one has 5 screens and the second has 2, you would have done already 7 screens of music.
+
+#### Music as background
+Following the name concept of the above, this shares same folder but has to be configurated differently. In the `values.xml` file mentioned above, this needs to be configured as an AmbienceInfo as well.
+
+```xml 
+<special_info>
+  <AmbienceInfo>
+    <name>TheBogTwo</name>
+    <type>Music</type>
+    <restart>true</restart>
+  </AmbienceInfo>
+  <!-- more AmbienceInfos -->
+</special_info>
+
+<sections>
+  <AmbienceSave>
+    <ambience>
+      <Ambience>
+        <name>TheBogTwo</name>
+        <volume>0.85</volume>
+      </Ambience>
+      <!-- more Ambience -->
+    </ambience>
+  </AmbienceSave>
+  <!-- more AmbienceSaves -->
+
+  <screens>5</screens>
+</sections>
+```
+
+#### Event effects
+Event effects are sounds that are triggered by an event that could be a bird flying away or a fake block prank. Here's a list of files that you could change (or leave them as normal):
+- Bird flies away
+- Block appears
+- Block disappears
+- Bug flies away
+- Fake block prank
+- Gargoyles
+- Lightning (NB+ Tower)
+- Gargoyles scared
+- Lightning (GoTB Tower)
+- Phantom block
+- White bird flies away
+
+#### Music
+The music contains many other files that can be changed such as:
+- Main babe ending song
+- New Babe + ending song (not really reachable)
+- Ghost of the Babe ending song (not really reachable) 
+- Opening theme
+- Menu intro
+- Menu loop
+
+And event music which is a subfolder which contains music that can be triggered, such as the sound on the last babe screen or the gargoyles. There is a very easy configuration file (`audio/music/event_music/events.xml`) that does not need any explaination.
 
 ---
 
