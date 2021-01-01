@@ -92,6 +92,15 @@ a {
   vertical-align: sub;
 }
 
+a.dl-button {
+  float: right;
+}
+
+a.dl-button ion-icon {
+  vertical-align: unset;
+    font-size: 27px;
+}
+
 ion-icon {
     vertical-align: text-bottom;
     font-size: 17px;
@@ -152,10 +161,19 @@ span.author-level {
   color: #343a40;
 }
 
+.intro {
+  padding: 0.5em 1.6em;
+    margin: 2em 0;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #f1f3f5;
+}
+
 .levels {
   display: flex;
   place-items: flex-start;
   flex-wrap: wrap;
+  border-top: 1px solid #f1f3f5;
 }
 
 .levels>div {
