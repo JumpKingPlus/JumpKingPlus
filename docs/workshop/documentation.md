@@ -27,7 +27,12 @@ pinned: false
 
 Welcome to the documentation for custom levels on Jump King using JumpKingPlus! On your left you can find the table of contents with everything you should need to make a custom level.
 
-<a class="ws-button" href="#" title="Saves as a .pdf file"><ion-icon name="cloud-download"></ion-icon> Save documentation</a>
+<a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/documentation.pdf" title="Saves as a .pdf file"><ion-icon name="cloud-download"></ion-icon> Save documentation</a>
+
+## Warning
+When this document referres on a folder, this is obviously meant to be inside `Jump King/Content/mods`, JumpKingPlus does **not** take any responsibility of your actions!
+
+I reccomend you to use the **working sample level** to start with, and edit it for your new custom level!
 
 ## Requirements for building custom levels
 > Custom levels are available only using __JumpKingPlus on [v1.2.0](https://github.com/Phoenixx19/JumpKingPlus/releases/tag/v1.2.0) or above__.
@@ -303,11 +308,83 @@ The world items are items that the player can pick up by walking on them. These 
 
 The game to position and read their texture reads a configuration file called `worlditems.xml`. The file is self explainatory so there's no need of a table.
 
-#### NPCs*
-`textures/old_man`
+#### NPCs
+Everything related to NPCs can be found inside `textures/old_man`. NPCs can be of two types: which are `old man` (normal NPC that speaks only) and `merchant` which is an entity that includes the `old man` type but can also sell items. The textures for both needs to be inside `textures/old_man` while the quotes work differently.
 
-#### Raven*
-`textures/raven`
+old_man_quotes.xml file (located in `textures/old_man/lines`)
+|tag|description|
+|---|---|
+|`<name>`|Name of NPC (LEAVE AS DEFAULT)|
+|`<sheet_cells>`|Size of the spritesheet|
+|`<X>`|Columns|
+|`<Y>`|Rows|
+|`<random_count>`|(LEAVE AS DEFAULT)|
+|`<position>`|Position inside the screen|
+|`<X>`|Position on X axis|
+|`<Y>`|Position on Y axis|
+|`<home_screen>`|Screen number|
+|`<talk_animation>`|Contains frames, triggered when talking|
+|`<frames>`|AnimationFrame[]|
+|`<AnimationFrame>`|Contains sprite index and duration|
+|`<sprite_index>`|Index of sprite from sheet cells|
+|`<duration>`|Duration in seconds|
+|`<busy_animation>`|Contains frames, triggered when idle|
+|`<bubble_format>`|Format regarding text|
+|`<direction>`|Left or right|
+|`<anchor>`|Contains X and Y|
+|`<X>`|Left or right|
+|`<Y>`|Up or down|
+|`<width>`|Width in pixels|
+|`<trigger_box>`|Box where NPC starts speaking if player is inside|
+|`<center_x>`|Leave as defualt unless you know what you are doing|
+|`<center_y>`|Leave as defualt unless you know what you are doing|
+|`<width>`|Width in pixels|
+|`<height>`|Height in pixels|
+|`<talk_delay>`|Delay of before starting to talk|
+|`<talking_speed>`|Speed until new letter reveal (in seconds)|
+|`<intro_quote>`|Contains intro quotes or lines|
+|`<lines>`|string[]|
+|`<string>`|A single quote|
+|`<achievements>` and inside tags|Leave as default|
+|`<screens>`|OldManScreen[]|
+|`<OldManScreen>`|Contains all the information to unlock a new quote|
+|`<screen>`|Screen number|
+|`<quotes>`|OldManQuote[]|
+|`<OldManQuote>`|Contains intro quotes or lines|
+
+> To make this table have more sense, look inside your gamefiles and look for an example (`Jump King/Content/props/textures/old_man/lines/hermit_quotes.xml`), this will clear out more than watching a table.
+
+merchant_quotes.xml file
+|tag|description|
+|---|---|
+|`<sale_item>`|Item being sold|
+|`<currency_type>`|Item that serves for payment|
+|`<price_increase>`|Price|
+|`<easteregg_amount>`|Easter egg amount (JumpKingPlus Exclusive)|
+|`<sale_achievement>`|Leave as default|
+|`<sale_lines>`, `<easteregg_lines>`, `<sold_lines>`, `<no_gold_lines>`|OldManQuote[]|
+|`<sell_quote>`|Contains lines|
+|`<lines>`|string[]|
+|`<settings>`|Old Man settings (the table above)|
+
+
+#### Raven
+The raven is the entity related to the bird. It is located inside the `textures/raven` folder. The folder should contain the raver texture and the `(raven name).ravset` (which is a xml file).
+
+|tag|description|
+|---|---|
+|`<fly_sfx>`|Sound effect that needs to be played when the flight is triggered|
+|`<texture>`|Name of the raven (which should be the same name of the file)|
+|`<item>`|Items carrying|
+|`<positions>`|RavenPosition[]|
+|`<RavenPosition>`|Contains the positions of the raven|
+|`<screen>`|Screen number|
+|`<position>`|Contains X and Y|
+|`<X>`|Pretty self-explainatory|
+|`<Y>`|Pretty self-explainatory|
+|`<treasure>`|Boolean value. If true, the raven is carrying the item|
+|`<look_direction>`|Left or right|
+|`<fly_direction>`|Left or right|
 
 #### Props
 
@@ -465,7 +542,7 @@ And event music which is a subfolder which contains music that can be triggered,
 ---
 
 ## Publishing
-To get it published on the site, post your map in the [#modding](https://github.com/ShootMe/LiveSplit.JumpKing/releases/latest) channel on Discord where it will get "verified" by the players. The zip file should contain your mods folder.
+To get it published on the site, post your map in the [#modding](https://github.com/ShootMe/LiveSplit.JumpKing/releases/latest) channel on Discord where it will get "verified" by the players. The zip file should contain your mods folder and only the files needed for the level custom.
 
 
 <br>
