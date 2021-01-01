@@ -312,6 +312,7 @@ The game to position and read their texture reads a configuration file called `w
 Everything related to NPCs can be found inside `textures/old_man`. NPCs can be of two types: which are `old man` (normal NPC that speaks only) and `merchant` which is an entity that includes the `old man` type but can also sell items. The textures for both needs to be inside `textures/old_man` while the quotes work differently.
 
 old_man_quotes.xml file (located in `textures/old_man/lines`)
+
 |tag|description|
 |---|---|
 |`<name>`|Name of NPC (LEAVE AS DEFAULT)|
@@ -354,7 +355,8 @@ old_man_quotes.xml file (located in `textures/old_man/lines`)
 
 > To make this table have more sense, look inside your gamefiles and look for an example (`Jump King/Content/props/textures/old_man/lines/hermit_quotes.xml`), this will clear out more than watching a table.
 
-merchant_quotes.xml file
+merchant_quotes.xml file (located in `textures/old_man/merchant`)
+
 |tag|description|
 |---|---|
 |`<sale_item>`|Item being sold|
