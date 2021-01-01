@@ -162,11 +162,23 @@ span.author-level {
 }
 
 .intro {
-  padding: 0.5em 1.6em;
+  padding: 0.5em 1.6em 1.6em 1.6em;
     margin: 2em 0;
     border-radius: 10px;
     background-color: #f8f9fa;
     border: 1px solid #f1f3f5;
+    overflow: auto;
+    background: rgb(255,255,255);
+    background: linear-gradient(23deg, rgba(255,255,255,1) 29%, rgba(127,194,133,1) 88%);
+}
+
+.intro .ws-buttons {
+  float: right;
+}
+
+.intro .ws-buttons a.ws-button {
+  margin-right: 0;
+  margin-left: 1em;
 }
 
 .levels {
