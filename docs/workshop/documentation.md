@@ -516,35 +516,19 @@ Following the name concept of the above, this shares same folder but has to be c
 </sections>
 ```
 
-#### Event effects
-Event effects are sounds that are triggered by an event that could be a bird flying away or a fake block prank. Here's a list of files that you could change (or leave them as normal):
-- Bird flies away
-- Block appears
-- Block disappears
-- Bug flies away
-- Fake block prank
-- Gargoyles
-- Lightning (NB+ Tower)
-- Gargoyles scared
-- Lightning (GoTB Tower)
-- Phantom block
-- White bird flies away
-
 #### Music
 The music contains many other files that can be changed such as:
-- Main babe ending song
-- New Babe + ending song (not really reachable)
-- Ghost of the Babe ending song (not really reachable) 
-- Opening theme
-- Menu intro
-- Menu loop
+- Main babe ending song (optional)
+- Menu intro (optional)
 
 And event music which is a subfolder which contains music that can be triggered, such as the sound on the last babe screen or the gargoyles. There is a very easy configuration file (`audio/music/event_music/events.xml`) that does not need any explaination.
+
+**Post Scriptum:** This folder has been cut to contain custom levels' size, since the audio folder takes up 80% of the size.
 
 ---
 
 ## Publishing
-To get it published on the site, post your map in the [#modding](https://github.com/ShootMe/LiveSplit.JumpKing/releases/latest) channel on Discord where it will get "verified" by the players. The zip file should contain your mods folder and only the files needed for the level custom.
+To get it published on the site, post your map in the [#modding](http://discord.gg/QhnERYV) channel on Discord where it will get "verified" by the players. The zip file should contain your mods folder and only the files needed for the level custom.
 
 
 <br>
