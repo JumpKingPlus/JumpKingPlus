@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<WeatherEffect xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <weathers>
+
+    <Weather>
+      <name>light_rain</name>
+      <fps>12</fps>
+      <screens>
+      </screens>
+    </Weather>
+    
+    <Weather>
+      <name>rain</name>
+      <fps>12</fps>
+      <screens>
+      </screens>
+    </Weather>
+
+    <Weather>
+      <name>light_snow</name>
+      <fps>12</fps>
+      <foreground>true</foreground>
+      <screens>
+      </screens>
+    </Weather>
+
+    <Weather>
+      <name>light_snow_bg</name>
+      <fps>8</fps>
+      <screens>
+		<int>1</int>
+      </screens>
+    </Weather>
+    
+    <Weather>
+      <name>snow</name>
+      <fps>12</fps>
+      <foreground>true</foreground>
+      <screens>	
+      </screens>
+    </Weather>
+
+    <Weather>
+      <name>snow_slow</name>
+      <fps>6</fps>
+      <foreground>true</foreground>
+      <screens>
+      </screens>
+    </Weather>
+
+    <Weather>
+      <name>ash</name>
+      <fps>10</fps>
+      <foreground>true</foreground>
+      <screens>
+      </screens>
+    </Weather>
+
+    <Weather>
+      <name>lf_rain</name>
+      <fps>12</fps>
+      <screens>                       
+      </screens>
+    </Weather>
+
+    <Weather>
+      <name>bubbles</name>
+      <fps>6</fps>
+      <screens>                              
+      </screens>
+    </Weather>
+
+    <Weather>
+      <name>qs</name>
+      <fps>14</fps>
+      <foreground>true</foreground>      
+      <screens>
+      </screens>
+    </Weather>
+
+  </weathers>
+  
+</WeatherEffect>
