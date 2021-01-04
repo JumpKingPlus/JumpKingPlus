@@ -11,4 +11,4 @@ banner: https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/im
 dlink: https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/SampleCustomLevel.zip
 ---
 
-Build your own level with this sample level!
+Build your own level with this sample level!<br>__This is not a custom playable map! Testing only!__

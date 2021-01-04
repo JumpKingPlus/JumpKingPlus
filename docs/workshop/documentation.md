@@ -37,7 +37,7 @@ I reccomend you to use the **working sample level** to start with, and edit it f
 ## Requirements for building custom levels
 > Custom levels are available only using __JumpKingPlus on [v1.2.0](https://github.com/Phoenixx19/JumpKingPlus/releases/tag/v1.2.0) or above__.
 
-- The [__sample custom level__]() by Phoenixx19
+- The [__sample custom level__](https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/SampleCustomLevel.zip) by Phoenixx19
 - A simple pixel art editor (Aseprite or GraphicsGale)
 - A good image editor for editing and exporting hitboxes (GIMP or Adobe Photoshop)
 - [JumpKingManager](https://github.com/ShootMe/LiveSplit.JumpKing/releases/latest) to access one area quickly
@@ -524,6 +524,30 @@ The music contains many other files that can be changed such as:
 And event music which is a subfolder which contains music that can be triggered, such as the sound on the last babe screen or the gargoyles. There is a very easy configuration file (`audio/music/event_music/events.xml`) that does not need any explaination.
 
 **Post Scriptum:** This folder has been cut to contain custom levels' size, since the audio folder takes up 80% of the size.
+
+
+### Particles folder
+
+<div class="ws-buttons"><a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/weather.xml"><ion-icon name="code-slash"></ion-icon> Example weather.xml</a><a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/snow_settings.xml"><ion-icon name="code-slash"></ion-icon> Example snow_settings.xml</a></div>
+
+The particles folder should include two .xml configuration file which are:
+- snow_settings.xml (which sets the snow)
+- weather.xml (which sets the weather)
+
+#### Weather 
+|tag|description|
+|---|---|
+|`<weathers>`|Weather[]|
+|`<Weather>`|Contains name of the weather, fps and screens it is in|
+|`<name>`|Name of the weather (leave as default)|
+|`<fps>`|Frames per second|
+|`<screens>`|int[]|
+|`<int>`|Screen number|
+
+By setting the weather to a specific screen number, that screen also can use masks to crop the particles at will.
+
+#### Snow settings
+This needs to be configured, if the snow particle is used.
 
 ---
 
