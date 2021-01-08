@@ -535,6 +535,7 @@ The particles folder should include two .xml configuration file which are:
 - weather.xml (which sets the weather)
 
 #### Weather 
+
 |tag|description|
 |---|---|
 |`<weathers>`|Weather[]|
