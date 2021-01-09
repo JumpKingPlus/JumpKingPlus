@@ -5,6 +5,7 @@ using Microsoft.Xna.Framework.Graphics;
 using BehaviorTree;
 using JumpKing.Player.Skins;
 using JumpKing.MiscEntities.WorldItems;
+using static JumpKingPlus.JKPlusData;
 
 namespace JumpKingPlus
 {
@@ -57,7 +58,7 @@ namespace JumpKingPlus
     {
         public static void LoadJKPlusText()
         {
-            TextHelper.DrawString(JKContentManager.Font.MenuFont, "Using JumpKingPlus v" + Game1.jkdata.version.ToString(), new Vector2(48f, 30f), Color.Gold, new Vector2(0f, -0.5f));
+            TextHelper.DrawString(JKContentManager.Font.MenuFont, "Using JumpKingPlus v" + JKVersion.version.ToString(), new Vector2(48f, 30f), Color.Gold, new Vector2(0f, -0.5f));
         }
     }
 

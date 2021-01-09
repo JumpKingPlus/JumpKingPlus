@@ -59,6 +59,28 @@ namespace JumpKingPlus
             "Ghost of the Babe's Screen"
         };
 
+        public Vector3 playerLocation;
+
+        public void SetTeleport(Vector2 position, int screen)
+        {
+            playerLocation = new Vector3(position.X, position.Y, screen);
+        }
+
+        public void SetToDefault()
+        {
+            playerLocation = Vector3.Zero;
+        }
+
+        public void TeleportToSavedLocation()
+        {
+            if (playerLocation == Vector3.Zero)
+            {
+                return;
+            }
+            TeleportToLocation((int)playerLocation.X, (int)playerLocation.Y, (int)playerLocation.Z);
+            JumpKing.MusicManager.Play(JKContentManager.Audio.Menu.Select);
+        }
+
         public static void TeleportToLocation(int pX, int pY, int locInt)
         {
             SaveManager.instance.m_player.m_body.position.X = pX;

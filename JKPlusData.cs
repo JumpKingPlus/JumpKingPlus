@@ -4,6 +4,11 @@ namespace JumpKingPlus
 {
     public class JKPlusData
     {
+
+        public static class JKVersion
+        {
+            public static Version version = new Version("1.2.0");
+        }
         /// <summary>
         ///     recap on JKPlusData.
         ///     version         is the actual JKPlus version, change it here only
@@ -14,7 +19,6 @@ namespace JumpKingPlus
         ///     jkpluslogo      JKPlus intro
         ///     toggleLocation  pewwww animation new area
         /// </summary>
-        public Version version = new Version("1.1.0");
         public Cheats cheats;
         public JKPlusData()
         {
@@ -23,6 +27,7 @@ namespace JumpKingPlus
             cheats = new Cheats();
             jkpluslogo = false;
             toggleLocation = true;
+            customGame = false;
         }
         private bool _restart;
         private bool toggleRpc;
@@ -31,6 +36,8 @@ namespace JumpKingPlus
         private bool jkpluslogo;
         private bool toggleLocation;
         private bool togglePreciseTimer;
+        private bool customGame;
+        private bool _is_in_lowGrav;
         public bool QuickRestart { get { return _restart; } set { _restart = value; } }
         public bool ToggleRPC { get { return toggleRpc; } set { toggleRpc = value; } }
         public bool ToggleCheats { get { return toggleCheats; } set { toggleCheats = value; cheats.AchievementAccess = !value; } }
@@ -44,5 +51,9 @@ namespace JumpKingPlus
                 "Default",
                 "Precise"
             };
+
+        public bool CustomGame { get { return customGame; } set { customGame = value; } }
+
+        public bool IsInLowGravity { get { return _is_in_lowGrav; } set { _is_in_lowGrav = value; } }
     }
 }
