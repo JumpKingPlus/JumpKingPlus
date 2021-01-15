@@ -121,7 +121,7 @@ Last warning. This takes a lot in both space on your drive and time. Choose only
 
 2. Download *.NET desktop development*.
 
-3. Install MonoGame from the ufficial website.
+3. Install MonoGame from the official website.
 
 4. [**Follow these instructions**](https://docs.monogame.net/articles/getting_started/1_setting_up_your_development_environment_windows.html#install-monogame-extension-for-visual-studio-2019) (from __Install MonoGame extension for Visual Studio 2019__ to __Install MGCB Editor__ included!).
 
@@ -198,7 +198,7 @@ The hitbox file is a **Texture2D** (.png image with alpha channel or transparent
     <tr>
       <td>Fake</td>
       <td>The player will fall through it</td>
-      <td>Wind, water and low gravity affects it</td>
+      <td>Wind, water and low gravity affects it; used also for slopes</td>
       <td><div class="rectangle" style="background:rgb(128,128,128);"></div></td>
     </tr>
     <tr>
