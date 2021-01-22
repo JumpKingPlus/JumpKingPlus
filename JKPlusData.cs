@@ -7,7 +7,7 @@ namespace JumpKingPlus
 
         public static class JKVersion
         {
-            public static Version version = new Version("1.2.0");
+            public static Version version = new Version("1.2.1");
         }
         /// <summary>
         ///     recap on JKPlusData.

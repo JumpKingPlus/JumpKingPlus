@@ -554,15 +554,9 @@ This needs to be configured, if the snow particle is used.
 ---
 
 ## Publishing
-To get it published on the site, post your map in the [#modding](http://discord.gg/QhnERYV) channel on Discord where it will get "verified" by one the level publisher moderators.
+To get it published on the site, post your map in the [#modding](http://discord.gg/QhnERYV) channel on Discord where it will get verified by one the level publisher moderators.
 
-The .zip file should contain your mods folder and only the files needed for the level custom.
-
-Fill out the form if you are interested to help us out [**here**](https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAcgqL_5UN0VQNENRNlc4RVRFVEoxRlgxRDc0RkpFRC4u)!
-
-<iframe width="640px" height= "480px" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAcgqL_5UN0VQNENRNlc4RVRFVEoxRlgxRDc0RkpFRC4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
-
-You don't have much time left, the form application ends at midnight on the 15th of January 2021.
+The .zip file should contain your mods folder and only the files needed for the level custom. Please host the level yourself, GitHub does not work as a cloud!
 
 <br>
 Special thanks to MERNY!<br>

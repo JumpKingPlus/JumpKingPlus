@@ -77,11 +77,11 @@ namespace JumpKingPlus
             {
                 return;
             }
-            TeleportToLocation((int)playerLocation.X, (int)playerLocation.Y, (int)playerLocation.Z);
+            TeleportToLocation(playerLocation.X, playerLocation.Y, (int)playerLocation.Z);
             JumpKing.MusicManager.Play(JKContentManager.Audio.Menu.Select);
         }
 
-        public static void TeleportToLocation(int pX, int pY, int locInt)
+        public static void TeleportToLocation(float pX, float pY, int locInt)
         {
             SaveManager.instance.m_player.m_body.position.X = pX;
             SaveManager.instance.m_player.m_body.position.Y = pY;
