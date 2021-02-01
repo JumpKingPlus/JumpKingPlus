@@ -7,7 +7,7 @@ namespace JumpKingPlus
 
         public static class JKVersion
         {
-            public static Version version = new Version("1.2.1");
+            public static Version version = new Version("1.3.0");
         }
         /// <summary>
         ///     recap on JKPlusData.
@@ -26,10 +26,12 @@ namespace JumpKingPlus
             toggleCheats = false;
             cheats = new Cheats();
             jkpluslogo = false;
+            toggleBuild = false;
             toggleLocation = true;
             customGame = false;
         }
         private bool _restart;
+        private bool toggleBuild;
         private bool toggleRpc;
         private bool toggleCheats;
         private bool toggleNpcSpeech;
@@ -38,6 +40,7 @@ namespace JumpKingPlus
         private bool togglePreciseTimer;
         private bool customGame;
         private bool _is_in_lowGrav;
+        public bool ToggleBuild { get { return toggleBuild; } set { toggleBuild = value; ToggleCheats = value; } }
         public bool QuickRestart { get { return _restart; } set { _restart = value; } }
         public bool ToggleRPC { get { return toggleRpc; } set { toggleRpc = value; } }
         public bool ToggleCheats { get { return toggleCheats; } set { toggleCheats = value; cheats.AchievementAccess = !value; } }
