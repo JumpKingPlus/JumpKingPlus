@@ -251,7 +251,7 @@ The hitbox file is a **Texture2D** (.png image with alpha channel or transparent
     </tr>
     <tr style="background-color: #fff3b2;">
       <td>Low gravity</td>
-      <td>Velocity and gravity is between water and normal, distance is slightly higher</td>
+      <td>Velocity and gravity is between water and normal, distance is slightly higher (fixed all problems related with solid platforms in v1.3.1)</td>
       <td></td>
       <td><div class="rectangle" style="background:rgb(128,255,255);"></div></td>
     </tr>
