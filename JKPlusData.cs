@@ -40,7 +40,7 @@ namespace JumpKingPlus
         private bool togglePreciseTimer;
         private bool customGame;
         private bool _is_in_lowGrav;
-        public bool ToggleBuild { get { return toggleBuild; } set { toggleBuild = value; ToggleCheats = value; } }
+        public bool ToggleBuild { get { return toggleBuild; } set { toggleBuild = value; if (toggleBuild) { toggleCheats = true; } } }
         public bool QuickRestart { get { return _restart; } set { _restart = value; } }
         public bool ToggleRPC { get { return toggleRpc; } set { toggleRpc = value; } }
         public bool ToggleCheats { get { return toggleCheats; } set { toggleCheats = value; cheats.AchievementAccess = !value; } }
