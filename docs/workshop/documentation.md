@@ -168,7 +168,7 @@ Custom fonts are optional as specified, if left to blank, JumpKingPlus will auto
 
 Both MainBabe and MainShoes are supposed to be called as the .xnb files located into `/mods/ending`. **Do not** include the extensions in the name, the game is automatically set to find the .xnb files.
 
-Inside the Ending Lines, it's possible to use the default library for translations included in the game, LanguageJK. 
+>Inside the Ending Lines, it's possible to use the default library for translations included in the game. LanguageJK includes all the possible text in Jump King based by your localization language. Check out all the possible combinations [**here**](./files/LanguageJK.xml).
 
 ### Hitbox file
 The hitbox file is a **Texture2D** (.png image with alpha channel or transparent) with the size of 780x585 pixels. Every screen is ordered by column starting from top to bottom which means every screen has 60x45 pixels. Jump King uses a specific color to define what a block is inside of this file.
