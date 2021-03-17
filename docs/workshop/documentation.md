@@ -257,7 +257,112 @@ The hitbox file is a **Texture2D** (.png image with alpha channel or transparent
     </tr>
   </tbody>
 </table>
-The yellowish color defines a custom hitbox added with JumpKingPlus.
+
+#### Compatibility table
+<table>
+  <thead>
+    <tr>
+      <th>block</th>
+      <th>vanilla JK</th>
+      <th>JK+ v1.1.0 or older</th>
+      <th>JK+ v1.2.0 to v1.3.1</th>
+      <th>JK v1.3.1 or newer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Solid</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+    </tr>
+    <tr>
+      <td>Slope</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+    </tr>
+    <tr>
+      <td>Fake</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+    </tr>
+    <tr>
+      <td>Ice</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+    </tr>
+    <tr>
+      <td>Snow</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+    </tr>
+    <tr>
+      <td>Wind</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+    </tr>
+    <tr>
+      <td>Sand</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+    </tr>
+    <tr>
+      <td>Wind</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+    </tr>
+    <tr>
+      <td>No Wind</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+    </tr>
+    <tr>
+      <td>Quark</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+    </tr>
+    <tr>
+      <td>Teleport</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+    </tr>
+    <tr>
+      <td>Low gravity</td>
+      <td>&cross;</td>
+      <td>&cross;</td>
+      <td>not fully working</td>
+      <td>&check;</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Screens folder
 The screen folder contains textures such as background, foreground, midground, scrolling images and masks.
