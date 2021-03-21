@@ -25,6 +25,7 @@ namespace JumpKingPlus
     public class ParseData
     {
         public static Mod _mod = XmlSerializerHelper.Deserialize<Mod>("Content/mods/mod.xml");
+        public static EarthquakeSettings _eqSettings = XmlSerializerHelper.Deserialize<EarthquakeSettings>("Content/mods/gui/earthquake_settings.xml");
 
         public struct Mod
         {
@@ -61,6 +62,11 @@ namespace JumpKingPlus
         {
             public string header;
             public string[] People;
+        }
+
+        public struct EarthquakeSettings
+        {
+            public int[] screens;
         }
     }
 

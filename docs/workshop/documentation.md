@@ -255,6 +255,24 @@ The hitbox file is a **Texture2D** (.png image with alpha channel or transparent
       <td></td>
       <td><div class="rectangle" style="background:rgb(128,255,255);"></div></td>
     </tr>
+    <tr style="background-color: #fff3b2;">
+      <td>Wind gradients</td>
+      <td>16 values that determinates the intensity of the wind</td>
+      <td>From 12.5% (Red: 192) to 200% (Red: 207) of the original wind strength</td>
+      <td><div class="rectangle-gradient" style="background-image: linear-gradient(to right, rgb(192,255,0), rgb(207,255,0));"></div></td>
+    </tr>
+    <tr style="background-color: #fff3b2;">
+      <td>One-way wind gradients (LEFT)</td>
+      <td>16 values that determinates the intensity of the wind, the wind will never change direction.</td>
+      <td>From 12.5% (Red: 208) to 200% (Red: 223) of the original wind strength</td>
+      <td><div class="rectangle-gradient" style="background-image: linear-gradient(to right, rgb(208,255,0), rgb(223,255,0));"></div></td>
+    </tr>
+    <tr style="background-color: #fff3b2;">
+      <td>One-way wind gradients (RIGHT)</td>
+      <td>16 values that determinates the intensity of the wind, the wind will never change direction.</td>
+      <td>From 12.5% (Red: 224) to 200% (Red: 239) of the original wind strength</td>
+      <td><div class="rectangle-gradient" style="background-image: linear-gradient(to right, rgb(224,255,0), rgb(239,255,0));"></div></td>
+    </tr>
   </tbody>
 </table>
 
@@ -263,10 +281,10 @@ The hitbox file is a **Texture2D** (.png image with alpha channel or transparent
   <thead>
     <tr>
       <th>block</th>
-      <th>vanilla JK</th>
       <th>JK+ v1.1.0 or older</th>
       <th>JK+ v1.2.0 to v1.3.1</th>
-      <th>JK v1.3.1 or newer</th>
+      <th>JK+ v1.3.1</th>
+      <th>JK+ v1.4.0 or newer</th>
     </tr>
   </thead>
   <tbody>
@@ -357,8 +375,22 @@ The hitbox file is a **Texture2D** (.png image with alpha channel or transparent
     <tr>
       <td>Low gravity</td>
       <td>&cross;</td>
+      <td>?</td>
+      <td>&check;</td>
+      <td>&check;</td>
+    </tr>
+    <tr>
+      <td>Wind gradients</td>
       <td>&cross;</td>
-      <td>not fully working</td>
+      <td>&cross;</td>
+      <td>&cross;</td>
+      <td>&check;</td>
+    </tr>
+    <tr>
+      <td>One-way wind gradients</td>
+      <td>&cross;</td>
+      <td>&cross;</td>
+      <td>&cross;</td>
       <td>&check;</td>
     </tr>
   </tbody>
@@ -528,7 +560,9 @@ Hidden walls can have props too; these can be added creating a different prop co
 ### King folder
 The king folder contains the textures of the wearable items by the player, by changing these you will have a different texture for the item only when the custom mode is triggered. Keep the same item name in order to get it working.
 
-### Locations
+### Gui folder
+
+#### Locations
 
 <div class="ws-buttons"><a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/location_settings.xml"><ion-icon name="code-slash"></ion-icon> Example location_settings.xml</a></div>
 
@@ -542,6 +576,19 @@ The locations in-game can be changed using the `gui/location_settings.xml` file.
 |`<end>`|Screen number where location ends|
 |`<unlock>`|Screen number where location name pops up|
 |`<name>`|Location name|
+
+#### Earthquake effect
+
+<div class="ws-buttons"><a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/earthquake_settings.xml"><ion-icon name="code-slash"></ion-icon> Example earthquake_settings.xml</a></div>
+
+Implemented from <span class="badge-pill">v1.4.0</span>, this permits to disable/enable the earthquake effect used by Jump King in correspondence of the towers. This is effect consists into moving the screen left and right by one pixel.
+
+The earthquake effect can be changed using the `gui/earthquake_settings.xml` file.
+
+By default there's only one screen set to 0, so it will never trigger. In case you want to use it, you will need to name every screen number with:
+```xml
+<int>SCREEN_NUMBER</int>
+```
 
 ### Font folder
 The font folder should include the custom fonts included for the custom level. Sadly MonoGame, and so Jump King, does not support TrueType fonts (.TTF) so to make them compatible in-game, you should check out how to convert the font to make it compatibile below [**here**](#convert-all-vs2019monogame). 

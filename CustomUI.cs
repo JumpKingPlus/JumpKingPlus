@@ -62,6 +62,12 @@ namespace JumpKingPlus
         }
     }
 
+    public class CompletionEndingItems
+    {
+        public bool snake;
+        public bool boots;
+    }
+
     public class ToggleSnake
     {
         bool snake;
