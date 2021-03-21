@@ -48,6 +48,7 @@ layout: wsdefault
           <span class="rounded-full level-tag latest">
             From {{ post.version-start }} to {{ post.version-end }}
           </span>
+          {% endif %}
           {% for tag in post.tags %}
           <span class="rounded-full level-tag">
               <span style="color: #868e96;">#</span>{{ tag }}
