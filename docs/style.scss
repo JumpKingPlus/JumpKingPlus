@@ -107,19 +107,24 @@ ion-icon {
     display: inline-block;
 }
 
+.intro > .ws-buttons {
+  justify-content: flex-end;
+}
+
 .ws-buttons {
-  display: inline-block;
-  margin-top: 1em;
+  display: flex;
+  padding-top: 1em;
   font-size: $small-font-size;
 }
 
 a.ws-button {
   color: $base-lighten-color;
   border: 1px solid $divider-color;
-  border-radius: 21.5px;
-  padding: 10px 20px;
+  border-radius: 20.5px;
+  padding: 6px 18px;
   background: $background-color;
   margin-right: 1em;
+  display: inline-block;
 
   &:hover, &:focus {
     color: $link-lighten-color;
@@ -170,10 +175,6 @@ div.intro {
   overflow: auto;
 }
 
-.intro .ws-buttons {
-  float: right;
-}
-
 .intro .ws-buttons a.ws-button {
   margin-right: 0;
   margin-left: 1em;
@@ -181,21 +182,21 @@ div.intro {
 
 .levels {
   display: flex;
+  justify-content: space-evenly;
   place-items: flex-start;
   flex-wrap: wrap;
   border-top: 1px solid #f1f3f5;
 }
 
 .levels>div {
-  flex: 0 calc(50% - 60px);
+  width: 40%;
 }
 
 .card {
   box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
   overflow: hidden;
   border-radius: 20px;
-  float: left;
-  margin: 30px;
+  margin: 30px 0 15px 0;
 }
 
 .card:before, .card:after {
@@ -214,8 +215,17 @@ div.card img {
   margin-right: .5em;
   font-weight: 600;
   display: inline-block;
+  color: #343a40;
   background-color: #edf2f7;
+  transition: .5s;
+  margin-top: .5em;
 }
+
+a.tag-link:hover {
+  .level-tag {
+    background-color: #d0e8d2;
+  }
+} 
 
 .latest {
   background-color: #d0e8d2!important;

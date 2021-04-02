@@ -1,11 +1,11 @@
 ---
 layout: wsdefault
+title: Workshop
 ---
 <script src="https://unpkg.com/feather-icons"></script>
 <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
   <div class="intro">
     <h1>Welcome to the Workshop!</h1>
-    <p><i>You found the secret button!</i></p>
     <p>With this section of the JumpKingPlus page, you can have access to new content!
       <br>Find out how to create a new map with the <b>documentation</b>.
       <br>...or how to get your map approved on the site,
@@ -22,7 +22,7 @@ layout: wsdefault
   </div>
 
   <h2>Custom levels&nbsp;
-    <a href="https://phoenixx19.github.io/JumpKingPlus/faq/#how-do-i-install-a-custom-level">
+    <a href="https://phoenixx19.github.io/JumpKingPlus/faq/#how-do-i-install-a-custom-level" style="display: inline-block;">
       <span class="badge-pill" style="font-size: smaller;">Installation method</span>
     </a>
   </h2>
@@ -50,9 +50,11 @@ layout: wsdefault
           </span>
           {% endif %}
           {% for tag in post.tags %}
-          <span class="rounded-full level-tag">
+          <a class="tag-link" href="{{ site.url }}{{ site.baseurl }}/workshop/tags#{{ tag }}">
+            <span class="rounded-full level-tag">
               <span style="color: #868e96;">#</span>{{ tag }}
-          </span>
+            </span>
+          </a>
           {% endfor %}
         </div>
       </div>

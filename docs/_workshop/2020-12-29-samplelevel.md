@@ -13,4 +13,4 @@ version-start: v1.2.0
 version-end: latest
 ---
 
-Build your own level with this sample level!<br>__This is not a custom playable map! Testing only!__
+Build your own level with this sample level! __This is not a custom playable map! Testing only!__

@@ -30,7 +30,7 @@ Welcome to the documentation for custom levels on Jump King using JumpKingPlus! 
 <a class="ws-button" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/workshop/files/documentation.pdf" title="Saves as a .pdf file"><ion-icon name="cloud-download"></ion-icon> Save documentation</a>
 
 ## Warning
-When this document referres on a folder, this is obviously meant to be inside `Jump King/Content/mods`, JumpKingPlus does **not** take any responsibility of your actions!
+When this document referres on a folder, this is obviously meant to be inside `Jump King/Content/mods`, JumpKingPlus does **not** take any responsibility of your actions as you agreed downloading JumpKingPlus with a MIT License.
 
 I reccomend you to use the **working sample level** to start with, and edit it for your new custom level!
 
