@@ -16,6 +16,7 @@ JumpKingPlus is an **enhancement** for Jump King with plentiful of small tweaks 
 ## Future features
 - [ ] Localization
 - [x] Workshop
+- [ ] Online support?
 <br>
 
 <br>
