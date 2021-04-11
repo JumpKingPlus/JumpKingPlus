@@ -1,9 +1,16 @@
 <div class="wrapper-sidebar">
     <header class="sidebar clearfix">
       <div class="site-info">
-        {% if site.avatar %}
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/images/jkcustomapslogo.png" /></a>
-        {% endif %} 
+        <div class="jk-logo">
+          {% if site.avatar %}
+            <a href="{{ site.baseurl }}/workshop" class="site-avatar"><img src="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/master/docs/images/jkcustomapslogo.png" /></a>
+          {% endif %} 
+          <div class="ws-build-logo">
+            <a title="Back to the homepage" class="ws-link-bg rounded-full" href="{{ site.baseurl }}/workshop">
+              <ion-icon name="home"></ion-icon>
+            </a>
+          </div>
+        </div>
         <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
         <p class="site-description"><b>Custom levels'</b> section | <a href="https://github.com/Phoenixx19/JumpKingPlus/releases/tag/v1.2.0"><span class="badge-pill">v1.2.0</span></a> or above</p>
       </div>

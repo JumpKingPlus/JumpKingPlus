@@ -239,6 +239,44 @@ a.tag-link:hover {
    border-radius: 9999px;
 }
 
+.jk-logo {
+  display: inline-block;
+  position: relative;
+  margin:0 auto;
+}
+
+a.ws-link-bg {
+  color: $background-color;
+  background-color: $link-lighten-color;
+  border: 1px solid $link-lighten-color;
+}
+a.ws-link-bg:hover {
+  background-color: $link-color;
+  border: 1px solid $link-color;
+}
+
+.ws-build-logo {
+  display: inline-block;
+  top: 7.5%;
+  right: 12%;
+  position: absolute;
+
+  a {
+    display: inline-flex;
+    padding: .5em;
+    transition: .5s;
+  }
+
+  ion-icon {
+    font-size: 165%;
+    pointer-events: none;
+
+    @include mobile {
+      font-size: 1em;
+    }
+  }
+}
+
 .badge-pill{
   padding-right:.6em;
   padding-left:.6em;
@@ -538,7 +576,6 @@ img {
   }
 
   .site-avatar {
-    margin:0 auto;
     display: block;
     max-width: 200px;
     max-height: 200px;
