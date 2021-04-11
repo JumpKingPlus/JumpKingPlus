@@ -28,7 +28,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1000px;
-  padding: 0 20px;
+  padding: 2em 20px;
   width: 100%;
 }
 
@@ -135,6 +135,10 @@ a.ws-button {
 
 article.post {
   padding: .5em 0;
+}
+
+article.post:first-child {
+  margin: 0;
 }
 
 article.post .entry {

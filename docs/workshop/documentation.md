@@ -7,7 +7,7 @@ comments: false
 toc: true
 pinned: false
 ---
-<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
 <style>
     .rectangle {
         width:20px;
