@@ -27,6 +27,15 @@ namespace JumpKingPlus
         public static Mod _mod = XmlSerializerHelper.Deserialize<Mod>("Content/mods/mod.xml");
         public static EarthquakeSettings _eqSettings = XmlSerializerHelper.Deserialize<EarthquakeSettings>("Content/mods/gui/earthquake_settings.xml");
 
+        public static string getImageKey()
+        {
+            if (_mod.About.image_key != null && _mod.About.image_key != "")
+            {
+                return _mod.About.image_key;
+            }
+            return "unknown";
+        }
+
         public struct Mod
         {
             public About About;
@@ -38,6 +47,7 @@ namespace JumpKingPlus
         public struct About
         {
             public string title;
+            public string image_key;
             public int ending_screen;
         }
 
@@ -92,7 +102,6 @@ namespace JumpKingPlus
         {
             if (CheckReadFile(dir))
             {
-                Game1.jkdata.ToggleCheats = false;
                 Game1.jkdata.cheats.AchievementAccess = false;
                 Game1.jkdata.CustomGame = true;
             }

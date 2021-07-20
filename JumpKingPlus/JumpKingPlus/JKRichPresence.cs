@@ -12,8 +12,29 @@ using static JumpKingPlus.JKPlusData;
 
 namespace JumpKingPlus
 {
+
+	public class DiscordLocations
+	{
+		public static DiscordLocationSettings _discordLocation = XmlSerializerHelper.Deserialize<DiscordLocationSettings>("Content/settings/discordLocations.xml");
+
+		public struct DiscordLocationSettings
+		{
+			public Location[] locations;
+		}
+
+		public struct Location
+		{
+			public int start;
+			public int end;
+			public string name;
+			public string imageKey;
+			public int id;
+		}
+	}
+
 	public class JKRichPresence
     {
+
 		/// <summary>
 		/// ClearUpdate() is the check for the toggle.
 		/// BodyValues is an internal class.
@@ -88,6 +109,7 @@ namespace JumpKingPlus
 		public void Init()
 		{
 			client = new DiscordRpcClient("726077029195448430");
+			client.RegisterUriScheme();
 			this.client.Initialize();
 		}
 
@@ -108,7 +130,7 @@ namespace JumpKingPlus
 						},
 						Assets = new Assets
 						{
-							LargeImageKey = "unknown",
+							LargeImageKey = ParseData.getImageKey(),
 							LargeImageText = "",
 							SmallImageKey = "jkpluslogo",
 							SmallImageText = "JumpKingPlus v" + JKVersion.version.ToString()
@@ -152,124 +174,21 @@ namespace JumpKingPlus
 			if (screen <= 43) { if (section != language.GAMETITLESCREEN_NEW_GAME) section = language.GAMETITLESCREEN_NEW_GAME; }
 			else if (screen >= 44 && screen <= 100) { if (section != language.GAMETITLESCREEN_NEW_BABE_PLUS) section = language.GAMETITLESCREEN_NEW_BABE_PLUS; }
 			else if (screen >= 101 && screen <= 163) { if (section != language.GAMETITLESCREEN_GHOST_OF_THE_BABE) section = language.GAMETITLESCREEN_GHOST_OF_THE_BABE; }
-			switch (screen)
-			{
-				// main babe
 
-				case int n when (n >= 0 && n <= 4):
-					text = language.LOCATION_REDCROWN_WOODS; image = "redcrown_woods"; break;
-
-				case int n when (n >= 5 && n <= 9):
-					text = language.LOCATION_COLOSSAL_DRAIN; image = "colossal_drain"; break;
-
-				case int n when (n >= 10 && n <= 13):
-					text = language.LOCATION_FALSE_KINGS_KEEP; image = "falsekeep"; break;
-
-				case int n when (n >= 14 && n <= 18):
-					text = language.LOCATION_BARGAINBURG; image = "bargainburg"; break;
-
-				case int n when (n >= 19 && n <= 24):
-					text = language.LOCATION_GREAT_FRONTIER; image = "new_frontier"; break;
-
-				case 25:
-					text = language.LOCATION_WINDSWEPT_BLUFF; image = "windswept_bluff"; break;
-
-				case int n when (n >= 26 && n <= 31):
-					text = language.LOCATION_STORMWALL_PASS; image = "stormwall_pass"; break;
-
-				case int n when (n >= 32 && n <= 35):
-					text = language.LOCATION_CHAPEL_PERILOUS; image = "chapel"; break;
-
-				case int n when (n >= 36 && n <= 38):
-					text = language.LOCATION_BLUE_RUIN; image = "blue_ruin"; break;
-
-				case int n when (n >= 39 && n <= 41):
-					text = language.LOCATION_THE_TOWER; image = "maintower"; break;
-
-				case 42:
-					text = language.GAMETITLESCREEN_NEW_GAME+" Screen"; image = "mainbabe"; break;
-
-				case 43:
-					text = "Unknown"; image = "mainbabe"; break;
-
-				// new babe+
-
-				case int n when (n >= 44 && n <= 45):
-					text = "Room of the Imp"; image = "improom"; break;
-
-				case int n when (n >= 46 && n <= 51):
-					text = language.LOCATION_BRIGHTCROWN_WOODS; image = "brightcrown"; break;
-
-				case int n when (n >= 52 && n <= 58):
-					text = language.LOCATION_COLOSSAL_DUNGEON; image = "colossal_dungeon"; break;
-
-				case int n when (n >= 59 && n <= 62):
-					text = language.LOCATION_FALSE_KINGS_CASTLE; image = "falsecastle"; break;
-
-				case int n when (n >= 63 && n <= 69):
-					text = language.LOCATION_UNDERBURG; image = "underburg"; break;
-
-				case int n when (n >= 70 && n <= 76):
-					text = language.LOCATION_LOST_FRONTIER; image = "lost_frontier"; break;
-
-				case int n when (n >= 77 && n <= 82):
-					text = language.LOCATION_HIDDEN_KINGDOM; image = "hiddenkingdom"; break;
-
-				case int n when (n >= 83 && n <= 88):
-					text = language.LOCATION_BLACK_SANCTUM; image = "black_sanctum"; break;
-
-				case int n when (n >= 89 && n <= 93):
-					text = language.LOCATION_DEEP_RUIN; image = "deep_ruin"; break;
-
-				case int n when (n >= 94 && n <= 98):
-					text = language.LOCATION_THE_DARK_TOWER; image = "dark_tower"; break;
-
-				case 99:
-					text = language.GAMETITLESCREEN_NEW_BABE_PLUS+" Screen"; image = "newbabe"; break;
-
-				case 100:
-					text = "Unknown"; image = "newbabe"; break;
-
-				// gotb
-
-				case int n when (n >= 101 && n <= 107):
-					text = language.LOCATION_BOG; image = "bog"; break;
-
-				case int n when (n >= 108 && n <= 115):
-					text = language.LOCATION_MOULDING_MANOR; image = "manor"; break;
-
-				case int n when (n >= 116 && n <= 122):
-					text = language.LOCATION_BUGSTALK; image = "bugstalk"; break;
-
-				case int n when (n >= 123 && n <= 129):
-					text = language.LOCATION_HOUSE_OF_NINE_LIVES; image = "tower_of_nine_lives"; break;
-
-				case int n when (n >= 130 && n <= 138):
-					text = language.LOCATION_THE_PHANTOM_TOWER; image = "phantom_tower"; break;
-
-				case int n when (n >= 139 && n <= 146):
-					text = language.LOCATION_HALTED_RUIN; image = "halted_ruin"; break;
-
-				case int n when (n >= 147 && n <= 152):
-					text = language.LOCATION_THE_TOWER_OF_ANTUMBRA; image = "antumbra"; break;
-
-				case 153:
-					text = language.GAMETITLESCREEN_GHOST_OF_THE_BABE+" Screen"; image = "ghostbabe"; break;
-
-				case 154:
-					text = "Unknown"; image = "ghostbabe"; break;
-
-				case int n when (n >= 155 && n <= 159):
-					text = language.LOCATION_PHILOSOPHERS_FOREST; image = "philosopher"; break;
-
-				case int n when (n >= 160 && n <= 163):
-					text = "Hole"; image = "hole"; break;
-
-				// default
-
-				default:
-					text = "Unknown"; image = "jklogo"; break;
-			}
+			DiscordLocations.Location[] locs = DiscordLocations._discordLocation.locations;
+			foreach (DiscordLocations.Location loc in locs)
+            {
+				if (screen >= (loc.start - 1) && screen <= (loc.end - 1))
+                {
+					text = loc.name;
+					if (language.ResourceManager.GetString(loc.name) != null)
+                    {
+						text = language.ResourceManager.GetString(loc.name);
+                    }
+					image = loc.imageKey;
+					break;
+                }
+            }
 		}
 
 		public void BootsRing(bool _boots, bool _ring)
@@ -303,7 +222,7 @@ namespace JumpKingPlus
 			var sessions = (AchievementManager.instance.m_all_time_stats.session - AchievementManager.instance.m_snapshot.session) + 1;
 			var falls = AchievementManager.instance.m_all_time_stats.falls - AchievementManager.instance.m_snapshot.falls;
 
-			GetLocation(body.LastScreen);
+			GetLocation(body.LastScreen);	
 			switch (_preset)
 			{
 				//preset 1
