@@ -123,12 +123,25 @@ namespace JumpKingPlus
             }
         }
 
+        public static Texture2D SmartLoad(Game game, string file)
+        {
+            if (File.Exists(game.Content.RootDirectory+"/mods/"+file+".xnb"))
+            {
+                return game.Content.Load<Texture2D>("mods/" + file);
+            }
+            else
+            {
+                return game.Content.Load<Texture2D>(file);
+            }
+        }
+
         public static void LoadCustomAssets(Game p_game)
         {
             JKContentManager.LevelTexture = p_game.Content.Load<Texture2D>("mods/level");
-            
+
             //default
-            JKContentManager.TitleLogo = p_game.Content.Load<Texture2D>("title_logo");
+            //JKContentManager.TitleLogo = p_game.Content.Load<Texture2D>("mods/title_logo");
+            JKContentManager.TitleLogo = SmartLoad(p_game, "title_logo");
             JKContentManager.NexileLogo = Sprite.CreateSprite(p_game.Content.Load<Texture2D>("JK_Nexile_Logo"));
             JKContentManager.NexileLogo.center = Vector2.One / 2f;
             JKContentManager.SlopeTexture = p_game.Content.Load<Texture2D>("slopes");
