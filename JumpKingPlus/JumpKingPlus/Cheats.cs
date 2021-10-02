@@ -67,11 +67,6 @@ namespace JumpKingPlus
             playerLocation = new Vector3(position.X, position.Y, screen);
         }
 
-        public void SetToDefault()
-        {
-            playerLocation = Vector3.Zero;
-        }
-
         public void TeleportToSavedLocation()
         {
             if (playerLocation == Vector3.Zero)

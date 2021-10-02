@@ -66,6 +66,7 @@ namespace JumpKingPlus
     {
         public bool snake;
         public bool boots;
+        public bool cheatedRun;
     }
 
     public class ToggleSnake

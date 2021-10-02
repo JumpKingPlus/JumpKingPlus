@@ -7,7 +7,7 @@ namespace JumpKingPlus
 
         public static class JKVersion
         {
-            public static Version version = new Version("1.5.1");
+            public static Version version = new Version("1.6.0");
         }
         /// <summary>
         ///     recap on JKPlusData.
@@ -42,6 +42,7 @@ namespace JumpKingPlus
         private bool _is_in_lowGrav;
         private bool toggleBuildHelper;
         private bool gameProgress;
+        private bool boomerRestart;
 
         public bool ToggleBuild { get { return toggleBuild; } set { toggleBuild = value; if (toggleBuild) { toggleCheats = true; } } }
         public bool QuickRestart { get { return _restart; } set { _restart = value; } }
@@ -62,5 +63,6 @@ namespace JumpKingPlus
         public bool IsInLowGravity { get { return _is_in_lowGrav; } set { _is_in_lowGrav = value; } }
         public bool ToggleBuildHelper { get { return toggleBuildHelper; } set { toggleBuildHelper = value; } }
         public bool ToggleGameProgress { get { return gameProgress; } set { gameProgress = value; } }
+        public bool ToggleBoomerRestart { get { return boomerRestart; } set { boomerRestart = value; } }
     }
 }

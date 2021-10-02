@@ -1,12 +1,8 @@
 C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\JumpKingPlus.dll
 C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\JumpKingPlus.pdb
-C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\DiscordRPC.dll
-C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\JumpKing.exe
-C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\MonoGame.Framework.dll
 C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\Newtonsoft.Json.dll
 C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\Steamworks.NET.dll
 C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\SlimDX.dll
-C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\LanguageJK.dll
 C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\SharpDX.MediaFoundation.dll
 C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\SharpDX.dll
 C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\SharpDX.XAudio2.dll
@@ -17,7 +13,6 @@ C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\SharpDX.XInp
 C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\DiscordRPC.xml
 C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\JumpKing.exe.config
 C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\MonoGame.Framework.xml
-C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\Newtonsoft.Json.xml
 C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\SlimDX.xml
 C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\LanguageJK.dll.config
 C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\SharpDX.MediaFoundation.xml
@@ -35,4 +30,9 @@ C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\obj\x86\Debug\JumpKingPlus
 C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\obj\x86\Debug\JumpKingPlus.csproj.CopyComplete
 C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\obj\x86\Debug\JumpKingPlus.dll
 C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\obj\x86\Debug\JumpKingPlus.pdb
-C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\obj\x86\Debug\JumpKingPlus.csprojAssemblyReference.cache
+C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\obj\x86\Debug\JumpKingPlus.csproj.AssemblyReference.cache
+C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\DiscordRPC.dll
+C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\JumpKing.exe
+C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\LanguageJK.dll
+C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\MonoGame.Framework.dll
+C:\Users\andre\source\repos\JumpKingPlus\JumpKingPlus\bin\x86\Debug\Newtonsoft.Json.xml

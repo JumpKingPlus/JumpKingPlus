@@ -19,6 +19,10 @@ using JumpKing.MiscEntities.Merchant;
 using JumpKing.MiscEntities;
 using System.Linq;
 using JumpKing.Particles;
+using JumpKing.MiscEntities.WorldItems;
+using static JumpKingPlus.WardrobeItem;
+using System;
+using Microsoft.Xna.Framework.Content;
 
 namespace JumpKingPlus
 {
@@ -39,6 +43,7 @@ namespace JumpKingPlus
         public struct Mod
         {
             public About About;
+            public Compatibility? Compatibility;
             public Fonts Fonts;
             public Ending Ending;
             public Credit[] EndingLines;
@@ -49,6 +54,23 @@ namespace JumpKingPlus
             public string title;
             public string image_key;
             public int ending_screen;
+            public bool disableProgress;
+            public StartPosition? StartingPosition;
+        }
+
+        public struct StartPosition
+        {
+            public float positionX;
+            public float positionY;
+            public float? velocityX;
+            public float? velocityY;
+            public bool? isOnGround;
+        }
+
+        public struct Compatibility
+        {
+            public Version minimum_version;
+            public Version maximum_version;
         }
 
         public struct Fonts
@@ -475,23 +497,75 @@ namespace JumpKingPlus
 
         public static class King
         {
-            public static void Load(Microsoft.Xna.Framework.Content.ContentManager p_loader)
+            public static void Load(ContentManager p_loader)
             {
-                JKContentManager.PlayerTexture = p_loader.Load<Texture2D>("mods/king/base");
+                Wardrobe.wardrobeItems = new List<WardrobeItem>();
+                Wardrobe.collectionItems = new List<WardrobeItem>();
+
+                if (File.Exists(p_loader.RootDirectory + "/mods/king/base.xnb"))
+                {
+                    JKContentManager.PlayerTexture = p_loader.Load<Texture2D>("mods/king/base");
+                } else
+                {
+                    JKContentManager.PlayerTexture = p_loader.Load<Texture2D>("king/base");
+                }
                 JKContentManager.PlayerSprites._CurrentSprites = new LayeredKingSprites(JKContentManager.PlayerTexture);
+                
+                string[] files = Directory.GetFiles("Content/wardrobe", "*.xml");
+                for (int i = 0; i < files.Length; i++)
+                {
+                    WardrobeItem wardrobeItem = new WardrobeItem(files[i]);
+                    WardrobeItem.WardrobeSettings wItemSettings = wardrobeItem._wItemSettings;
+                    bool isCollection = wItemSettings.isCollection;
+                    if (isCollection)
+                    {
+                        Wardrobe.collectionItems.Add(wardrobeItem);
+                    }
+                    else
+                    {
+                        Wardrobe.wardrobeItems.Add(wardrobeItem);
+                    }
+                }
+                
                 SkinSettings skinSettings = XmlSerializerHelper.Deserialize<SkinSettings>("Content/mods/king/skin_settings.xml");
                 SkinManager.SetSettings(skinSettings);
-                foreach (Skin skin in skinSettings.skins)
+                
+                Skin[] skins = skinSettings.skins;
+                for (int j = 0; j < skins.Length; j++)
                 {
-                    Texture2D p_tex;
-                    if (!File.Exists(p_loader.RootDirectory + "/mods/king/" +skin.texture +".xnb"))
+                    Skin skin = skins[j];
+                    WardrobeItem wardrobeItem2 = Wardrobe.collectionItems.Find((WardrobeItem c) => Wardrobe.HasSkin(c._wItemSettings.collection.Value.Reskins, skin.item) && c._wItemSettings.collection.Value.enabled);
+                    bool flag = wardrobeItem2 != null;
+                    if (flag)
                     {
-                        p_tex = p_loader.Load<Texture2D>("king/" + skin.texture);
-                    } else
-                    {
-                        p_tex = p_loader.Load<Texture2D>("mods/king/" + skin.texture);
+                        WardrobeItem wardrobeItem3 = Wardrobe.wardrobeItems.Find((WardrobeItem x) => x._wItemSettings.skin.Equals(skin.item) && x._wItemSettings.enabled.Value);
+                        bool flag2 = wardrobeItem3 != null;
+                        if (flag2)
+                        {
+                            Texture2D p_tex = p_loader.Load<Texture2D>("wardrobe/" + wardrobeItem3._wItemSettings.name);
+                            SkinManager.AddSkinSprite(skin.item, new KingSprites(p_tex));
+                        }
+                        else
+                        {
+                            bool flag3 = !File.Exists(p_loader.RootDirectory + "/mods/king/" + skin.texture + ".xnb");
+                            if (flag3)
+                            {
+                                Texture2D p_tex2 = p_loader.Load<Texture2D>("king/" + skin.texture);
+                                SkinManager.AddSkinSprite(skin.item, new KingSprites(p_tex2));
+                            }
+                            else
+                            {
+                                Texture2D p_tex3 = p_loader.Load<Texture2D>("mods/king/" + skin.texture);
+                                SkinManager.AddSkinSprite(skin.item, new KingSprites(p_tex3));
+                            }
+                        }
                     }
-                    SkinManager.AddSkinSprite(skin.item, new KingSprites(p_tex));
+                    else
+                    {
+                        WardrobeItem.Reskin skinsEnabled = Wardrobe.GetSkinsEnabled(wardrobeItem2._wItemSettings.collection.Value, skin.item);
+                        Texture2D p_tex4 = p_loader.Load<Texture2D>("wardrobe/" + skinsEnabled.name);
+                        SkinManager.AddSkinSprite(skinsEnabled.skin, new KingSprites(p_tex4));
+                    }
                 }
             }
         }
