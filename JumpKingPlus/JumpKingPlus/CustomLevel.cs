@@ -535,7 +535,7 @@ namespace JumpKingPlus
                 {
                     Skin skin = skins[j];
                     WardrobeItem wardrobeItem2 = Wardrobe.collectionItems.Find((WardrobeItem c) => Wardrobe.HasSkin(c._wItemSettings.collection.Value.Reskins, skin.item) && c._wItemSettings.collection.Value.enabled);
-                    bool flag = wardrobeItem2 != null;
+                    bool flag = wardrobeItem2 == null;
                     if (flag)
                     {
                         WardrobeItem wardrobeItem3 = Wardrobe.wardrobeItems.Find((WardrobeItem x) => x._wItemSettings.skin.Equals(skin.item) && x._wItemSettings.enabled.Value);
