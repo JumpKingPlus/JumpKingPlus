@@ -81,6 +81,7 @@
   <ItemGroup>
     <Compile Include="Cheats.cs" />
     <Compile Include="CustomLevel.cs" />
+    <Compile Include="EllieBlocks.cs" />
     <Compile Include="JKExtensions.cs" />
     <Compile Include="JKPlusData.cs" />
     <Compile Include="JKRichPresence.cs" />

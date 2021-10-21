@@ -7,7 +7,38 @@ namespace JumpKingPlus
 
         public static class JKVersion
         {
-            public static Version version = new Version("1.6.1");
+            public static Version version = new Version("1.7.0");
+
+            public static bool IsVersionOkay(Version _version)
+            {
+                if (version.CompareTo(_version) == -1)
+                {
+                    return false;
+                }
+                return true;
+            }
+
+            public static bool IsVersionBetween(Version versionStart, Version versionEnd)
+            {
+                if (IsVersionOkay(versionStart))
+                {
+                    return !IsVersionOkay(versionEnd);
+                }
+                return false;
+            }
+
+            public static bool VersionChecker(string versionStart, string versionEnd)
+            {
+                if (versionStart == null || versionStart == "" && versionEnd == null || versionEnd == "")
+                {
+                    return true;
+                }
+                if (versionEnd != "" && versionEnd != null)
+                {
+                    return IsVersionBetween(new Version(versionStart), new Version(versionEnd));
+                }
+                return IsVersionOkay(new Version(versionStart));
+            }
         }
         /// <summary>
         ///     recap on JKPlusData.
@@ -39,6 +70,7 @@ namespace JumpKingPlus
         private bool toggleLocation;
         private bool togglePreciseTimer;
         private bool customGame;
+        private bool isCustomGameIncompatible;
         private bool _is_in_lowGrav;
         private bool toggleBuildHelper;
         private bool gameProgress;
@@ -60,6 +92,7 @@ namespace JumpKingPlus
             };
 
         public bool CustomGame { get { return customGame; } set { customGame = value; } }
+        public bool IsCustomGameIncompatible { get { return isCustomGameIncompatible; } set { isCustomGameIncompatible = value; } }
         public bool IsInLowGravity { get { return _is_in_lowGrav; } set { _is_in_lowGrav = value; } }
         public bool ToggleBuildHelper { get { return toggleBuildHelper; } set { toggleBuildHelper = value; } }
         public bool ToggleGameProgress { get { return gameProgress; } set { gameProgress = value; } }

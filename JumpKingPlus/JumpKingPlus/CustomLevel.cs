@@ -43,7 +43,7 @@ namespace JumpKingPlus
         public struct Mod
         {
             public About About;
-            public Compatibility? Compatibility;
+            public Compatibility Compatibility;
             public Fonts Fonts;
             public Ending Ending;
             public Credit[] EndingLines;
@@ -54,6 +54,8 @@ namespace JumpKingPlus
             public string title;
             public string image_key;
             public int ending_screen;
+            public int? ending_screen_nbp;
+            public int? ending_screen_owl;
             public bool disableProgress;
             public StartPosition? StartingPosition;
         }
@@ -69,8 +71,8 @@ namespace JumpKingPlus
 
         public struct Compatibility
         {
-            public Version minimum_version;
-            public Version maximum_version;
+            public string minimum_version;
+            public string maximum_version;
         }
 
         public struct Fonts
@@ -88,6 +90,10 @@ namespace JumpKingPlus
         {
             public string MainBabe;
             public string MainShoes;
+            public string NBPBabe;
+            public string NBPShoes;
+            public string OwlBabe;
+            public string OwlBird;
         }
 
         public struct Credit
@@ -352,8 +358,22 @@ namespace JumpKingPlus
                 {
                     JKContentManager.Audio.Music.Ending = new JKSound(p_loader.Load<SoundEffect>("audio/music/ending"), SoundType.Music);
                 }
-                JKContentManager.Audio.Music.Ending2 = new JKSound(p_loader.Load<SoundEffect>("audio/music/ending2"), SoundType.Music);
-                JKContentManager.Audio.Music.Ending3 = new JKSound(p_loader.Load<SoundEffect>("audio/music/ending3"), SoundType.Music);
+                if (File.Exists(Game1.instance.Content.RootDirectory + "/mods/audio/music/ending2.xnb"))
+                {
+                    JKContentManager.Audio.Music.Ending2 = new JKSound(p_loader.Load<SoundEffect>(text + "ending2"), SoundType.Music);
+                }
+                else
+                {
+                    JKContentManager.Audio.Music.Ending2 = new JKSound(p_loader.Load<SoundEffect>("audio/music/ending2"), SoundType.Music);
+                }
+                if (File.Exists(Game1.instance.Content.RootDirectory + "/mods/audio/music/ending3.xnb"))
+                {
+                    JKContentManager.Audio.Music.Ending3 = new JKSound(p_loader.Load<SoundEffect>(text + "ending3"), SoundType.Music);
+                }
+                else
+                {
+                    JKContentManager.Audio.Music.Ending3 = new JKSound(p_loader.Load<SoundEffect>("audio/music/ending3"), SoundType.Music);
+                }
                 JKContentManager.Audio.Music.event_music = new Dictionary<string, JKSound>();
                 Dictionary<string, SoundEffect> dictionary = JKExtensions.UltraContent.LoadCunt<SoundEffect>(p_loader, text + "event_music", ".xnb");
                 foreach (string key in dictionary.Keys)
@@ -490,8 +510,21 @@ namespace JumpKingPlus
         {
             public static void Load(Microsoft.Xna.Framework.Content.ContentManager p_loader)
             {
-                JKContentManager.Ending.EndingImageCrown = Sprite.CreateSprite(p_loader.Load<Texture2D>("mods/ending/" + ParseData._mod.Ending.MainBabe));
-                JKContentManager.Ending.EndingImageShoes = Sprite.CreateSprite(p_loader.Load<Texture2D>("mods/ending/" + ParseData._mod.Ending.MainShoes));
+                JKContentManager.Ending.EndingImageCrown = Sprite.CreateSprite(p_loader.Load<Texture2D>(SmartEndingLoad(ParseData._mod.Ending.MainBabe, "ending/imagecrown")));
+                JKContentManager.Ending.EndingImageShoes = Sprite.CreateSprite(p_loader.Load<Texture2D>(SmartEndingLoad(ParseData._mod.Ending.MainShoes, "ending/imageshoes")));
+                JKContentManager.Ending.EndingImageCrownNBP = Sprite.CreateSprite(p_loader.Load<Texture2D>(SmartEndingLoad(ParseData._mod.Ending.NBPBabe, "nbp_imagecrown")));
+                JKContentManager.Ending.EndingImageShoesNBP = Sprite.CreateSprite(p_loader.Load<Texture2D>(SmartEndingLoad(ParseData._mod.Ending.NBPShoes, "nbp_imageshoes")));
+                JKContentManager.Ending.OwlEndingImageCrown = Sprite.CreateSprite(p_loader.Load<Texture2D>(SmartEndingLoad(ParseData._mod.Ending.OwlBabe, "owl_imagecrown")));
+                JKContentManager.Ending.OwlEndingImageBird = Sprite.CreateSprite(p_loader.Load<Texture2D>(SmartEndingLoad(ParseData._mod.Ending.OwlBird, "owl_imagebird")));
+            }
+
+            public static string SmartEndingLoad(string newImage, string olReliable)
+            {
+                if (newImage != null && File.Exists(Game1.instance.Content.RootDirectory + "/mods/ending/" + newImage + ".xnb"))
+                {
+                    return "mods/ending/" + newImage;
+                }
+                return "ending/" + olReliable;
             }
         }
 
@@ -602,6 +635,10 @@ namespace JumpKingPlus
             if (Game1.jkdata.CustomGame)
             {
                 Main = JumpKingPlus.ParseData._mod.About.ending_screen - 1;
+                if (JumpKingPlus.ParseData._mod.About.ending_screen_nbp.HasValue)
+                    NBP = JumpKingPlus.ParseData._mod.About.ending_screen_nbp.Value - 1;
+                if (JumpKingPlus.ParseData._mod.About.ending_screen_owl.HasValue)
+                    Owl = JumpKingPlus.ParseData._mod.About.ending_screen_owl.Value - 1;
             }
 
             if (prefs.new_babe == 0 && prefs.new_babe_plus == 0 && prefs.owl_babe == 0)
