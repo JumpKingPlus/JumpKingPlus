@@ -20,5 +20,4 @@ JumpKingPlus is an **enhancement** for Jump King with plentiful of small tweaks 
 
 ### [Linux Installation](https://github.com/rampus-bit/JumpKingPlusOnLinux)
 
-<br>
 ~ Phoenixx19, 2020
