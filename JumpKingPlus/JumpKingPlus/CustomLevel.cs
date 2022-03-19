@@ -39,6 +39,18 @@ namespace JumpKingPlus
             }
             return "unknown";
         }
+        public static Color getColor()
+        {
+            if (!ParseData._mod.About.LevelColor.HasValue)
+            {
+                return Color.Gold;
+            }
+            return new Color(Convert.ToInt32(ParseData._mod.About.LevelColor.Value.red),
+                Convert.ToInt32(ParseData._mod.About.LevelColor.Value.green),
+                Convert.ToInt32(ParseData._mod.About.LevelColor.Value.blue),
+                Convert.ToInt32(ParseData._mod.About.LevelColor.Value.alpha)
+            );
+        }
 
         public struct Mod
         {
@@ -53,11 +65,20 @@ namespace JumpKingPlus
         {
             public string title;
             public string image_key;
+            public LevelColor? LevelColor;
             public int ending_screen;
             public int? ending_screen_nbp;
             public int? ending_screen_owl;
             public bool disableProgress;
             public StartPosition? StartingPosition;
+        }
+
+        public struct LevelColor
+        {
+            public byte red;
+            public byte green;
+            public byte blue;
+            public byte alpha;
         }
 
         public struct StartPosition

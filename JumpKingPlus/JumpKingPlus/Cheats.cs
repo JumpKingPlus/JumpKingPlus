@@ -4,6 +4,7 @@ using JumpKing;
 using JumpKing.SaveThread;
 using Microsoft.Xna.Framework;
 using System.Collections.Generic;
+using JumpKing.MiscSystems.LocationText;
 
 namespace JumpKingPlus
 {
@@ -159,8 +160,12 @@ namespace JumpKingPlus
         public List<int> customSplittedLocs()
         {
             List<int> locations = new List<int>() { };
-            foreach (JumpKing.MiscSystems.LocationText.Location loc in JumpKing.MiscSystems.LocationText.LocationTextManager.SETTINGS.locations)
+            foreach (Location loc in LocationTextManager.SETTINGS.locations)
             {
+                if (loc.ignore.HasValue && loc.ignore.Value)
+                {
+                    continue;
+                }
                 for (int i = loc.start - 1; i < loc.end; i++)
                 {
                     locations.Add(i);
