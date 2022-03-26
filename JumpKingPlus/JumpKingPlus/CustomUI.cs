@@ -58,7 +58,7 @@ namespace JumpKingPlus
     {
         public static void LoadJKPlusText()
         {
-            TextHelper.DrawString(JKContentManager.Font.MenuFont, "Using JumpKingPlus v" + JKVersion.version.ToString(), new Vector2(48f, 30f), Color.Gold, new Vector2(0f, -0.5f));
+            TextHelper.DrawString(JKContentManager.Font.MenuFontSmall, "Using JumpKingPlus v" + JKVersion.version.ToString(), new Vector2(45f, 0f), Color.Gold, new Vector2(0f, -0.5f));
         }
     }
 
