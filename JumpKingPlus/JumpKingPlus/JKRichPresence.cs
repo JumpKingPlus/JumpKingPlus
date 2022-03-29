@@ -9,6 +9,7 @@ using JumpKing.MiscSystems.LocationText;
 using LanguageJK;
 using JumpKing;
 using static JumpKingPlus.JKPlusData;
+using DiscordRPC.Logging;
 
 namespace JumpKingPlus
 {
@@ -108,9 +109,12 @@ namespace JumpKingPlus
 
 		public void Init()
 		{
-			client = new DiscordRpcClient("726077029195448430");
-			client.RegisterUriScheme();
-			this.client.Initialize();
+			client = new DiscordRpcClient("726077029195448430", autoEvents: false);
+			
+			client.RegisterUriScheme("1061090");
+			client.Logger = new ConsoleLogger() { Level = LogLevel.Warning };
+			client.Subscribe(EventType.Join);
+			client.Subscribe(EventType.JoinRequest);
 		}
 
 		public void Update()
@@ -120,7 +124,7 @@ namespace JumpKingPlus
 				if (Game1.jkdata.CustomGame)
                 {
 					PlayerStats currentStats = AchievementManager.instance.GetCurrentStats();
-					this.client.SetPresence(new RichPresence
+					this.client.SetPresence(GetPresence(new RichPresence
 					{
 						Details = ParseData._mod.About.title,
 						State = Location.name,
@@ -135,7 +139,7 @@ namespace JumpKingPlus
 							SmallImageKey = "jkpluslogo",
 							SmallImageText = "JumpKingPlus v" + JKVersion.version.ToString()
 						}
-					});
+					}));
 				} else
                 {
 					if (menuElapsed != DateTime.MinValue)
@@ -150,7 +154,7 @@ namespace JumpKingPlus
 			{
 				if (menuElapsed == DateTime.MinValue)
 					menuElapsed = DateTime.UtcNow;
-				this.client.SetPresence(new RichPresence
+				this.client.SetPresence(GetPresence(new RichPresence
 				{
 					Details = "Main Menu",
 					State = "",
@@ -165,8 +169,26 @@ namespace JumpKingPlus
 						SmallImageKey = "jkplus",
 						SmallImageText = "JumpKingPlus v" + JKVersion.version.ToString()
 					}
-				});
+				}));
 			}
+		}
+
+		public int MaxSize { get; set; } = 8;
+		public int? LobbyPlayerCount { get; set; }
+		public ulong? LobbyId { get; set; }
+
+		public RichPresence GetPresence(RichPresence presence) {
+			if (LobbyId.HasValue) {
+				presence.Party = new Party() {
+					ID = LobbyId.Value.ToString().GetHashCode().ToString(),
+					Max = MaxSize,
+					Size = LobbyPlayerCount.Value,
+				};
+				presence.Secrets = new Secrets() {
+					JoinSecret = LobbyId.Value.ToString()
+				};
+			}
+			return presence;
 		}
 
 		public void GetLocation(int screen)
@@ -227,7 +249,7 @@ namespace JumpKingPlus
 			{
 				//preset 1
 				case 1:
-					this.client.SetPresence(new RichPresence
+					this.client.SetPresence(GetPresence(new RichPresence
 					{
 						Details = section,
 						State = text,
@@ -242,12 +264,12 @@ namespace JumpKingPlus
 							SmallImageKey = smallimage,
 							SmallImageText = smalltext
 						}
-					});
+					}));
 					break;
 
 				//preset 2
 				case 2:
-				this.client.SetPresence(new RichPresence
+				this.client.SetPresence(GetPresence(new RichPresence
 					{
 						Details = text,
 						State = falls + " falls",
@@ -262,12 +284,12 @@ namespace JumpKingPlus
 							SmallImageKey = smallimage,
 							SmallImageText = smalltext
 						}
-					});
+					}));
 					break;
 
 				//preset 3
 				case 3:
-				this.client.SetPresence(new RichPresence
+				this.client.SetPresence(GetPresence(new RichPresence
 					{
 						Details = "Attempt n.°" + sessions,
 						State = falls + " falls",
@@ -282,7 +304,7 @@ namespace JumpKingPlus
 							SmallImageKey = smallimage,
 							SmallImageText = smalltext
 						}
-					});
+					}));
 					break;
 			}
 		}
