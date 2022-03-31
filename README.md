@@ -16,7 +16,7 @@ JumpKingPlus is an **enhancement** for Jump King with plentiful of small tweaks 
 ## Future features
 - [ ] Localization
 - [x] Workshop
-- [ ] Online support?
+- [x] Online support
 - [ ] [**Linux Installation**](https://github.com/rampus-bit/JumpKingPlusOnLinux), by [rampus-bit](https://github.com/rampus-bit)
 
 ~ Phoenixx19, 2020-2022
