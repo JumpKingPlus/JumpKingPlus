@@ -28,6 +28,18 @@ namespace JumpKingPlus
 {
     public class ParseData
     {
+        static ParseData()
+        {
+            if (File.Exists("Content/mods/mod.xml"))
+            {
+                ParseData._mod = XmlSerializerHelper.Deserialize<ParseData.Mod>("Content/mods/mod.xml");
+            }
+            if (File.Exists("Content/mods/gui/earthquake_settings.xml"))
+            {
+                ParseData._eqSettings = XmlSerializerHelper.Deserialize<ParseData.EarthquakeSettings>("Content/mods/gui/earthquake_settings.xml");
+            }
+        }
+
         public static Mod _mod = XmlSerializerHelper.Deserialize<Mod>("Content/mods/mod.xml");
         public static EarthquakeSettings _eqSettings = XmlSerializerHelper.Deserialize<EarthquakeSettings>("Content/mods/gui/earthquake_settings.xml");
 
