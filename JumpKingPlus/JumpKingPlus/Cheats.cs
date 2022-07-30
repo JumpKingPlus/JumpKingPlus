@@ -19,6 +19,7 @@ namespace JumpKingPlus
         {
             achievementsAcc = true;
             jumpPerc = false;
+            jumpPercSett = false;
             noFalls = false;
             tpOption = false;
         }
@@ -112,19 +113,34 @@ namespace JumpKingPlus
 
         private bool achievementsAcc;
         private bool jumpPerc;
+        private bool jumpPercSett;
         private bool noFalls;
         private bool tpOption;
         private int bestScreen = 0;
         private float jumpTimer = 0f;
         private int lastJump = 0;
+        private int jumpCount = 0;
+
+        public String[] percent = new string[2]
+        {
+            "Percentage",
+            "Frames"
+        };
 
         public bool AchievementAccess { get { return achievementsAcc; } set { achievementsAcc = value; ToggleCheatAction(); } }
         public bool JumpPercentage { get { return jumpPerc; } set { jumpPerc = value; } }
+        public bool JumpPercentageSetting { get { return jumpPercSett; } set { jumpPercSett = value; } }
         public bool NoFalls { get { return noFalls; } set{ noFalls = value; } }
         public bool TeleportOption { get { return tpOption; } set { tpOption = value; } }
         public int BestScreen { get { return bestScreen; } set { bestScreen = value; } }
         public float JumpTimer { get { return jumpTimer; } set { jumpTimer = value; } }
+        public int JumpCount { get { return jumpCount; } set { jumpCount = value; } }
         public int LastJump { get { return lastJump; } set { lastJump = value; } }
+
+        /*public int FrameCounter(float currentjump)
+        {
+            return currentjump; 
+        }*/
 
         public int RoundPercent(float currentjump, float jumptime)
         {

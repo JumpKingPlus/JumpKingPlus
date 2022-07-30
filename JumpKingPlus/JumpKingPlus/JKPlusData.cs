@@ -7,7 +7,7 @@ namespace JumpKingPlus
 
         public static class JKVersion
         {
-            public static Version version = new Version("1.8.0");
+            public static Version version = new Version("1.8.1");
 
             public static bool IsVersionOkay(Version _version)
             {
