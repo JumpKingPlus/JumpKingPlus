@@ -123,7 +123,7 @@ namespace JumpKingPlus
 
         public String[] percent = new string[2]
         {
-            "Percentage",
+            "Percent",
             "Frames"
         };
 
