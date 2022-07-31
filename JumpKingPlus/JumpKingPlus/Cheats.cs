@@ -120,6 +120,7 @@ namespace JumpKingPlus
         private float jumpTimer = 0f;
         private int lastJump = 0;
         private int jumpCount = 0;
+        private bool xyCoor;
 
         public String[] percent = new string[2]
         {
@@ -136,11 +137,7 @@ namespace JumpKingPlus
         public float JumpTimer { get { return jumpTimer; } set { jumpTimer = value; } }
         public int JumpCount { get { return jumpCount; } set { jumpCount = value; } }
         public int LastJump { get { return lastJump; } set { lastJump = value; } }
-
-        /*public int FrameCounter(float currentjump)
-        {
-            return currentjump; 
-        }*/
+        public bool XYCoordinates { get { return xyCoor; } set { xyCoor = value; } }
 
         public int RoundPercent(float currentjump, float jumptime)
         {
