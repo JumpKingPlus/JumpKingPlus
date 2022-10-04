@@ -112,7 +112,7 @@ namespace JumpKingPlus
 			client = new DiscordRpcClient("726077029195448430", autoEvents: false);
 			
 			client.RegisterUriScheme("1061090");
-			client.Logger = new ConsoleLogger() { Level = LogLevel.Warning };
+			//client.Logger = new ConsoleLogger() { Level = LogLevel.Warning };
 			client.Subscribe(EventType.Join);
 			client.Subscribe(EventType.JoinRequest);
 		}
