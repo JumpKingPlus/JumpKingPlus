@@ -1,5 +1,7 @@
 /docs/_site
 .DS_Store
+.cache
 docs/.jekyll-cache
 */**/bin/**
 */**/Debug/**
+*/**/Release/**

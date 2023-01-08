@@ -7,7 +7,7 @@ namespace JumpKingPlus
 
         public static class JKVersion
         {
-            public static Version version = new Version("1.8.1");
+            public static Version version = new Version("1.8.2");
 
             public static bool IsVersionOkay(Version _version)
             {
@@ -75,6 +75,7 @@ namespace JumpKingPlus
         private bool toggleBuildHelper;
         private bool gameProgress;
         private bool boomerRestart;
+        private bool immediateAchievement;
 
         public bool ToggleBuild { get { return toggleBuild; } set { toggleBuild = value; if (toggleBuild) { toggleCheats = true; } } }
         public bool QuickRestart { get { return _restart; } set { _restart = value; } }
@@ -97,5 +98,6 @@ namespace JumpKingPlus
         public bool ToggleBuildHelper { get { return toggleBuildHelper; } set { toggleBuildHelper = value; } }
         public bool ToggleGameProgress { get { return gameProgress; } set { gameProgress = value; } }
         public bool ToggleBoomerRestart { get { return boomerRestart; } set { boomerRestart = value; } }
+        public bool ToggleImmediateAchievement { get { return immediateAchievement; } set { immediateAchievement = value; } }
     }
 }
