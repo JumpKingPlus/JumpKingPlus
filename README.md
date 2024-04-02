@@ -1,5 +1,5 @@
 > [!WARNING]
-> Since 24th of February 2024, **JumpKingPlus has officially retired** in favor of the official Steam Workshop now available on Steam. Any of the releases won't work anymore since Jump King now runs at 64-bit by default and JumpKingPlus is based off of the 32-bit build of the game. Read more in the [**blog post**](https://jumpkingplus.github.io/the-good-ending/).
+> Since 24th of February 2024, **JumpKingPlus has officially retired** in favor of the [official Steam Workshop now available on Steam](https://steamcommunity.com/app/1061090/workshop/). Any of the releases won't work anymore since Jump King now runs at 64-bit by default and JumpKingPlus is based off of the 32-bit build of the game. If you are looking to have the "JumpKingPlus experience" back in Jump King, most of the mods present in JumpKingPlus have been ported already and are available in the [JumpKingPlus' Steam collection](https://steamcommunity.com/sharedfiles/filedetails/?id=3140157155). Read more in the [**blog post**](https://jumpkingplus.github.io/the-good-ending/).
 
 # JumpKingPlus <img href="https://JumpKingPlus.github.io/" src ="https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/jkpluslogo.png" width="80px" alt="jkplus logo" align ="right">
 *An enhanced version of Jump King.* :sparkles:
@@ -22,4 +22,4 @@ JumpKingPlus is an **enhancement** for Jump King with plentiful of small tweaks 
 - [x] Online support
 - [ ] [**Linux Installation**](https://github.com/rampus-bit/JumpKingPlusOnLinux), by [rampus-bit](https://github.com/rampus-bit)
 
-~ Phoenixx19, 2020-2022
+~ Phoenixx19, 2020-2024
