@@ -1,3 +1,6 @@
+> [!WARNING]
+> Since 24th of February 2024, **JumpKingPlus has officially retired** in favor of the official Steam Workshop now available on Steam. Any of the releases won't work anymore since Jump King now runs at 64-bit by default and JumpKingPlus is based off of the 32-bit build of the game. Read more in the [**blog post**](https://jumpkingplus.github.io/the-good-ending/).
+
 # JumpKingPlus <img href="https://JumpKingPlus.github.io/" src ="https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/jkpluslogo.png" width="80px" alt="jkplus logo" align ="right">
 *An enhanced version of Jump King.* :sparkles:
 
